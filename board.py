@@ -21,13 +21,49 @@ class Board():
         self.__board_size = 8
         self.__board = np.zeros((self.__board_size, self.__board_size))
         #puttable list: points are contained
-        puttable_list = []
+        self.__puttable_list = []
 
     def read_board(self, file_path):
         with open(file_path) as f:
             for i, row in enumerate(f):
-                col = row.split(parser)
+                col = row.split(self.parser)
                 self.__board[i,] = col
+
+    def is_puttable(self, coor, bow):
+
+        if self.__board[coor[0], coor[1]] != 0:
+            return False
+
+        for i in range(8):
+            tmp_coor = coor.copy()
+            tmp_coor += self.__vec[i]
+            if 
+            while True:
+                tmp_coor += self.__vec[i]
+
+                if tmp_coor[0] > 7 or tmp_coor[0] < 0:
+                    return False
+
+                if tmp_coor[1] > 7 or tmp_coor[1] < 0:
+                    return False
+
+                if self.__board[tmp_coor[0], tmp_coor[1]] == 0:
+                    return False
+
+
+    def listing_puttable(self, bow):
+        self.__puttable_list = []
+        for i in range(self.__board_size):
+            for j in range(self.__board_size):
+                coor = np.array([i, j])
+                if self.is_puttable(coor, bow):
+                    self.__puttable_list.append(coor)
+
+    def get_puttable_list(self):
+        return self.__puttable_list
+
+    def put_stone(self, coor):
+        pass
 
     def print_board(self):
         print(" ", end="")
@@ -41,7 +77,7 @@ class Board():
             for j in range(self.__board_size):
                 tstn = int(self.__board[i,j])
                 stone = " "
-                if tstn is 1:
+                if tstn == 1:
                     stone = "B"
                 elif tstn == 2:
                     stone = "W"
@@ -55,24 +91,11 @@ class Board():
         #if(is_able(coor)):
 
 
-    def is_puttable(self, coor):
-        for i in range(8):
-            tcoor = coor.copy()
-            while True:
-                tmp_coor += vec[i]
-
-                if tmp_coor[0] > 7 or tmp_coor[0] < 0:
-                    return False
-
-                if tmp_coor[1] > 7 or tmp_coor[1] < 0:
-                    return False
-
-                if board[tmp_coor[0], tmp_coor[1]] != 0:
-                    return True
 
 
 
 if __name__ == '__main__':
+
     b = Board()
     b.read_board("init.csv")
 
