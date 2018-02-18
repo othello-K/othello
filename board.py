@@ -68,6 +68,9 @@ class Board():
                 if tmp_coor[1] > 7 or tmp_coor[1] < 0:
                     break
 
+                if self.get_stone(tmp_coor) == 0:
+                    break
+
                 if self.get_stone(tmp_coor) == bow:
                     return True
 

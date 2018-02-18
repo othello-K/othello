@@ -5,6 +5,7 @@ from game import Game
 if __name__ == '__main__':
 
     BOARD_INIT_FILE = 'init.csv'
+
     user1 = User(1)
     user2 = User(2)
     board = Board()
