@@ -9,6 +9,11 @@ class User():
         #history
         self.__history = []
 
+    def set_nstone(self, nstone):
+        self.__nstone = nstone
+
+    def append_history(self, coor):
+        self.__history.append(self, coor)
 
     def out_bow(self):
         if self.__bow == 1:

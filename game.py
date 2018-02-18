@@ -7,7 +7,6 @@ class Game():
     in this class, game process is written
     """
 
-
     def __init__(self):
         #preceding user
         self.__user1 = None
@@ -32,9 +31,22 @@ class Game():
         else:
             print("only user1 or user2 can be assigned")
 
+    def append_input(self, coor, bow):
+        if bow == 1:
+            self.__user1.append_input(coor)
+        if bow == 2:
+            self.__user2.append_input(coor)
+
     def set_board(self, board):
         self.__board = board
         print(self.__board)
+
+    def set_nstone(self, nstone, bow):
+        if bow == 1:
+            self.__user1.set_nstone(nstone)
+        elif bow == 2:
+            self.__user2.set_nstone(nstone)
+
 
     def input_coor(self):
         while True:
@@ -67,6 +79,7 @@ class Game():
 
             if len(self.__board.get_puttable_list()) == 0:
                 if flag:
+                    print("game finished!")
                     break;
                 else:
                     flag = True
@@ -78,10 +91,23 @@ class Game():
                 flag = False
 
             self.input_coor()
+
             self.put_stone(self.__input_list[-1], self.__attacker)
+
+            self.append_input(coor, bow)
+            self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)
+
             self.__turn += 1
             self.__attacker = self.__turn % 2 + 1
 
     def end_game(self):
-        pass
+        nstone1 = self.__user1.get_nstone()
+        nstone2 = self.__user1.get_nstone()
+        print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
+        if nstone1 > nstone2:
+            print("Black Win!")
+        elif nstone1 < nstone2:
+            print("White Win!")
+        else:
+            print("DRAW!")

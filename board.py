@@ -19,6 +19,7 @@ class Board():
     def __init__(self):
         self.__nstone = 0
         self.__board_size = 8
+        j
         self.__board = np.zeros((self.__board_size, self.__board_size))
         self.__board_history = []
         #puttable list: points are contained
@@ -123,6 +124,10 @@ class Board():
                             break
                         self.set_stone(tmp_coor, bow)
                     break
+
+    def count_stone(self, bow):
+        return np.count_nonzero(bow - self.__board)
+
 
 
     def print_board(self):
