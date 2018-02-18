@@ -18,9 +18,9 @@ class Game():
         #turn
         self.__turn = 0
         #input coor
-        self.input_list = []
+        self.__input_list = []
         #now attacker
-        self.attacker = 1
+        self.__attacker = 1
 
     def set_user(self, user, user_id):
         if user_id == 1:
@@ -37,32 +37,37 @@ class Game():
     def input_coor(self):
         while True:
 
-            ptlist = self.__board.get_puttable_list()
-            print(ptlist)
-
             print('input coordinate x')
             coorx = input('coor x:')
 
             print('input coordinate x')
             coory = input('coor y:')
 
-            coor = np.array([coorx, coory])
+            coor = np.array([int(coorx), int(coory)])
+            print(coor)
 
             # refactoring required: not to get puttable list
-            if coor in ptlist :
-                self.input_coor.append( np.array([coorx, coory]) )
+            if self.__board.is_in_puttable_list(coor) :
+                self.__input_list.append( coor )
                 break
             else:
                 print("unable to put stone there")
                 continue
 
-    def put_stone(self):
-        print(self.__board)
-        self.__board.put_stone()
+    def put_stone(self, coor, bow):
+        self.__board.put_stone(self.__input_list[-1], bow)
 
     def start_game(self):
         while True:
+            self.__board.listing_puttable(self.__attacker)
             self.__board.print_board()
-            self.__board.listing_puttable()
+            print("player {}'s attack".format(self.__attacker))
+
+            if len(self.__board.get_puttable_list()) == 0:
+                print("nowhere to put stone")
+                self.__turn += 1
+                self.__attacker = self.__turn % 2 + 1
+                continue
+
             self.input_coor()
-            self.put_stone()
+            self.put_stone(self.__input_list[-1], self.__attacker)
