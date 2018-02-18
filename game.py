@@ -21,6 +21,8 @@ class Game():
         self.__input_list = []
         #now attacker
         self.__attacker = 1
+        #game keeper flag
+        self.__flag = False
 
     def set_user(self, user, user_id):
         if user_id == 1:
@@ -64,10 +66,22 @@ class Game():
             print("player {}'s attack".format(self.__attacker))
 
             if len(self.__board.get_puttable_list()) == 0:
-                print("nowhere to put stone")
-                self.__turn += 1
-                self.__attacker = self.__turn % 2 + 1
-                continue
+                if flag:
+                    break;
+                else:
+                    flag = True
+                    print("nowhere to put stone")
+                    self.__turn += 1
+                    self.__attacker = self.__turn % 2 + 1
+                    continue
+            else:
+                flag = False
 
             self.input_coor()
             self.put_stone(self.__input_list[-1], self.__attacker)
+            self.__turn += 1
+            self.__attacker = self.__turn % 2 + 1
+
+    def end_game(self):
+        pass
+

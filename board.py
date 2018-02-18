@@ -68,6 +68,9 @@ class Board():
                 if tmp_coor[1] > 7 or tmp_coor[1] < 0:
                     break
 
+                if self.get_stone(tmp_coor) == 0:
+                    break
+
                 if self.get_stone(tmp_coor) == bow:
                     return True
 
@@ -116,9 +119,10 @@ class Board():
                 if self.get_stone(tmp_coor) == bow:
                     while True:
                         tmp_coor -= self.__vec[i]
-                        self.set_stone(tmp_coor, bow)
                         if self.get_stone(tmp_coor) == bow:
-                            return
+                            break
+                        self.set_stone(tmp_coor, bow)
+                    break
 
 
     def print_board(self):
@@ -151,7 +155,6 @@ class Board():
 
 
 if __name__ == '__main__':
-
     b = Board()
     b.read_board("init.csv")
 
