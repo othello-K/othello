@@ -8,6 +8,8 @@ class User():
         self.__nstone = 0
         #history
         self.__history = []
+        #type: HUMAN=1, CPU > 1
+        self.type = 1
 
     def set_nstone(self, nstone):
         self.__nstone = nstone
@@ -25,3 +27,17 @@ class User():
 
     def get_nstone(self):
         return (self.__nstone)
+
+    def human_input(self):
+        print('input coordinate x')
+        coorx = input('coor x:')
+
+        print('input coordinate x')
+        coory = input('coor y:')
+
+        return np.array([int(coorx), int(coory)])
+
+    def input_coor(self):
+        if self.__type == 1:
+            self.human_input()
+

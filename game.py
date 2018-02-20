@@ -47,6 +47,10 @@ class Game():
         elif bow == 2:
             self.__user2.set_nstone(nstone)
 
+    def print_nstone(self):
+        nstone1 = self.__user1.get_nstone()
+        nstone2 = self.__user1.get_nstone()
+        print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
     def input_coor(self):
         while True:
@@ -101,9 +105,6 @@ class Game():
             self.__attacker = self.__turn % 2 + 1
 
     def end_game(self):
-        nstone1 = self.__user1.get_nstone()
-        nstone2 = self.__user1.get_nstone()
-        print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
         if nstone1 > nstone2:
             print("Black Win!")
