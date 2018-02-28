@@ -12,12 +12,21 @@ class User():
         self.type = 1
 
     def set_nstone(self, nstone):
+        """
+        石の数をセット
+        """
         self.__nstone = nstone
 
     def append_history(self, coor):
+        """
+        ユーザが石を置いた座標の履歴
+        """
         self.__history.append(self, coor)
 
     def out_bow(self):
+        """
+        ユーザが先攻か後攻か表示
+        """
         if self.__bow == 1:
             print("black: preceding attack")
         elif self.__bow == 2:
@@ -26,9 +35,15 @@ class User():
             print("i don't know")
 
     def get_nstone(self):
+        """
+        ユーザのとった石の数を表示
+        """
         return (self.__nstone)
 
     def human_input(self):
+        """
+        ユーザが人間のインプット処理
+        """
         print('input coordinate x')
         coorx = input('coor x:')
 
@@ -38,6 +53,10 @@ class User():
         return np.array([int(coorx), int(coory)])
 
     def input_coor(self):
+        """
+        ユーザにインプットさせる．
+        typeによって人間かCPUか変える
+        """
         if self.__type == 1:
             self.human_input()
 
