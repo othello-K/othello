@@ -9,7 +9,7 @@ if __name__ == '__main__':
     user1 = User(1)
     user2 = User(2)
     board = Board()
-    board.read_board(BOARD_INIT_FILE)
+    board.init_board(BOARD_INIT_FILE)
     game = Game()
     game.set_user(user1, 1)
     game.set_user(user2, 2)

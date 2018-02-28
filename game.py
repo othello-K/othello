@@ -8,9 +8,9 @@ class Game():
     """
 
     def __init__(self):
-        #preceding user
+        #preceding attack user
         self.__user1 = None
-        #after atack user
+        #after attack user
         self.__user2 = None
         #board
         self.__board = None
@@ -78,7 +78,7 @@ class Game():
     def start_game(self):
         while True:
             self.__board.listing_puttable(self.__attacker)
-            self.__board.print_board()
+            self.__board.display_board()
             print("player {}'s attack".format(self.__attacker))
 
             if len(self.__board.get_puttable_list()) == 0:
@@ -98,7 +98,7 @@ class Game():
 
             self.put_stone(self.__input_list[-1], self.__attacker)
 
-            self.append_input(coor, bow)
+            #self.append_input(coor, bow)
             self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)
 
             self.__turn += 1

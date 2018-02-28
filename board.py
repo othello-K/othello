@@ -1,5 +1,4 @@
 import numpy as np
-from user import User
 
 class Board():
 
@@ -19,7 +18,6 @@ class Board():
     def __init__(self):
         self.__nstone = 0
         self.__board_size = 8
-        j
         self.__board = np.zeros((self.__board_size, self.__board_size))
         self.__board_history = []
         #puttable list: points are contained
@@ -40,7 +38,10 @@ class Board():
         else:
             return -1
 
-    def read_board(self, file_path):
+    def get_board_size(self):
+        return self.__board_size
+
+    def init_board(self, file_path):
         with open(file_path) as f:
             for i, row in enumerate(f):
                 col = row.split(self.parser)
@@ -130,7 +131,7 @@ class Board():
 
 
 
-    def print_board(self):
+    def display_board(self):
         tmp_board = self.__board.copy()
         for puttable in self.__puttable_list:
             tmp_board[puttable[0], puttable[1]] = -1
@@ -157,9 +158,7 @@ class Board():
             print("")
 
 
-
-
 if __name__ == '__main__':
     b = Board()
-    b.read_board("init.csv")
+    b.init_board("init.csv")
 
