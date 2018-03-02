@@ -103,9 +103,6 @@ class Game():
         """
         ゲームの流れが書いてあるメソッド
         """
-        root = Tk()
-        root.title("Othello")
-        root.geometry("800x800")
         while True:
             #置ける場所を探す
             self.__board.listing_puttable(self.__attacker)
