@@ -1,5 +1,6 @@
 from board import Board
 from user import User
+from gui_game import GuiBoard
 import numpy as np
 
 class Game():
@@ -19,7 +20,7 @@ class Game():
         self.__board = None
         #turn 何ターン目かを格納
         self.__turn = 0
-        #input coor 今まで石を置いた座標を格納
+        #input coord 今まで石を置いた座標を格納
         self.__input_list = []
         #now attacker 現在の攻撃ユーザ　先攻１，後攻２
         self.__attacker = 1
@@ -38,14 +39,14 @@ class Game():
         else:
             print("only user1 or user2 can be assigned")
 
-    def append_input(self, coor, bow):
+    def append_input(self, coord, bow):
         """
         ユーザの入力した座標を，Userオブジェクトに追加する（戻る用）
         """
         if bow == 1:
-            self.__user1.append_input(coor)
+            self.__user1.append_input(coord)
         if bow == 2:
-            self.__user2.append_input(coor)
+            self.__user2.append_input(coord)
 
     def set_board(self, board):
         """
@@ -71,30 +72,30 @@ class Game():
         nstone2 = self.__user1.get_nstone()
         print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
-    def input_coor(self):
+    def input_coord(self):
         """
         ユーザに座標を入力させる．GUIでの実装をする予定
         """
         while True:
 
-            print('input coordinate x')
-            coorx = input('coor x:')
+            print('input coorddinate x')
+            coordx = input('coord x:')
 
-            print('input coordinate x')
-            coory = input('coor y:')
+            print('input coorddinate x')
+            coordy = input('coord y:')
 
-            coor = np.array([int(coorx), int(coory)])
-            print(coor)
+            coord = np.array([int(coordx), int(coordy)])
+            print(coord)
 
             #置ける場所かどうか判定．置けるなら履歴に追加する
-            if self.__board.is_in_puttable_list(coor) :
-                self.__input_list.append( coor )
+            if self.__board.is_in_puttable_list(coord) :
+                self.__input_list.append( coord )
                 break
             else:
                 print("unable to put stone there")
                 continue
 
-    def put_stone(self, coor, bow):
+    def put_stone(self, coord, bow):
         #石をおく
         self.__board.put_stone(self.__input_list[-1], bow)
 
@@ -102,6 +103,9 @@ class Game():
         """
         ゲームの流れが書いてあるメソッド
         """
+        root = Tk()
+        root.title("Othello")
+        root.geometry("800x800")
         while True:
             #置ける場所を探す
             self.__board.listing_puttable(self.__attacker)
@@ -125,7 +129,7 @@ class Game():
                 flag = False
 
             #ユーザに入力させる
-            self.input_coor()
+            self.input_coord()
 
             #入力座標の履歴の最後尾を取り出し，そこに石をおく．
             self.put_stone(self.__input_list[-1], self.__attacker)

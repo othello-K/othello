@@ -13,6 +13,10 @@ from board import Board
 
 class GuiBoard(ttk.Frame):
 
+    BK_IMG = "img/black1.gif"
+    WH_IMG = "img/white1.gif"
+    PT_IMG = "img/puttable1.gif"
+    BG_IMG = "img/background.gif"
 
     def __init__(self, board, master=None, **kwargs):
         super().__init__(master)
@@ -37,15 +41,19 @@ class GuiBoard(ttk.Frame):
                 coor = np.array([i,j])
                 img = None
                 if self.__board.get_stone(coor) == 1:
-                    tmp_img = Image.open("black1.gif")
+                    tmp_img = Image.open(BK_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                 elif self.__board.get_stone(coor) == 2:
-                    tmp_img = Image.open("white1.gif")
+                    tmp_img = Image.open(WH_IMG)
+                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
+                    img = ImageTk.PhotoImage(tmp_img)
+                elif self.__board.get_stone(coor) == 3:
+                    tmp_img = Image.open(PT_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                 else:
-                    tmp_img = Image.open("background.gif")
+                    tmp_img = Image.open(BG_IMG)
                     img = ImageTk.PhotoImage(tmp_img)
 
                 btn = Button(self, image=img, command=lambda row=i,col=j: self.append_coor(np.array([row, col])))
