@@ -4,6 +4,8 @@ import sys
 from tkinter import *
 from tkinter import ttk
 
+import copy
+
 from PIL import Image
 from PIL import ImageTk
 
@@ -36,24 +38,31 @@ class GuiBoard(ttk.Frame):
     def display_board(self):
         bsize = self.__board.get_board_size()
         grid_size = self.__grid_size
+
+        #置ける場所を表示するためのものを実装する予定
+        tmp_board = copy.copy(self.__board)
+        for puttable in self.__board.get_puttable_list():
+            tmp_board.set_stone(puttable, -1)
+
         for i in range(bsize):
             for j in range(bsize):
-                coor = np.array([i,j])
+                coord = np.array([i,j])
                 img = None
-                if self.__board.get_stone(coor) == 1:
-                    tmp_img = Image.open(BK_IMG)
+                stone = tmp_board.get_stone(coord)
+                if stone == 1:
+                    tmp_img = Image.open(GuiBoard.BK_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
-                elif self.__board.get_stone(coor) == 2:
-                    tmp_img = Image.open(WH_IMG)
+                elif stone == 2:
+                    tmp_img = Image.open(GuiBoard.WH_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
-                elif self.__board.get_stone(coor) == 3:
-                    tmp_img = Image.open(PT_IMG)
+                elif stone == -1:
+                    tmp_img = Image.open(GuiBoard.PT_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                 else:
-                    tmp_img = Image.open(BG_IMG)
+                    tmp_img = Image.open(GuiBoard.BG_IMG)
                     img = ImageTk.PhotoImage(tmp_img)
 
                 btn = Button(self, image=img, command=lambda row=i,col=j: self.append_coor(np.array([row, col])))
@@ -70,8 +79,6 @@ def main():
     b = Board()
     b.init_board('init.csv')
     g = GuiBoard(board=b, master=root)
-    g.display_board()
-    g.display_board()
     g.display_board()
     root.mainloop()
 

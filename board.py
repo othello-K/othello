@@ -35,6 +35,12 @@ class Board():
         """
         return bow % 2 + 1
 
+    def get_board(self):
+        """
+        boardのgetter
+        """
+        return self.__board
+
     def set_stone(self, coord, bow):
         """
         指定されたcoordinateにbowの石を置く

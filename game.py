@@ -18,6 +18,8 @@ class Game():
         self.__user2 = None
         #board 石をおくボードオブジェクト
         self.__board = None
+        #GUI ボード
+        self.__gui_board = None
         #turn 何ターン目かを格納
         self.__turn = 0
         #input coord 今まで石を置いた座標を格納
@@ -26,6 +28,9 @@ class Game():
         self.__attacker = 1
         #game keeper flag ゲームの終了判定をするフラッグ
         self.__flag = False
+
+    def set_gui_board(self, board):
+        self.__gui_board = board
 
     def set_user(self, user, user_id):
         """
@@ -108,6 +113,9 @@ class Game():
             self.__board.listing_puttable(self.__attacker)
             #ボードを表示
             self.__board.display_board()
+            #GUIボードを表示
+            self.__gui_board.display_board()
+
             print("player {}'s attack".format(self.__attacker))
 
             #ゲームの終了判定
