@@ -17,11 +17,11 @@ class User():
         """
         self.__nstone = nstone
 
-    def append_history(self, coor):
+    def append_history(self, coord):
         """
         ユーザが石を置いた座標の履歴
         """
-        self.__history.append(self, coor)
+        self.__history.append(self, coord)
 
     def out_bow(self):
         """
@@ -44,15 +44,15 @@ class User():
         """
         ユーザが人間のインプット処理
         """
-        print('input coordinate x')
-        coorx = input('coor x:')
+        print('input coorddinate x')
+        coordx = input('coord x:')
 
-        print('input coordinate x')
-        coory = input('coor y:')
+        print('input coorddinate x')
+        coordy = input('coord y:')
 
-        return np.array([int(coorx), int(coory)])
+        return np.array([int(coordx), int(coordy)])
 
-    def input_coor(self):
+    def input_coord(self):
         """
         ユーザにインプットさせる．
         typeによって人間かCPUか変える

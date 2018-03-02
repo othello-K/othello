@@ -4,43 +4,54 @@ import sys
 from tkinter import *
 from tkinter import ttk
 
+from PIL import Image
+from PIL import ImageTk
+
 import numpy as np
 
 from board import Board
 
 class GuiBoard(ttk.Frame):
 
+
     def __init__(self, board, master=None, **kwargs):
         super().__init__(master)
         self.__board = board
         self.__window_size = 800
+        self.__grid_size = int( (self.__window_size*0.8)/self.__board.get_board_size() )
+        self.coor_list = []
 
-    def init_board(self):
+    def get_coor(self, x, y):
+        print("{}, {}".format(x,y))
+        return x, y
+
+    def append_coor(self, coor):
+        self.coor_list.append(coor)
+        print(self.coor_list)
+
+    def display_board(self):
         bsize = self.__board.get_board_size()
-        grid_size = (self.__window_size*0.8)/bsize
+        grid_size = self.__grid_size
         for i in range(bsize):
             for j in range(bsize):
                 coor = np.array([i,j])
+                img = None
                 if self.__board.get_stone(coor) == 1:
-                    print("aaa")
-                    img = PhotoImage(file="black1.gif")
-                    img = img.resize((grid_size, grid_size), Image.ANTIALIAS)
-                    btn = Button(self, text="{},{}".format(i,j), image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
+                    tmp_img = Image.open("black1.gif")
+                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
+                    img = ImageTk.PhotoImage(tmp_img)
                 elif self.__board.get_stone(coor) == 2:
-                    img = PhotoImage(file="white1.gif")
-                    btn = Button(self, image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
+                    tmp_img = Image.open("white1.gif")
+                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
+                    img = ImageTk.PhotoImage(tmp_img)
                 else:
-                    img = PhotoImage(file="background.gif")
-                    btn = Button(self, image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
+                    tmp_img = Image.open("background.gif")
+                    img = ImageTk.PhotoImage(tmp_img)
+
+                btn = Button(self, image=img, command=lambda row=i,col=j: self.append_coor(np.array([row, col])))
+                btn.config(height = grid_size, width = grid_size)
+                btn.image = img
+                btn.grid(column=i, row=j)
 
         self.grid(column=0, row=0)
 
@@ -51,7 +62,9 @@ def main():
     b = Board()
     b.init_board('init.csv')
     g = GuiBoard(board=b, master=root)
-    g.init_board()
+    g.display_board()
+    g.display_board()
+    g.display_board()
     root.mainloop()
 
 

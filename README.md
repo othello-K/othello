@@ -11,6 +11,6 @@ KDEのB3，Kチームのオセロプログラム
 ## othello.py
 board.BoardをGUIで利用できるようにするクラス．
 ## 未実装部分
-**Undo処理．ボードや入力座標の履歴が残っているのでそれを用いて実装する予定．
-*GUI部分．Tkinterを用いています．
-*AIの実装．Userクラスのcpu__inputに書く予定
+*Undo処理．ボードや入力座標の履歴が残っているのでそれを用いて実装する予定．
+GUI部分．Tkinterを用いています．
+AIの実装．Userクラスのcpu__inputに書く予定
