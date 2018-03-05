@@ -175,7 +175,6 @@ class Board():
         return np.count_nonzero(bow - self.__board)
 
 
-
     def display_board(self):
         """
         boardを表示
@@ -204,9 +203,6 @@ class Board():
 
                 print("{}|".format(stone), end="")
             print("")
-
-
-
 
 if __name__ == '__main__':
     b = Board()
