@@ -42,7 +42,7 @@ class GuiBoard(ttk.Frame):
         #置ける場所を表示するためのものを実装する予定
         tmp_board = copy.copy(self.__board)
         for puttable in self.__board.get_puttable_list():
-            tmp_board.set_stone(puttable, -1)
+            tmp_board.set_stone(puttable[0], puttable[1], -1)
 
         for i in range(bsize):
             for j in range(bsize):

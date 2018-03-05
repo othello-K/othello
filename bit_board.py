@@ -12,6 +12,7 @@ class BitBoard():
         self.__bl_board = 0x0000000000000000
         #白ボード
         self.__wh_board = 0x0000000000000000
+        #石を置ける場所だけフラグ
         #石を置ける場所が入っている
         self.__puttable_list = []
 

@@ -41,12 +41,12 @@ class Board():
         """
         return self.__board
 
-    def set_stone(self, coord, bow):
+    def set_stone(self, x, y, bow):
         """
         指定されたcoordinateにbowの石を置く
         """
-        if coord[0] < 8 and coord[0] >= 0 and coord[1] < 8 and coord[1] >= 0:
-            self.__board[coord[0], coord[1]] = bow
+        if x < 8 and x >= 0 and y < 8 and y >= 0:
+            self.__board[x, y] = bow
         else:
             print("out of board size")
 
@@ -126,23 +126,25 @@ class Board():
         """
         return self.__puttable_list
 
-    def is_in_puttable_list(self, coord):
+    def is_in_puttable_list(self, x, y):
         """
         石を置けるか判定．こっちの方が速い．
         """
+        coord = np.array([x, y])
         for puttable in self.__puttable_list:
             if (coord==puttable).all():
                 return True
 
         return False
 
-    def put_stone(self, coord, bow):
+    def put_stone(self, x, y, bow):
         """
         石を置く．
         """
         opp = self.get_opponent(bow)
         self.__board_history.append(self.__board.copy())
-        self.set_stone(coord, bow)
+        self.set_stone(x, y, bow)
+        coord = np.array([x, y])
 
         for i in range(8):
             tmp_coord = coord.copy()
@@ -165,7 +167,7 @@ class Board():
                         tmp_coord -= self.__vec[i]
                         if self.get_stone(tmp_coord) == bow:
                             break
-                        self.set_stone(tmp_coord, bow)
+                        self.set_stone(tmp_coord[0], tmp_coord[1],  bow)
                     break
 
     def count_stone(self, bow):
