@@ -120,7 +120,7 @@ class Game():
 
             #ゲームの終了判定
             #置ける場所がないとフラグがたつ
-            if len(self.__board.get_puttable_list()) == 0:
+            if self.__board.is_no_puttable():
                 if flag:
                     print("game finished!")
                     break;

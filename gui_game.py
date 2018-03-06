@@ -39,7 +39,6 @@ class GuiBoard(ttk.Frame):
         bsize = self.__board.get_board_size()
         grid_size = self.__grid_size
 
-        #置ける場所を表示するためのものを実装する予定
         tmp_board = copy.copy(self.__board)
         for puttable in self.__board.get_puttable_list():
             tmp_board.set_stone(puttable[0], puttable[1], -1)

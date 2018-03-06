@@ -3,6 +3,8 @@ from board import Board
 
 class BitBoard():
 
+    PARSER = ','
+
     def __init__(self):
         #石の数
         self.__nstone = 0
@@ -13,6 +15,10 @@ class BitBoard():
         #白ボード
         self.__wh_board = 0x0000000000000000
         #石を置ける場所だけフラグ
+        self.__puttable_map = 0x0000000000000000
+        #各ターンでボードを保存
+        self.__bl_board_history = []
+        self.__wh_board_history = []
         #石を置ける場所が入っている
         self.__puttable_list = []
 
@@ -30,18 +36,18 @@ class BitBoard():
         y *= self.__board_size
 
         if bow == 1:
-            self.__bl_board = self.__bl_board & (1 << (x + y))
+            self.__bl_board = self.__bl_board & (1 << (x + 8*y))
         elif bow == 2:
-            self.__wh_board = self.__wh_board & (1 << (x + y))
+            self.__wh_board = self.__wh_board & (1 << (x + 8*y))
 
     def get_stone(self, x, y, bow):
         """
         指定されたbowの盤面のcoord_sumの状態を判定
         """
         if bow == 1:
-            return (self.__bl_board >> coord_sum) & 0b1
+            return (self.__bl_board >> (x + 8*y)) & 0b1
         elif bow == 2:
-            return (self.__wh_board >> coord_sum) & 0b1
+            return (self.__wh_board >> (x + 8*y)) & 0b1
 
     def get_board_size(self):
         """
@@ -49,7 +55,35 @@ class BitBoard():
         """
         return self.__board_size
 
-    def init_board(self, board):
+    def set_board(self, board, bow):
+        if bow == 1:
+            self.__bl_board = board
+        elif bow == 2:
+            self.__wh_board = board
+
+    def append_board_history(self, board, bow):
+        if bow == 1:
+            self.__bl_board_history.append(board)
+        elif bow == 2:
+            self.__wh_board_history.append(board)
+
+
+
+    def init_board(self, file_path):
+        """
+        csvファイルを元に，ボードを初期化
+        """
+        with open(file_path) as f:
+            for i, row in enumerate(f):
+                col = row.split(self.PARSER)
+                for j, stone in enumerate(col):
+                    if stone == '1':
+                        self.__bl_board |= (1<< (i+8*j))
+                    elif stone == '2':
+                        self.__wh_board |= (1<< (i+8*j))
+
+
+    def init_board_from_board(self, board):
         """
         Boardオブジェクトを元に盤面を初期化
         """
@@ -61,6 +95,7 @@ class BitBoard():
                     self.__bl_board = self.__bl_board | (1<<(i+j*8))
                 elif stone == 2:
                     self.__wh_board = self.__bl_board | (1<<(i+j*8))
+
 
     def get_board_half(self, bow):
         if bow == 1:
@@ -101,11 +136,12 @@ class BitBoard():
                 print("{}|".format(stone), end="")
             print("")
 
+
     def listing_puttable(self, bow):
         """
         石を置ける場所のリストを作成
         """
-        atk_board = self.getboard_half(atk)
+        atk_board = self.get_board_half(bow)
         opp = self.get_opponent(bow)
         opp_board = self.get_board_half(opp)
 
@@ -191,29 +227,28 @@ class BitBoard():
         tmp |= all_side_watch_board & (tmp >> 7)
         legal_board |= blank_board & (tmp >> 7)
 
-        return legal_board
+        self.__puttable_map = legal_board
 
-    def put_stone(self, x, y, bow):
-        #着手した場合のボードを生成
-        atk_board = self.get_board_half(bow)
-        opp_board = self.get_board_half(self.get_opponent(bow))
 
-        rev = 0
-        put = 1 << ( x + 8*y )
-        for way in range(self.__board_size):
-            tmp_rev = 0
-            mask = transfer(put, way)
+    def is_puttable(self, x, y):
+       if self.__puttable_map >> (x + 8*y) & 0b1 == 1:
+           return True
+       else:
+           return False
 
-            while (mask != 0) and ((mask & opp_board) != 0):
-                rev_ |= mask
-                mask = transfer(mask, way)
 
-            if (mask & playerBoard) != 0 :
-                rev |= tmp_rev
+    def get_puttable_list(self):
+        """
+        石を置ける場所のリストをゲット
+        """
+        self.__puttable_list = []
+        for i in range(self.__board_size):
+            for j in range(self.__board_size):
+                if self.is_puttable(i, j):
+                    self.__puttable_list.append(np.array([i,j]))
 
-        #反転する
-        atk_board ^= put | rev
-        opp_board ^= rev
+        return self.__puttable_list
+
 
     def transfer(self, put, way):
         if way == 0: #上
@@ -234,3 +269,63 @@ class BitBoard():
             return (put << 9) & 0xfefefefefefefe00
         else:
             return 0
+
+
+    def is_in_puttable_list(self, x, y):
+        if self.__puttable_map >> (x + 8*y) & 0b1 != 0:
+            return True
+        else:
+            return False
+
+
+    def is_no_puttable(self):
+        if self.__puttable_map == 0:
+            return True
+        else:
+            return False
+
+
+    def count_stone(self, bow):
+        if bow == 1:
+            print(hex(self.__bl_board))
+            nbit = (self.__bl_board & 0x5555555555555555) + (( self.__bl_board >> 1 ) & 0x5555555555555555)
+            nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
+            nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
+            nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
+            nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
+            return (nbit & 0x00000000ffffffff) + (nbit >> 32)
+        elif bow == 2:
+            nbit = (self.__wh_board & 0x5555555555555555) + (( self.__wh_board >> 1 ) & 0x5555555555555555)
+            nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
+            nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
+            nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
+            nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
+            return (nbit & 0x00000000ffffffff) + (nbit >> 32)
+
+
+    def put_stone(self, x, y, bow):
+        #着手した場合のボードを生成
+        atk_board = self.get_board_half(bow)
+        opp_board = self.get_board_half(self.get_opponent(bow))
+
+
+        rev = 0
+        put = 1 << ( x + 8*y )
+        for way in range(self.__board_size):
+            tmp_rev = 0
+            mask = self.transfer(put, way)
+
+            while (mask != 0) and ((mask & opp_board) != 0):
+                tmp_rev |= mask
+                mask = self.transfer(mask, way)
+
+            if (mask & atk_board) != 0 :
+                rev |= tmp_rev
+
+        #反転する
+        atk_board ^= put | rev
+        opp_board ^= rev
+        self.set_board(atk_board, bow)
+        self.set_board(opp_board, self.get_opponent(bow))
+
+
