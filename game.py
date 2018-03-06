@@ -114,7 +114,7 @@ class Game():
             #ボードを表示
             self.__board.display_board()
             #GUIボードを表示
-            self.__gui_board.display_board()
+            #self.__gui_board.display_board()
 
             print("player {}'s attack".format(self.__attacker))
 
@@ -137,7 +137,7 @@ class Game():
             self.input_coord()
 
             #入力座標の履歴の最後尾を取り出し，そこに石をおく．
-            self.put_stone(self.__input_list[-1][0], self.__input_list[-1][1], self.__attacker)
+            self.put_stone(int(self.__input_list[-1][0]), int(self.__input_list[-1][1]), self.__attacker)
 
             #石の数を数えてユーザにセット
             self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)

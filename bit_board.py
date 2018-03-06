@@ -307,10 +307,11 @@ class BitBoard():
         #着手した場合のボードを生成
         atk_board = self.get_board_half(bow)
         opp_board = self.get_board_half(self.get_opponent(bow))
-
+        print(type(int(x)))
+        print(x)
 
         rev = 0
-        put = 1 << ( x + 8*y )
+        put = 0b1 << ( x + 8*y )
         for way in range(self.__board_size):
             tmp_rev = 0
             mask = self.transfer(put, way)
