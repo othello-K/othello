@@ -84,25 +84,25 @@ class Game():
         while True:
 
             print('input coorddinate x')
-            coordx = input('coord x:')
+            coordx = int( input('coord x:') )
 
             print('input coorddinate x')
-            coordy = input('coord y:')
+            coordy = int(input('coord y:'))
 
-            coord = np.array([int(coordx), int(coordy)])
+            coord = np.array([coordx, coordy])
             print(coord)
 
             #置ける場所かどうか判定．置けるなら履歴に追加する
-            if self.__board.is_in_puttable_list(coord) :
+            if self.__board.is_in_puttable_list(coordx, coordy):
                 self.__input_list.append( coord )
                 break
             else:
                 print("unable to put stone there")
                 continue
 
-    def put_stone(self, coord, bow):
+    def put_stone(self, x, y, bow):
         #石をおく
-        self.__board.put_stone(self.__input_list[-1], bow)
+        self.__board.put_stone(x, y, bow)
 
     def start_game(self):
         """
@@ -114,13 +114,13 @@ class Game():
             #ボードを表示
             self.__board.display_board()
             #GUIボードを表示
-            self.__gui_board.display_board()
+            #self.__gui_board.display_board()
 
             print("player {}'s attack".format(self.__attacker))
 
             #ゲームの終了判定
             #置ける場所がないとフラグがたつ
-            if len(self.__board.get_puttable_list()) == 0:
+            if self.__board.is_no_puttable():
                 if flag:
                     print("game finished!")
                     break;
@@ -137,7 +137,7 @@ class Game():
             self.input_coord()
 
             #入力座標の履歴の最後尾を取り出し，そこに石をおく．
-            self.put_stone(self.__input_list[-1], self.__attacker)
+            self.put_stone(int(self.__input_list[-1][0]), int(self.__input_list[-1][1]), self.__attacker)
 
             #石の数を数えてユーザにセット
             self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)

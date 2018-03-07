@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 
 from board import Board
+from bit_board import BitBoard
 from user import User
 from game import Game
 from gui_game import GuiBoard
@@ -12,7 +13,7 @@ if __name__ == '__main__':
 
     user1 = User(1)
     user2 = User(2)
-    board = Board()
+    board = BitBoard()
     board.init_board(BOARD_INIT_FILE)
     root = Tk()
     root.title("Othello")
