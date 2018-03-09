@@ -8,4 +8,6 @@ if __name__ == '__main__':
     b.display_board()
     b.put_stone(2, 4, 1)
     b.display_board()
+    b.undo_board()
+    b.display_board()
     print(b.count_stone(1))
