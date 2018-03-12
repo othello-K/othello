@@ -1,6 +1,6 @@
-from board import Board
-from user import User
-from gui_game import GuiBoard
+from board.board import Board
+from user.user import User
+from board.gui_board import GuiBoard
 import numpy as np
 
 class Game():
@@ -28,6 +28,9 @@ class Game():
         self.__attacker = 1
         #game keeper flag ゲームの終了判定をするフラッグ
         self.__flag = False
+
+    def get_attacker(self):
+        return self.__attacker
 
     def set_gui_board(self, board):
         self.__gui_board = board

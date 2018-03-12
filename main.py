@@ -1,15 +1,15 @@
 from tkinter import *
 from tkinter import ttk
 
-from board import Board
-from bit_board import BitBoard
-from user import User
-from game import Game
-from gui_game import GuiBoard
+from board.board import Board
+from board.bit_board import BitBoard
+from user.user import User
+from game.game import Game
+from board.gui_board import GuiBoard
 
 if __name__ == '__main__':
 
-    BOARD_INIT_FILE = 'init.csv'
+    BOARD_INIT_FILE = 'init/init.csv'
 
     user1 = User(1)
     user2 = User(2)

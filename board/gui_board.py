@@ -11,7 +11,7 @@ from PIL import ImageTk
 
 import numpy as np
 
-from board import Board
+from board.board import Board
 
 class GuiBoard(ttk.Frame):
 
