@@ -1,5 +1,6 @@
-
 import copy
+import sys
+sys.path.append('../')
 from bit_board import BitBoard
 
 def AlphaBeta(board, list, own, opponent):  # AlphaBeta法で探索する
