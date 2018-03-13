@@ -1,4 +1,4 @@
-from bit_board import BitBoard
+from board.bit_board import BitBoard
 
 if __name__ == '__main__':
     b = BitBoard()

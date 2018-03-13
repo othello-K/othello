@@ -29,6 +29,9 @@ class Game():
         #game keeper flag ゲームの終了判定をするフラッグ
         self.__flag = False
 
+    def get_attacker(self):
+        return self.__attacker
+
     def set_gui_board(self, board):
         self.__gui_board = board
 

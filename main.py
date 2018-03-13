@@ -9,7 +9,7 @@ from board.gui_board import GuiBoard
 
 if __name__ == '__main__':
 
-    BOARD_INIT_FILE = 'init.csv'
+    BOARD_INIT_FILE = 'init/init.csv'
 
     user1 = User(1)
     user2 = User(2)
