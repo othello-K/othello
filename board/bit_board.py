@@ -1,5 +1,5 @@
 import numpy as np
-from board import Board
+from board.board import Board
 
 class BitBoard():
 
@@ -329,4 +329,14 @@ class BitBoard():
         self.set_board(atk_board, bow)
         self.set_board(opp_board, self.get_opponent(bow))
 
+    def create_board(self):
+        board = Board()
 
+        for x in range(self.__board_size):
+          for y in range(self.__board_size):
+            if self.get_stone(x, y, 1) == 1:
+              board.set_stone(x, y, 1)
+            elif self.get_stone(x, y, 2) == 2:
+              board.set_stone(x, y, 2)
+
+        return board
