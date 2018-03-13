@@ -117,6 +117,7 @@ class Game():
             #ボードを表示
             self.__board.display_board()
             #GUIボードを表示
+            self.__gui_board.set_board(self.__board.create_board())
             self.__gui_board.display_board()
 
             print("player {}'s attack".format(self.__attacker))

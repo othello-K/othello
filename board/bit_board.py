@@ -360,7 +360,9 @@ class BitBoard():
           for y in range(self.__board_size):
             if self.get_stone(x, y, 1) == 1:
               board.set_stone(x, y, 1)
-            elif self.get_stone(x, y, 2) == 2:
+            elif self.get_stone(x, y, 2) == 1:
               board.set_stone(x, y, 2)
+            if self.is_puttable(x, y):
+                board.append_puttable(x, y)
 
         return board

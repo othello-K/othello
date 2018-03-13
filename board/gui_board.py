@@ -15,10 +15,10 @@ from board.board import Board
 
 class GuiBoard(ttk.Frame):
 
-    BK_IMG = "img/black1.gif"
-    WH_IMG = "img/white1.gif"
-    PT_IMG = "img/puttable1.gif"
-    BG_IMG = "img/background.gif"
+    BK_IMG = "board/img/black1.gif"
+    WH_IMG = "board/img/white1.gif"
+    PT_IMG = "board/img/puttable1.gif"
+    BG_IMG = "board/img/background.gif"
 
     def __init__(self, board, master=None, **kwargs):
         super().__init__(master)
@@ -26,6 +26,9 @@ class GuiBoard(ttk.Frame):
         self.__window_size = 800
         self.__grid_size = int( (self.__window_size*0.8)/self.__board.get_board_size() )
         self.coor_list = []
+
+    def set_board(self, board):
+        self.__board = board
 
     def get_coor(self, x, y):
         print("{}, {}".format(x,y))
@@ -41,13 +44,13 @@ class GuiBoard(ttk.Frame):
 
         tmp_board = copy.copy(self.__board)
         for puttable in self.__board.get_puttable_list():
+            print(puttable)
             tmp_board.set_stone(puttable[0], puttable[1], -1)
 
         for i in range(bsize):
             for j in range(bsize):
-                coord = np.array([i,j])
                 img = None
-                stone = tmp_board.get_stone(coord)
+                stone = tmp_board.get_stone(i, j)
                 if stone == 1:
                     tmp_img = Image.open(GuiBoard.BK_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
