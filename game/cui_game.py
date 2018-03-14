@@ -17,42 +17,43 @@ class CuiGame(BaseGame):
         """
         while True:
             #置ける場所を探す
-            self.__board.listing_puttable(self.__attacker)
+            self._board.listing_puttable(self._attacker)
             #ボードを表示
-            self.__board.display_board()
-            #GUIボードを表示
-            self.__gui_board.set_board(self.__board)
-            self.__gui_board.display_board(self.__attacker)
+            self._board.display_board()
 
-            print("player {}'s attack".format(self.__attacker))
+            print("player {}'s attack".format(self._attacker))
+
+            self._board.listing_puttable(self._attacker)
+            #ボードを表示
+            self._board.display_board()
+
+            print("player {}'s attack".format(self._attacker))
 
             #ゲームの終了判定
             #置ける場所がないとフラグがたつ
-            if self.__board.is_no_puttable():
+            if self._board.is_no_puttable():
                 if flag:
                     print("game finished!")
                     break;
                 else:
                     flag = True
                     print("nowhere to put stone")
-                    self.__turn += 1
-                    self.__attacker = self.__turn % 2 + 1
+                    self.next_turn()
                     continue
             else:
                 flag = False
 
             #ユーザに入力させる
-            self.input_coord(self.__attacker)
+            self.input_coord(self._attacker)
 
             #入力座標の履歴の最後尾を取り出し，そこに石をおく．
-            self.put_stone(int(self.__input_list[-1][0]), int(self.__input_list[-1][1]), self.__attacker)
+            self.put_stone(int(self._input_list[-1][0]), int(self._input_list[-1][1]), self._attacker)
 
             #石の数を数えてユーザにセット
-            self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)
+            self.set_nstone(self._board.count_stone(self._attacker), self._attacker)
 
             #ターンを増やし，攻撃を変更
-            self.__turn += 1
-            self.__attacker = self.__turn % 2 + 1
+            self.next_turn()
 
     def end_game(self):
         """

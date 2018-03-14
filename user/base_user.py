@@ -3,31 +3,31 @@ class BaseUser():
 
     def __init__(self, bow):
         #if bow == 1, preceding, if 2 after
-        self.__bow = bow
+        self._bow = bow
         #num of stone
-        self.__nstone = 0
+        self._nstone = 0
         #history
-        self.__history = []
+        self._history = []
 
     def set_nstone(self, nstone):
         """
         石の数をセット
         """
-        self.__nstone = nstone
+        self._nstone = nstone
 
     def append_history(self, coord):
         """
         ユーザが石を置いた座標の履歴
         """
-        self.__history.append(self, coord)
+        self._history.append(self, coord)
 
     def display_bow(self):
         """
         ユーザが先攻か後攻か表示
         """
-        if self.__bow == 1:
+        if self._bow == 1:
             print("black: preceding attack")
-        elif self.__bow == 2:
+        elif self._bow == 2:
             print("white: after attack")
         else:
             print("i don't know")
@@ -36,7 +36,7 @@ class BaseUser():
         """
         ユーザのとった石の数を表示
         """
-        return (self.__nstone)
+        return (self._nstone)
 
     def input_coord(self, **kwargs):
         """
