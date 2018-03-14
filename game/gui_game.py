@@ -12,38 +12,20 @@ from PIL import ImageTk
 import numpy as np
 
 from board.board import Board
+from game.base_game import BaseGame
 
-class GuiBoard(ttk.Frame):
+class GuiGame(ttk.Frame, BaseGame):
 
     BK_IMG = "board/img/black1.gif"
     WH_IMG = "board/img/white1.gif"
     PT_IMG = "board/img/puttable1.gif"
     BG_IMG = "board/img/background.gif"
 
-    def __init__(self, board, master=None, **kwargs):
-        super().__init__(master)
-        self.__board = board
-        self.__put_flag = False
+    def __init__(self, master=None, **kwargs):
+        super(GuiGame, self).__init__(master)
         self.__window_size = 800
         self.__grid_size = int( (self.__window_size*0.8)/self.__board.get_board_size() )
-        self.coor_list = []
 
-    def set_board(self, board):
-        self.__board = board
-
-    def get_coor(self, x, y):
-        print("{}, {}".format(x,y))
-        return x, y
-
-    def append_coor(self, coor):
-        self.coor_list.append(coor)
-        print(self.coor_list)
-
-    def get_opponent(self, bow):
-        """
-        敵ユーザの番号を返す
-        """
-        return bow % 2 + 1
 
     def put_stone(self, x, y, bow):
         if self.__board.is_puttable(x, y):
@@ -62,7 +44,7 @@ class GuiBoard(ttk.Frame):
             for j in range(bsize):
                 img = None
                 if tmp_board.get_stone(i, j, 1) == 1:
-                    tmp_img = Image.open(GuiBoard.BK_IMG)
+                    tmp_img = Image.open(GuiGame.BK_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
@@ -70,7 +52,7 @@ class GuiBoard(ttk.Frame):
                     btn.image = img
                     btn.grid(column=i, row=j)
                 elif tmp_board.get_stone(i, j, 2) == 1:
-                    tmp_img = Image.open(GuiBoard.WH_IMG)
+                    tmp_img = Image.open(GuiGame.WH_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
@@ -78,7 +60,7 @@ class GuiBoard(ttk.Frame):
                     btn.image = img
                     btn.grid(column=i, row=j)
                 elif tmp_board.is_puttable(i, j):
-                    tmp_img = Image.open(GuiBoard.PT_IMG)
+                    tmp_img = Image.open(GuiGame.PT_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img, command=lambda row=i,col=j: self.put_stone(row, col, bow))
@@ -86,7 +68,7 @@ class GuiBoard(ttk.Frame):
                     btn.image = img
                     btn.grid(column=i, row=j)
                 else:
-                    tmp_img = Image.open(GuiBoard.BG_IMG)
+                    tmp_img = Image.open(GuiGame.BG_IMG)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
                     btn.config(height = grid_size, width = grid_size)
