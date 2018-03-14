@@ -35,6 +35,9 @@ class Board():
         """
         return bow % 2 + 1
 
+    def append_puttable(self, x, y):
+        self.__puttable_list.append(np.array([x, y]))
+
     def get_board(self):
         """
         boardのgetter

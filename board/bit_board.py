@@ -352,3 +352,17 @@ class BitBoard():
         self.set_board(opp_board, opp)
         self.append_board_history(atk_board, bow)
         self.append_board_history(opp_board, opp)
+
+    def create_board(self):
+        board = Board()
+
+        for x in range(self.__board_size):
+          for y in range(self.__board_size):
+            if self.get_stone(x, y, 1) == 1:
+              board.set_stone(x, y, 1)
+            elif self.get_stone(x, y, 2) == 1:
+              board.set_stone(x, y, 2)
+            if self.is_puttable(x, y):
+                board.append_puttable(x, y)
+
+        return board
