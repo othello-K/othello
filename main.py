@@ -18,7 +18,7 @@ if __name__ == '__main__':
     root = Tk()
     root.title("Othello")
     root.geometry("800x800")
-    gui_board = GuiBoard(board=board.create_board(), master=root)
+    gui_board = GuiBoard(board=board, master=root)
     game = Game()
     game.set_user(user1, 1)
     game.set_user(user2, 2)
