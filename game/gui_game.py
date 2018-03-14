@@ -23,22 +23,22 @@ class GuiGame(ttk.Frame, BaseGame):
 
     def __init__(self, master=None, **kwargs):
         super(GuiGame, self).__init__(master)
-        self.__window_size = 800
-        self.__grid_size = int( (self.__window_size*0.8)/self.__board.get_board_size() )
+        self._window_size = 800
+        self._grid_size = int( (self._window_size*0.8)/self._board.get_board_size() )
 
 
     def put_stone(self, x, y, bow):
-        if self.__board.is_puttable(x, y):
-            self.__board.put_stone(x, y, bow)
+        if self._board.is_puttable(x, y):
+            self._board.put_stone(x, y, bow)
             opp = self.get_opponent(bow)
-            self.__board.listing_puttable(opp)
+            self._board.listing_puttable(opp)
             self.display_board(opp)
 
     def display_board(self, bow):
-        bsize = self.__board.get_board_size()
-        grid_size = self.__grid_size
+        bsize = self._board.get_board_size()
+        grid_size = self._grid_size
 
-        tmp_board = copy.copy(self.__board)
+        tmp_board = copy.copy(self._board)
 
         for i in range(bsize):
             for j in range(bsize):
