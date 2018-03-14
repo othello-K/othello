@@ -12,24 +12,24 @@ class BaseGame():
 
     def __init__(self):
         #preceding attack user 先攻ユーザ
-        self.__user1 = None
+        self._user1 = None
         #after attack user 後攻ユーザ
-        self.__user2 = None
+        self._user2 = None
         #board 石をおくボードオブジェクト
-        self.__board = None
+        self._board = None
         #GUI ボード
-        self.__gui_board = None
+        self._gui_board = None
         #turn 何ターン目かを格納
-        self.__turn = 0
+        self._turn = 0
         #input coord 今まで石を置いた座標を格納
-        self.__input_list = []
+        self._input_list = []
         #now attacker 現在の攻撃ユーザ　先攻１，後攻２
-        self.__attacker = 1
+        self._attacker = 1
         #game keeper flag ゲームの終了判定をするフラッグ
-        self.__flag = False
+        self._flag = False
 
     def get_attacker(self):
-        return self.__attacker
+        return self._attacker
 
     def get_opponent(self, bow):
         """
@@ -38,7 +38,7 @@ class BaseGame():
         return bow % 2 + 1
 
     def set_gui_board(self, board):
-        self.__gui_board = board
+        self._gui_board = board
 
     def set_user(self, user, user_id):
         """
@@ -46,9 +46,9 @@ class BaseGame():
         userにUserオブジェクト，user_idに先攻１か後攻２かを入れる
         """
         if user_id == 1:
-            self.__user1 = user
+            self._user1 = user
         elif user_id == 2:
-            self.__user2 = user
+            self._user2 = user
         else:
             print("only user1 or user2 can be assigned")
 
@@ -58,32 +58,32 @@ class BaseGame():
         ユーザの入力した座標を，Userオブジェクトに追加する（戻る用）
         """
         if bow == 1:
-            self.__user1.append_input(coord)
+            self._user1.append_input(coord)
         if bow == 2:
-            self.__user2.append_input(coord)
+            self._user2.append_input(coord)
 
     def set_board(self, board):
         """
         Boardオブジェクトのセッター
         """
-        self.__board = board
-        print(self.__board)
+        self._board = board
+        print(self._board)
 
     def set_nstone(self, nstone, bow):
         """
         ユーザオブジェクトに，獲得している石の個数をセットする
         """
         if bow == 1:
-            self.__user1.set_nstone(nstone)
+            self._user1.set_nstone(nstone)
         elif bow == 2:
-            self.__user2.set_nstone(nstone)
+            self._user2.set_nstone(nstone)
 
     def print_nstone(self):
         """
         黒石と白石の数を表示
         """
-        nstone1 = self.__user1.get_nstone()
-        nstone2 = self.__user1.get_nstone()
+        nstone1 = self._user1.get_nstone()
+        nstone2 = self._user1.get_nstone()
         print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
     def input_coord(self, bow):
@@ -91,18 +91,18 @@ class BaseGame():
         ユーザに座標を入力させる．GUIでの実装をする予定
         """
         if bow == 1:
-            self.__user1.input_coord()
+            self._user1.input_coord()
         elif bow == 2:
-            self.__user2.input_coord()
+            self._user2.input_coord()
 
     def put_stone(self, x, y, bow):
         #石をおく
-        self.__board.put_stone(x, y, bow)
+        self._board.put_stone(x, y, bow)
 
     def next_turn(self):
         #ターンを増やし，攻撃を変更
-        self.__turn += 1
-        self.__attacker = self.__turn % 2 + 1
+        self._turn += 1
+        self._attacker = self._turn % 2 + 1
 
     def start_game(self):
         """
