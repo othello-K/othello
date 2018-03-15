@@ -28,10 +28,10 @@ class GuiGame(BaseGame, ttk.Frame):
         self._grid_size = int( (self._window_size*0.8)/8 )
 
 
-r   def put_stone(self, x, y, bow):
+    def put_stone(self, x, y, bow):
         self._board.put_stone(x, y, bow)
         opp = self.get_opponent(bow)
-j       self._board.listing_puttable(opp)
+        self._board.listing_puttable(opp)
         self.display_board(opp)
 
     def display_board(self, bow):
