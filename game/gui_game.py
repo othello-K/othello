@@ -29,11 +29,10 @@ class GuiGame(BaseGame, ttk.Frame):
 
 
     def put_stone(self, x, y, bow):
-        if self._board.is_puttable(x, y):
-            self._board.put_stone(x, y, bow)
-            opp = self.get_opponent(bow)
-            self._board.listing_puttable(opp)
-            self.display_board(opp)
+        self._board.put_stone(x, y, bow)
+        opp = self.get_opponent(bow)
+        self._board.listing_puttable(opp)
+        self.display_board(opp)
 
     def display_board(self, bow):
         bsize = self._board.get_board_size()
@@ -69,6 +68,31 @@ class GuiGame(BaseGame, ttk.Frame):
         btn.grid(column=i, row=j)
         self.grid(column=0, row=0)
 
+    def start_game(self):
+        """
+        ゲームの流れが書いてあるメソッド
+        """
+        while True:
+            #置ける場所を探す
+            self._board.listing_puttable(self._attacker)
+            #ボードを表示
+            self.display_board(self._attacker)
+
+            print("player {}'s attack".format(self._attacker))
+
+            #ゲームの終了判定
+            #置ける場所がないとフラグがたつ
+            if self._board.is_no_puttable():
+                if flag:
+                    print("game finished!")
+                    break;
+                else:
+                    flag = True
+                    print("nowhere to put stone")
+                    self.next_turn()
+                    continue
+
+        self.input_coord(bow = self._attacker)
 
 def main():
     root = Tk()
