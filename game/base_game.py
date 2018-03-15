@@ -17,8 +17,6 @@ class BaseGame():
         self._user2 = None
         #board 石をおくボードオブジェクト
         self._board = None
-        #GUI ボード
-        self._gui_board = None
         #turn 何ターン目かを格納
         self._turn = 0
         #input coord 今まで石を置いた座標を格納

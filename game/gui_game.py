@@ -14,7 +14,7 @@ import numpy as np
 from board.board import Board
 from game.base_game import BaseGame
 
-class GuiGame(ttk.Frame, BaseGame):
+class GuiGame(BaseGame, ttk.Frame):
 
     BK_IMG = "board/img/black1.gif"
     WH_IMG = "board/img/white1.gif"
@@ -22,9 +22,10 @@ class GuiGame(ttk.Frame, BaseGame):
     BG_IMG = "board/img/background.gif"
 
     def __init__(self, master=None, **kwargs):
-        super(GuiGame, self).__init__(master)
+        super(GuiGame, self).__init__()
+        super(BaseGame, self).__init__(master)
         self._window_size = 800
-        self._grid_size = int( (self._window_size*0.8)/self._board.get_board_size() )
+        self._grid_size = int( (self._window_size*0.8)/8 )
 
 
     def put_stone(self, x, y, bow):
@@ -48,33 +49,24 @@ class GuiGame(ttk.Frame, BaseGame):
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
                 elif tmp_board.get_stone(i, j, 2) == 1:
                     tmp_img = Image.open(GuiGame.WH_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
                 elif tmp_board.is_puttable(i, j):
                     tmp_img = Image.open(GuiGame.PT_IMG)
                     tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img, command=lambda row=i,col=j: self.put_stone(row, col, bow))
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
                 else:
                     tmp_img = Image.open(GuiGame.BG_IMG)
                     img = ImageTk.PhotoImage(tmp_img)
                     btn = Button(self, image=img)
-                    btn.config(height = grid_size, width = grid_size)
-                    btn.image = img
-                    btn.grid(column=i, row=j)
 
+        btn.config(height = grid_size, width = grid_size)
+        btn.image = img
+        btn.grid(column=i, row=j)
         self.grid(column=0, row=0)
 
 
