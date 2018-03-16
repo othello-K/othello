@@ -7,7 +7,7 @@ class BaseUser():
         #num of stone
         self._nstone = 0
         #history
-        self._history = []
+        self._input_history = []
 
     def set_nstone(self, nstone):
         """
@@ -19,7 +19,13 @@ class BaseUser():
         """
         ユーザが石を置いた座標の履歴
         """
-        self._history.append(self, coord)
+        self._input_history.append(coord)
+
+    def pop_history(self):
+        """
+        ユーザが石を置いた座標の履歴
+        """
+        self._input_history.pop()
 
     def display_bow(self):
         """

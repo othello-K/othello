@@ -44,7 +44,7 @@ class CuiGame(BaseGame):
             self.put_stone(int(self._input_list[-1][0]), int(self._input_list[-1][1]), self._attacker)
 
             #石の数を数えてユーザにセット
-            self.set_nstone(self._board.count_stone(self._attacker), self._attacker)
+            self.set_nstone()
 
             #ターンを増やし，攻撃を変更
             self.next_turn()
