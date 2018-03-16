@@ -23,18 +23,12 @@ class CuiGame(BaseGame):
 
             print("player {}'s attack".format(self._attacker))
 
-            self._board.listing_puttable(self._attacker)
-            #ボードを表示
-            self._board.display_board()
-
-            print("player {}'s attack".format(self._attacker))
-
             #ゲームの終了判定
             #置ける場所がないとフラグがたつ
             if self._board.is_no_puttable():
                 if flag:
                     print("game finished!")
-                    break;
+                    break
                 else:
                     flag = True
                     print("nowhere to put stone")

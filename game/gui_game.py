@@ -16,16 +16,28 @@ from game.base_game import BaseGame
 
 class GuiGame(BaseGame, ttk.Frame):
 
-    BK_IMG = "board/img/black1.gif"
-    WH_IMG = "board/img/white1.gif"
-    PT_IMG = "board/img/puttable1.gif"
-    BG_IMG = "board/img/background.gif"
+    BK_IMG = "game/img/black1.gif"
+    WH_IMG = "game/img/white1.gif"
+    PT_IMG = "game/img/puttable1.gif"
+    BG_IMG = "game/img/background.gif"
 
     def __init__(self, master=None, **kwargs):
         super(GuiGame, self).__init__()
         super(BaseGame, self).__init__(master)
         self._window_size = 800
         self._grid_size = int( (self._window_size*0.8)/8 )
+        tmp_img = Image.open(GuiGame.BK_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._bk_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.WH_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._wh_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.PT_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._pt_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.BG_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._bg_img = ImageTk.PhotoImage(tmp_img)
 
 
     def put_stone(self, x, y, bow):
@@ -33,6 +45,25 @@ class GuiGame(BaseGame, ttk.Frame):
         opp = self.get_opponent(bow)
         self._board.listing_puttable(opp)
         self.display_board(opp)
+
+
+    def game_process(self, x, y, bow):
+        self._board.put_stone(x, y, bow)
+        opp = self.get_opponent(bow)
+        self._board.listing_puttable(opp)
+        if self._board.is_no_puttable():
+            self._board.listing_puttable(bow)
+            if self._board.is_no_puttable():
+                print('game finished')
+                self.end_game()
+            else:
+                print('nowhere to put stone')
+                self.next_turn()
+                self.display_board(bow)
+        else:
+            flag = False
+            self.input_coord(opp)
+
 
     def display_board(self, bow):
         bsize = self._board.get_board_size()
@@ -44,55 +75,45 @@ class GuiGame(BaseGame, ttk.Frame):
             for j in range(bsize):
                 img = None
                 if tmp_board.get_stone(i, j, 1) == 1:
-                    tmp_img = Image.open(GuiGame.BK_IMG)
-                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
-                    img = ImageTk.PhotoImage(tmp_img)
-                    btn = Button(self, image=img)
+                    img = self._bk_img
+                    btn = Button(self, image=self._bk_img)
                 elif tmp_board.get_stone(i, j, 2) == 1:
-                    tmp_img = Image.open(GuiGame.WH_IMG)
-                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
-                    img = ImageTk.PhotoImage(tmp_img)
-                    btn = Button(self, image=img)
+                    btn = Button(self, image=self._wh_img)
+                    img = self._wh_img
                 elif tmp_board.is_puttable(i, j):
-                    tmp_img = Image.open(GuiGame.PT_IMG)
-                    tmp_img = tmp_img.resize((grid_size, grid_size), Image.ANTIALIAS)
-                    img = ImageTk.PhotoImage(tmp_img)
-                    btn = Button(self, image=img, command=lambda row=i,col=j: self.put_stone(row, col, bow))
+                    img = self._pt_img
+                    btn = Button(self, image=self._pt_img, command=lambda row=i,col=j: self.game_process(row, col, bow))
                 else:
-                    tmp_img = Image.open(GuiGame.BG_IMG)
-                    img = ImageTk.PhotoImage(tmp_img)
+                    img = self._bg_img
                     btn = Button(self, image=img)
 
-        btn.config(height = grid_size, width = grid_size)
-        btn.image = img
-        btn.grid(column=i, row=j)
+                btn.config(height = grid_size, width = grid_size)
+                btn.image = img
+                btn.grid(column=i, row=j)
         self.grid(column=0, row=0)
 
-    def start_game(self):
+    def start_game(self, root):
         """
         ゲームの流れが書いてあるメソッド
         """
-        while True:
-            #置ける場所を探す
-            self._board.listing_puttable(self._attacker)
-            #ボードを表示
-            self.display_board(self._attacker)
+        self._board.listing_puttable(self._attacker)
+        #ボードを表示
+        self.display_board(self._attacker)
+        root.mainloop()
 
-            print("player {}'s attack".format(self._attacker))
+        print("player {}'s attack".format(self._attacker))
 
-            #ゲームの終了判定
-            #置ける場所がないとフラグがたつ
-            if self._board.is_no_puttable():
-                if flag:
-                    print("game finished!")
-                    break;
-                else:
-                    flag = True
-                    print("nowhere to put stone")
-                    self.next_turn()
-                    continue
+    def end_game(self):
+        """
+        ゲーム終了時の処理．勝敗と石の数を表示．
+        """
 
-        self.input_coord(bow = self._attacker)
+        if nstone1 > nstone2:
+            print("Black Win!")
+        elif nstone1 < nstone2:
+            print("White Win!")
+        else:
+            print("DRAW!")
 
 def main():
     root = Tk()

@@ -84,14 +84,14 @@ class BaseGame():
         nstone2 = self._user1.get_nstone()
         print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
-    def input_coord(self, bow):
+    def input_coord(self, atk):
         """
         ユーザに座標を入力させる．GUIでの実装をする予定
         """
-        if bow == 1:
-            self._user1.input_coord()
-        elif bow == 2:
-            self._user2.input_coord()
+        if atk == 1:
+            self._user1.input_coord(bow=atk, board=self._board, game=self)
+        elif atk == 2:
+            self._user2.input_coord(bow=atk, board=self._board, game=self)
 
     def put_stone(self, x, y, bow):
         #石をおく
