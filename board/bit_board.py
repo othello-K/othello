@@ -379,7 +379,7 @@ class BitBoard():
 
         #reduce liberty
         self.change_liberty(x, y, -1)
-        
+
         # reflect
         self.set_board(atk_board, bow)
         self.set_board(opp_board, opp)
