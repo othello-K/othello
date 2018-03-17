@@ -95,8 +95,7 @@ def AlphaBeta_evaluate6(board, own, opponent, pruning, turn):
     for coord in board.get_puttable_list():
         board6 = copy.deepcopy(board)
         board6.put_stone(int(coord[0]),int(coord[1]), opponent)
-        evaluation = eval.evaluate(board, opponent, own)
-        print(evaluation)
+        evaluation = eval.evaluate(board, opponent, opponent)
         evaluations6 += [evaluation]
         if pruning(evaluation):
             break
