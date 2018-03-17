@@ -4,8 +4,7 @@ from tkinter import ttk
 from board.board import Board
 from board.bit_board import BitBoard
 from user.user import User
-from game.game import Game
-from board.gui_board import GuiBoard
+from game.gui_game import GuiGame
 
 #import eval_test
 
@@ -20,16 +19,15 @@ if __name__ == '__main__':
     root = Tk()
     root.title("Othello")
     root.geometry("800x800")
-    gui_board = GuiBoard(board=board, master=root)
-    game = Game()
+    game = GuiGame(board=board, master=root)
     game.set_user(user1, 1)
     game.set_user(user2, 2)
     game.set_board(board)
-    game.set_gui_board(gui_board)
 
     #evaluate = eval_test.MidEvaluator(board, 1)
     #print(evaluate.evaluate(board, 1, 1))
 
     # start game
-    game.start_game(board)
+    game.start_game(root)
+    root.mainloop()
     game.end_game()
