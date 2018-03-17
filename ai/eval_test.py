@@ -309,11 +309,9 @@ class MidEvaluator(Evaluator):
 
         opponent = __board.get_opponent(myside)
 
-        value = 0 # 仮
-
         for x in range(0, __board.get_board_size()):
             for y in range(0, __board.get_board_size()):
-                # value = __board.getLiberty(x,y)
+                value = __board.get_liberty(x, y)
                 if(__board.get_stone(x, y, myside) == 1):
                     liberty.myside += value
                 elif(__board.get_stone(x, y, opponent) == 1):
