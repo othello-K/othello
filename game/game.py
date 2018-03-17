@@ -2,6 +2,7 @@ from board.board import Board
 from user.user import User
 from board.gui_board import GuiBoard
 import numpy as np
+import eval_test
 
 class Game():
     """
@@ -107,10 +108,11 @@ class Game():
         #石をおく
         self.__board.put_stone(x, y, bow)
 
-    def start_game(self):
+    def start_game(self, board):
         """
         ゲームの流れが書いてあるメソッド
         """
+        evaluate = eval_test.MidEvaluator(board, 1)
         while True:
             #置ける場所を探す
             self.__board.listing_puttable(self.__attacker)
@@ -141,6 +143,8 @@ class Game():
 
             #入力座標の履歴の最後尾を取り出し，そこに石をおく．
             self.put_stone(int(self.__input_list[-1][0]), int(self.__input_list[-1][1]), self.__attacker)
+
+            print(evaluate.evaluate(board, self.__attacker, 1))
 
             #石の数を数えてユーザにセット
             self.set_nstone(self.__board.count_stone(self.__attacker), self.__attacker)

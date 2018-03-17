@@ -53,6 +53,17 @@ class BitBoard():
         elif bow == 2:
             return (self.__wh_board >> (x + 8*y)) & 0b1
 
+    def get_player(self, x, y):
+        """
+        指定された座標に置かれている石をおいたプレイヤーを返す
+        """
+        if(self.get_stone(x, y, 1) == 1):
+            return 1
+        elif(self.get_stone(x, y, 2) == 1):
+            return 2
+        else:
+            return 0
+
 
     def undo_board(self):
         self.pop_board_history(1)

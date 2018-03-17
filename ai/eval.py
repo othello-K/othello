@@ -15,11 +15,12 @@ def evaluate(bb, bow):  # 任意の盤面のどちらかの石の評価値を計
     opp = bb.get_opponent(bow)
     for x in range(bb.get_board_size()):
         for y in range(bb.get_board_size()):
-            if bb.get_stone(x,y,bow) == 0 and bb.get_stone(x,y,opp):   #  (x,y)に石が置いてあるか
+            if bb.get_stone(x,y,bow) == 0 and bb.get_stone(x,y,opp) == 0:   #  (x,y)に石が置いてあるか
+                print("pass")
                 pass
             elif bb.get_stone(x,y,bow) == 1:
                 bp += EVALUATION_BOARD[x][y] * random.random() * 3
-            else:
+            else :
                 bp -= EVALUATION_BOARD[x][y] * random.random() * 3
 
     p = confirm_stone(bb, bow)

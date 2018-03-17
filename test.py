@@ -7,7 +7,7 @@ from user.user import User
 from game.game import Game
 from board.gui_board import GuiBoard
 
-#import eval_test
+import eval_test
 
 if __name__ == '__main__':
 
@@ -17,19 +17,24 @@ if __name__ == '__main__':
     user2 = User(2)
     board = BitBoard()
     board.init_board(BOARD_INIT_FILE)
-    root = Tk()
-    root.title("Othello")
-    root.geometry("800x800")
-    gui_board = GuiBoard(board=board, master=root)
+
     game = Game()
     game.set_user(user1, 1)
     game.set_user(user2, 2)
     game.set_board(board)
-    game.set_gui_board(gui_board)
 
-    #evaluate = eval_test.MidEvaluator(board, 1)
-    #print(evaluate.evaluate(board, 1, 1))
+    evaluate = eval_test.MidEvaluator(board, 1)
+    print('eval : ' + str(evaluate.evaluate(board, 1, 1)))
 
     # start game
-    game.start_game(board)
-    game.end_game()
+    turn = 1
+    attacker = 1
+    while True:
+        board.display_board()
+        print("x")
+        x = input()
+        print("y")
+        y = input()
+        board.set_stone(int(x), int(y), attacker)
+        game.set_nstone(board.count_stone(attacker), attacker)
+        attacker = turn % 2 + 1
