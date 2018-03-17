@@ -114,7 +114,7 @@ class BitBoard():
                 for j, stone in enumerate(col):
                     if stone == '1':
                         self._bl_board |= (1<< (i+8*j))
-			self.change_liberty(i, j, -1)
+                        self.change_liberty(i, j, -1)
                     elif stone == '2':
                         self._wh_board |= (1<< (i+8*j))
                         self.change_liberty(i, j, -1)
