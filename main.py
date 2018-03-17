@@ -6,6 +6,8 @@ from board.bit_board import BitBoard
 from user.user import User
 from game.gui_game import GuiGame
 
+#import eval_test
+
 if __name__ == '__main__':
 
     BOARD_INIT_FILE = 'init/init.csv'
@@ -21,6 +23,9 @@ if __name__ == '__main__':
     game.set_user(user1, 1)
     game.set_user(user2, 2)
     game.set_board(board)
+
+    #evaluate = eval_test.MidEvaluator(board, 1)
+    #print(evaluate.evaluate(board, 1, 1))
 
     # start game
     game.start_game(root)
