@@ -20,7 +20,9 @@ class BaseGame():
         #turn 何ターン目かを格納
         self._turn = 0
         #input coord 今まで石を置いた座標を格納
-        self._input_list = []
+        self._input_history = []
+        #input coord 今まで石を置いたユーザを格納
+        self._input_user_history = []
         #now attacker 現在の攻撃ユーザ　先攻１，後攻２
         self._attacker = 1
         #game keeper flag ゲームの終了判定をするフラッグ
@@ -35,8 +37,6 @@ class BaseGame():
         """
         return bow % 2 + 1
 
-    def set_gui_board(self, board):
-        self._gui_board = board
 
     def set_user(self, user, user_id):
         """
@@ -51,14 +51,18 @@ class BaseGame():
             print("only user1 or user2 can be assigned")
 
 
-    def append_input(self, coord, bow):
+    def append_history(self, coord, bow):
         """
-        ユーザの入力した座標を，Userオブジェクトに追加する（戻る用）
+        ユーザの入力した座標を，Userオブジェクトに追加する
         """
         if bow == 1:
-            self._user1.append_input(coord)
-        if bow == 2:
-            self._user2.append_input(coord)
+            self._user1.append_history(coord)
+        elif bow == 2:
+            self._user2.append_history(coord)
+
+        self._input_history.append(coord)
+        self._input_user_history.append(bow)
+
 
     def set_board(self, board):
         """
@@ -67,14 +71,12 @@ class BaseGame():
         self._board = board
         print(self._board)
 
-    def set_nstone(self, nstone, bow):
+    def set_nstone(self):
         """
         ユーザオブジェクトに，獲得している石の個数をセットする
         """
-        if bow == 1:
-            self._user1.set_nstone(nstone)
-        elif bow == 2:
-            self._user2.set_nstone(nstone)
+        self._user1.set_nstone(self._board.count_stone(1))
+        self._user2.set_nstone(self._board.count_stone(2))
 
     def print_nstone(self):
         """
@@ -84,14 +86,14 @@ class BaseGame():
         nstone2 = self._user1.get_nstone()
         print("Black: {}\nWhite: {}".format(nstone1, nstone2))
 
-    def input_coord(self, bow):
+    def input_coord(self, atk):
         """
         ユーザに座標を入力させる．GUIでの実装をする予定
         """
-        if bow == 1:
-            self._user1.input_coord()
-        elif bow == 2:
-            self._user2.input_coord()
+        if atk == 1:
+            self._user1.input_coord(bow=atk, board=self._board, game=self)
+        elif atk == 2:
+            self._user2.input_coord(bow=atk, board=self._board, game=self)
 
     def put_stone(self, x, y, bow):
         #石をおく

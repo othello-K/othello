@@ -7,5 +7,6 @@ class User(BaseUser):
         ユーザにインプットさせる．
         """
         atk = kwargs['bow']
-#        gui_board = kwargs['board']
-#        gui_board.display_board()
+        game = kwargs['game']
+        game.display_gui_board(atk)
+

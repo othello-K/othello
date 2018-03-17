@@ -148,7 +148,7 @@ class BitBoard():
         for i in range(self._board_size):
             print("{}|".format(i), end="")
             for j in range(self._board_size):
-                coord = i + j*8
+                coord = j + i*8
                 stone = " "
                 if tmp_bl_board >> coord & 1 == 1:
                     stone = "B"

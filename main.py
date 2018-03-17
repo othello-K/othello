@@ -23,5 +23,6 @@ if __name__ == '__main__':
     game.set_board(board)
 
     # start game
-    game.start_game()
+    game.start_game(root)
+    root.mainloop()
     game.end_game()
