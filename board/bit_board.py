@@ -366,10 +366,6 @@ class BitBoard():
 
         #reduce liberty
         self.change_liberty(x, y, -1)
-        for i in range(10):
-            for j in range(10):
-                print(self._liberty[j][i], end='')
-            print('')
 
         # reflect
         self.set_board(atk_board, bow)

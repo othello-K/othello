@@ -55,7 +55,6 @@ class GuiGame(BaseGame, ttk.Frame):
         self._board.display_board()
 
     def game_process(self, event, x, y, bow):
-        print(self._board.is_puttable(x, y))
         self.append_history(np.array([x, y]), bow)
         self._board.put_stone(x, y, bow)
         self.set_nstone()
@@ -127,7 +126,6 @@ class GuiGame(BaseGame, ttk.Frame):
                     img = self._pt_img
                     command = lambda event, row=i, col=j: self.game_process(event, row, col, bow)
 
-                print(command)
                 self._button_map[i][j].configure(image=img)
                 self._button_map[i][j].bind("<Button-1>", command)
 
