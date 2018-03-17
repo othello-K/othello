@@ -3,6 +3,8 @@ import copy
 import sys
 sys.path.append("../")
 from bit_board import BitBoard
+from eval import evaluate
+
 
 def AlphaBeta(board, list, own, opponent):  # AlphaBeta法で探索する
     evaluations = AlphaBeta_evaluate1(board, list, own, opponent)
@@ -104,9 +106,9 @@ def AlphaBeta_evaluate6(board, own, opponent, pruning):
 if __name__ == "__main__":
     b = BitBoard()
     b.init_board("../init.csv")
+    b.display_board()
     cb = copy.deepcopy(b)
     cb.listing_puttable(1)
     list = cb.get_puttable_list()
-    AlphaBeta(cb,list, 1,  cb.get_opponent(1))
-    print("正常")
+    print(AlphaBeta(cb,list, 1,  cb.get_opponent(1)))
     

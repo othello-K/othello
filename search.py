@@ -1,5 +1,6 @@
 import copy
 import sys
+from ai.eval.
 sys.path.append('../')
 from bit_board import BitBoard
 
@@ -92,8 +93,8 @@ def AlphaBeta_evaluate6(board, own, opponent, pruning):
     for coord in board.get_puttable_list():
         board6 = copy.deepcopy(board)
         board6.put_stone(int(coord[0]),int(coord[1]), opponent)
-        ev_opponent = evaluate(board6, opponent)
-        ev_own = evaluate(board6, own)
+        ev_opponent = evaluation(board6, opponent)
+        ev_own = evaluation(board6, own)
         evaluation = ev_own - ev_opponent
         evaluations6 += [evaluation]
         if pruning(evaluation):

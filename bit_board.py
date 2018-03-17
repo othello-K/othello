@@ -307,8 +307,6 @@ class BitBoard():
         #着手した場合のボードを生成
         atk_board = self.get_board_half(bow)
         opp_board = self.get_board_half(self.get_opponent(bow))
-        print(type(int(x)))
-        print(x)
 
         rev = 0
         put = 0b1 << ( x + 8*y )
