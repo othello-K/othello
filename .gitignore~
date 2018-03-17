@@ -1,6 +1,14 @@
-/__pycache__/
+<<<<<<< HEAD
+__pycache__/
 *.ipynb
 /.ipynb_checkpoints/
 /.idea/
 .DS_Store
 __pycache__
+=======
+/__pycache__/
+__pycache__
+/.ipynb_checkpoints/
+/.idea/
+.DS_Store
+>>>>>>> f463f2391d0c4162b13cc7dbda019fdb62bc820a

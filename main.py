@@ -1,15 +1,14 @@
 from tkinter import *
 from tkinter import ttk
 
-from board import Board
-from bit_board import BitBoard
-from user import User
-from game import Game
-from gui_game import GuiBoard
+from board.board import Board
+from board.bit_board import BitBoard
+from user.user import User
+from game.gui_game import GuiGame
 
 if __name__ == '__main__':
 
-    BOARD_INIT_FILE = 'init.csv'
+    BOARD_INIT_FILE = 'init/init.csv'
 
     user1 = User(1)
     user2 = User(2)
@@ -18,13 +17,12 @@ if __name__ == '__main__':
     root = Tk()
     root.title("Othello")
     root.geometry("800x800")
-    gui_board = GuiBoard(board=board, master=root)
-    game = Game()
+    game = GuiGame(board=board, master=root)
     game.set_user(user1, 1)
     game.set_user(user2, 2)
     game.set_board(board)
-    game.set_gui_board(gui_board)
 
     # start game
-    game.start_game()
+    game.start_game(root)
+    root.mainloop()
     game.end_game()
