@@ -18,6 +18,8 @@ class BitBoard():
         self._wh_board = 0x0000000000000000
         #石を置ける場所だけフラグ
         self._puttable_map = 0x0000000000000000
+        #
+        self._liberty = [[8 for i in range(self._board_size + 2)] for j in range(self._board_size + 2)]
         #各ターンでボードを保存
         self._bl_board_history = []
         self._wh_board_history = []
@@ -54,11 +56,12 @@ class BitBoard():
             return (self._wh_board >> (x + 8*y)) & 0b1
 
 
-    def undo_board(self):
+    def undo_board(self, x, y):
         self.pop_board_history(1)
         self.pop_board_history(2)
         self.set_board(self._bl_board_history[-1], 1)
         self.set_board(self._wh_board_history[-1], 2)
+        self.change_liberty(x, y, 1)
 
 
     def get_board_size(self):
@@ -89,7 +92,6 @@ class BitBoard():
             self._wh_board_history.pop()
 
 
-
     def init_board(self, file_path):
         """
         csvファイルを元に，ボードを初期化
@@ -100,8 +102,10 @@ class BitBoard():
                 for j, stone in enumerate(col):
                     if stone == '1':
                         self._bl_board |= (1<< (i+8*j))
+                        self.change_liberty(i, j, -1)
                     elif stone == '2':
                         self._wh_board |= (1<< (i+8*j))
+                        self.change_liberty(i, j, -1)
 
             self.append_board_history(self._bl_board, 1)
             self.append_board_history(self._wh_board, 2)
@@ -126,7 +130,6 @@ class BitBoard():
             return self._bl_board
         elif bow == 2:
             return self._wh_board
-
 
     def display_board(self):
         """
@@ -326,6 +329,18 @@ class BitBoard():
             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
 
 
+    def change_liberty(self, x, y, pm):
+        # reduce liberty
+        self._liberty[x][y-1] += pm
+        self._liberty[x-1][y-1] += pm
+        self._liberty[x-1][y] += pm
+        self._liberty[x-1][y+1] += pm
+        self._liberty[x][y+1] += pm
+        self._liberty[x+1][y+1] += pm
+        self._liberty[x+1][y] += pm
+        self._liberty[x+1][y-1] += pm
+
+
     def put_stone(self, x, y, bow):
         #着手した場合のボードを生成
         atk_board = self.get_board_half(bow)
@@ -348,10 +363,22 @@ class BitBoard():
         #反転する
         atk_board ^= put | rev
         opp_board ^= rev
+
+        #reduce liberty
+        self.change_liberty(x, y, -1)
+        for i in range(10):
+            for j in range(10):
+                print(self._liberty[j][i], end='')
+            print('')
+
+        # reflect
         self.set_board(atk_board, bow)
         self.set_board(opp_board, opp)
         self.append_board_history(atk_board, bow)
         self.append_board_history(opp_board, opp)
+
+    def get_liberty(self, x, y):
+        return self._liberty[y][x]
 
     def create_board(self):
         board = Board()

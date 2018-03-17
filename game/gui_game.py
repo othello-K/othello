@@ -79,8 +79,8 @@ class GuiGame(BaseGame, ttk.Frame):
     def undo_process(self):
         input_list = self._input_history
         if len(input_list) != 0:
-            self._board.undo_board()
-            self._input_history.pop()
+            tmp_coord = self._input_history.pop()
+            self._board.undo_board(tmp_coord[0], tmp_coord[1])
             bow = self._input_user_history.pop()
             if bow == 1:
                 self._user1.pop_history()
