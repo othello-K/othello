@@ -16,10 +16,14 @@ from game.base_game import BaseGame
 
 class GuiGame(BaseGame, ttk.Frame):
 
-    BK_IMG = "game/img/black1.gif"
-    WH_IMG = "game/img/white1.gif"
-    PT_IMG = "game/img/puttable1.gif"
-    BG_IMG = "game/img/background.gif"
+    BK_IMG = "game/img/black2.gif"
+    WH_IMG = "game/img/white2.gif"
+    PT_IMG = "game/img/puttable2.gif"
+    BG_IMG = "game/img/background2.gif"
+    B_IMG = "game/img/B.gif"
+    W_IMG = "game/img/W.gif"
+    BL_U_IMG = "game/img/undoB.gif"
+    WH_U_IMG = "game/img/undoW.gif"
 
     def __init__(self, master=None, **kwargs):
         super(GuiGame, self).__init__()
@@ -29,8 +33,9 @@ class GuiGame(BaseGame, ttk.Frame):
             self._board = board
             board_size = board.get_board_size()
         self._window_size = 800
-        self._grid_size = int( (self._window_size*0.8)/board_size )
+        self._grid_size = int( (self._window_size*0.8)/(board_size+1) )
         self._button_map = []
+        self._atk_label = None
         #button image settings
         tmp_img = Image.open(GuiGame.BK_IMG)
         tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
@@ -44,6 +49,18 @@ class GuiGame(BaseGame, ttk.Frame):
         tmp_img = Image.open(GuiGame.BG_IMG)
         tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
         self._bg_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.B_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._b_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.W_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._w_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.BL_U_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._bl_u_img = ImageTk.PhotoImage(tmp_img)
+        tmp_img = Image.open(GuiGame.WH_U_IMG)
+        tmp_img = tmp_img.resize((self._grid_size, self._grid_size), Image.ANTIALIAS)
+        self._wh_u_img = ImageTk.PhotoImage(tmp_img)
 
     def print_state(self, x, y, bow):
         if bow == 1:
@@ -88,7 +105,7 @@ class GuiGame(BaseGame, ttk.Frame):
             self._turn -= 1
             #when undo the first putting, error occur
             if len(self._input_user_history) != 0:
-                self._attacker = self._input_user_history[-1]
+                self._attacker = bow
             else:
                 self._attacker = 1
             self.set_nstone()
@@ -97,16 +114,19 @@ class GuiGame(BaseGame, ttk.Frame):
 
 
     def init_gui_board(self):
+        #self.grid(column=0, row=0)
         bsize = self._board.get_board_size()
-        self._button_map = [[ Button() for i in range(bsize)] for j in range(bsize)]
+        self._button_map = [[ Button(text='hoge') for i in range(bsize)] for j in range(bsize)]
         for x, btns in enumerate(self._button_map):
             for y, btn in enumerate(btns):
                 btn.configure(height = self._grid_size, width = self._grid_size)
-                btn.grid(column=x, row=y)
+                btn.grid(column=x, row=y, padx=0, pady=0, ipadx=0, ipady=0)
+        undo_button  = Button(command=lambda: self.undo_process())
+        undo_button.configure(height = self._grid_size, width = self._grid_size, image=self._bl_u_img)
+        undo_button.grid(column=bsize, row=3, padx=0, pady=0, ipadx=0, ipady=0)
+        self._atk_label = Label(width=self._grid_size, height=self._grid_size, image=self._b_img)
+        self._atk_label.grid(column=bsize, row=0, ipadx=0, ipady=0)
 
-        self.grid(column=0, row=0)
-        undo_button  = Button(text = 'UNDO', command=lambda: self.undo_process())
-        undo_button.grid(column=bsize, row=3)
 
     def display_gui_board(self, bow):
         bsize = self._board.get_board_size()
@@ -116,8 +136,9 @@ class GuiGame(BaseGame, ttk.Frame):
 
         for i in range(bsize):
             for j in range(bsize):
-                img = self._bg_img
+                img = None
                 command = None
+                img = self._bg_img
                 if tmp_board.get_stone(i, j, 1) == 1:
                     img = self._bk_img
                 elif tmp_board.get_stone(i, j, 2) == 1:
