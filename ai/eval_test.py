@@ -309,6 +309,7 @@ class MidEvaluator(Evaluator):
 
         opponent = __board.get_opponent(myside)
 
+
         for x in range(0, __board.get_board_size()):
             for y in range(0, __board.get_board_size()):
                 value = __board.get_liberty(x, y)
@@ -362,6 +363,7 @@ class MidEvaluator(Evaluator):
 
         return index
 
+
     def idxLeft(self, __board):
 
         index = \
@@ -375,16 +377,3 @@ class MidEvaluator(Evaluator):
               +  1 * (__board.get_player(0,7) )
 
         return index
-
-
-
-
-
-
-
-
-
-
-
-
-

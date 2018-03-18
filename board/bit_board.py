@@ -67,6 +67,18 @@ class BitBoard():
             return 0
 
 
+    def get_player(self, x, y):
+        """
+        指定された座標に置かれている石をおいたプレイヤーを返す
+        """
+        if(self.get_stone(x, y, 1) == 1):
+            return 1
+        elif(self.get_stone(x, y, 2) == 1):
+            return 2
+        else:
+            return 0
+
+
     def undo_board(self, x, y):
         self.pop_board_history(1)
         self.pop_board_history(2)
@@ -141,6 +153,7 @@ class BitBoard():
             return self._bl_board
         elif bow == 2:
             return self._wh_board
+
 
     def display_board(self):
         """
@@ -384,8 +397,10 @@ class BitBoard():
         self.append_board_history(atk_board, bow)
         self.append_board_history(opp_board, opp)
 
+
     def get_liberty(self, x, y):
         return self._liberty[y][x]
+
 
     def create_board(self):
         board = Board()
