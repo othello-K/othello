@@ -11,6 +11,7 @@ class Search():
         evaluations = self.AlphaBeta_evaluate1(board, list, own, opponent, turn)
         maximum_evaluation_index = evaluations.index(max(evaluations))
         x, y = list[maximum_evaluation_index]
+        print(evaluations)
         return evaluations, x, y
 
     def AlphaBeta_evaluate1(self, board, list, own, opponent, turn):
@@ -96,7 +97,7 @@ class Search():
         for coord in board.get_puttable_list():
             board6 = copy.deepcopy(board)
             board6.put_stone(int(coord[0]),int(coord[1]), opponent)
-            evaluation = self._eval.evaluate(board, opponent, opponent)
+            evaluation = self._eval.evaluate(board6, opponent, opponent)
             evaluations6 += [evaluation]
             if pruning(evaluation):
                 break
