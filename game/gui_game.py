@@ -161,7 +161,6 @@ def main():
     b.init_board('init.csv')
     g = GuiBoard(board=b, master=root)
     g.display_gui_board()
-    hlsearch
 
     root.mainloop()
 
