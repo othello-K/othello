@@ -96,7 +96,8 @@ class Search():
         for coord in board.get_puttable_list():
             board6 = copy.deepcopy(board)
             board6.put_stone(int(coord[0]),int(coord[1]), opponent)
-            evaluation = self._eval.evaluate(board, opponent, opponent)
+            evaluation = self._eval.evaluate(board6, opponent, own)
+            print(evaluation)
             evaluations6 += [evaluation]
             if pruning(evaluation):
                 break
