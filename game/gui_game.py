@@ -25,9 +25,12 @@ class GuiGame(BaseGame, ttk.Frame):
     BL_U_IMG = "game/img/undoB.gif"
     WH_U_IMG = "game/img/undoW.gif"
 
-    def __init__(self, master=None, **kwargs):
+    def __init__(self, **kwargs):
+        self._root = Tk()
+        self._root.title("Othello")
+        self._root.geometry("900x900")
         super(GuiGame, self).__init__()
-        super(BaseGame, self).__init__(master)
+        super(BaseGame, self).__init__(self._root)
         board = kwargs['board']
         if board is not None:
             self._board = board
@@ -181,14 +184,14 @@ class GuiGame(BaseGame, ttk.Frame):
         self.display_gui_board()
         self.input_coord(self._attacker)
 
-    def start_game(self, root):
+    def start_game(self):
         """
         ゲーム開始までの処理
         """
         start_button = Button(text='start', command=self.start_process)
         start_button.grid(column=0, row=0)
         print("player {}'s attack".format(self._attacker))
-        root.mainloop()
+        self._root.mainloop()
 
 
     def end_game(self):

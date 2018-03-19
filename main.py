@@ -17,15 +17,11 @@ if __name__ == '__main__':
     user2 = User(2)
     board = BitBoard()
     board.init_board(BOARD_INIT_FILE)
-    root = Tk()
-    root.title("Othello")
-    root.geometry("900x900")
-    game = GuiGame(board=board, master=root)
+    game = GuiGame(board=board)
     game.set_user(user1, 1)
     game.set_user(user2, 2)
     game.set_board(board)
 
     # start game
-    game.start_game(root)
-    root.mainloop()
+    game.start_game()
     game.end_game()
