@@ -102,10 +102,11 @@ class BaseGame():
         #石をおく
         self._board.put_stone(x, y, bow)
 
-    def next_turn(self):
+    def next_turn(self, is_pass):
         #ターンを増やし，攻撃を変更
         self._turn += 1
-        self._attacker = self._turn % 2 + 1
+        if not is_pass:
+            self._attacker = self._turn % 2 + 1
 
     def start_game(self):
         """

@@ -77,7 +77,6 @@ class GuiGame(BaseGame, ttk.Frame):
         self.set_nstone()
         opp = self.get_opponent(bow)
         self._board.listing_puttable(opp)
-        self.display_gui_board()
         self.print_state(x, y, bow)
         if self._board.is_no_puttable():
             self._board.listing_puttable(bow)
@@ -88,9 +87,12 @@ class GuiGame(BaseGame, ttk.Frame):
             else:
                 print('nowhere to put stone')
                 print(str(opp) + ' pass')
-                self.next_turn()
+                self.next_turn(is_pass = True)
+                self.display_gui_board()
                 self.input_coord(bow)
         else:
+            self.next_turn(is_pass = False)
+            self.display_gui_board()
             self.input_coord(opp)
 
     def undo_process(self):
@@ -99,6 +101,7 @@ class GuiGame(BaseGame, ttk.Frame):
             tmp_coord = self._input_history.pop()
             self._board.undo_board(tmp_coord[0], tmp_coord[1])
             bow = self._input_user_history.pop()
+            print(bow)
             if bow == 1:
                 self._user1.pop_history()
             elif bow == 2:
@@ -111,28 +114,26 @@ class GuiGame(BaseGame, ttk.Frame):
                 self._attacker = 1
             self.set_nstone()
             self._board.listing_puttable(self._attacker)
-            self.display_gui_board(self._attacker)
+            self.display_gui_board()
+            self.input_coord(self._attacker)
 
 
     def init_gui_board(self):
         self.grid(column=0, row=0)
         bsize = self._board.get_board_size()
-        self._button_map = [[ Button(text='hoge') for i in range(bsize)] for j in range(bsize)]
+        self._button_map = [[ Button() for i in range(bsize)] for j in range(bsize)]
         for x, btns in enumerate(self._button_map):
             for y, btn in enumerate(btns):
                 btn.configure(height = self._grid_size, width = self._grid_size)
                 btn.grid(column=x, row=y, padx=0, pady=0, ipadx=0, ipady=0)
+
         undo_button  = Button(command=lambda: self.undo_process())
         undo_button.configure(height = self._grid_size, width = self._grid_size, image=self._bl_u_img)
         undo_button.grid(column=bsize, row=3, padx=0, pady=0, ipadx=0, ipady=0)
+
         self._atk_label = Label(width=self._grid_size, height=self._grid_size, image=self._b_img)
         self._atk_label.grid(column=bsize, row=0, ipadx=0, ipady=0)
 
-        start_button  = Button(text = 'UNDO', command=lambda: self.undo_process())
-        start_button.grid(column=bsize, row=3)
-
-        undo_button  = Button(text = 'UNDO', command=lambda: self.undo_process())
-        undo_button.grid(column=bsize, row=3)
 
     def display_gui_board(self):
         bsize = self._board.get_board_size()
@@ -151,6 +152,14 @@ class GuiGame(BaseGame, ttk.Frame):
                     img = self._pt_img
 
                 self._button_map[i][j].configure(image=img)
+
+        if self._attacker == 1:
+            img = self._b_img
+            self._atk_label.configure(image=img)
+        elif self._attacker == 2:
+            img = self._w_img
+            self._atk_label.configure(image=img)
+
 
     def enable_gui_board(self, bow):
 

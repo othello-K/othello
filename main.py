@@ -14,7 +14,7 @@ if __name__ == '__main__':
     BOARD_INIT_FILE = 'init/init.csv'
 
     user1 = User(1)
-    user2 = AiUser(2)
+    user2 = User(2)
     board = BitBoard()
     board.init_board(BOARD_INIT_FILE)
     root = Tk()

@@ -8,5 +8,5 @@ class User(BaseUser):
         """
         atk = kwargs['bow']
         game = kwargs['game']
-        game.display_gui_board(atk)
+        game.enable_gui_board(atk)
 
