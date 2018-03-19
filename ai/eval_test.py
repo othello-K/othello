@@ -5,10 +5,10 @@ import copy
 # 辺に関するパラメータをまとめたクラス
 class EdgeParam:
     def __init__(self):
-        self.stable   = None      # 確定石の個数
-        self.wing     = None      # wingの個数
-        self.mountain = None      # 山の個数 
-        self.Cmove    = None      # C打ちの個数 
+        self.stable   = 0     # 確定石の個数
+        self.wing     = 0     # wingの個数
+        self.mountain = 0     # 山の個数 
+        self.Cmove    = 0     # C打ちの個数 
 
     def set_value(self, stable, wing, mountain, Cmove):
         self.stable   = stable
@@ -28,8 +28,8 @@ class EdgeParam:
 # 隅周辺に関するパラメータをまとめたクラス
 class CornerParam:
     def __init__(self):
-        self.corner   = None        # 隅にある石の数
-        self.Xmove    = None        # 危険なX打ちの個数
+        self.corner   = 0        # 隅にある石の数
+        self.Xmove    = 0        # 危険なX打ちの個数
 
 # 重み係数を規定するクラス
 class Weight:
@@ -91,7 +91,7 @@ class WLDEvaluator(Evaluator):
 class MidEvaluator(Evaluator):
     def __init__(self, __board, myside):
         self.TABLE_SIZE = 6561     #3^8 
-        self.EdgeTable  = [ColorStorage(EdgeParam)] * self.TABLE_SIZE     # 評価テーブルを宣言
+        self.EdgeTable  = [ColorStorage(EdgeParam) for i in range(self.TABLE_SIZE)]    # 評価テーブルを宣言
 
         # 初回起動時にテーブルを生成
         self.generateEdge(0, __board, [0]*8 , [0]*8, myside)
@@ -123,10 +123,16 @@ class MidEvaluator(Evaluator):
         cornerstat = ColorStorage(CornerParam)
 
         # 辺の評価
-        edgestat  = self.EdgeTable[self.idxTop(__board)]
+
+        stat = self.EdgeTable[self.idxBottom(__board)]
+        #edgestat  = self.EdgeTable[self.idxTop(__board)]
+        edgestat.myside.set_value(stat.myside.stable, stat.myside.wing, stat.myside.mountain, stat.myside.Cmove)
+        edgestat.opponent.set_value(stat.opponent.stable, stat.opponent.wing, stat.opponent.mountain, stat.opponent.Cmove) 
+
         edgestat += self.EdgeTable[self.idxBottom(__board)]
         edgestat += self.EdgeTable[self.idxRight(__board)]
         edgestat += self.EdgeTable[self.idxLeft(__board)]
+
 
         # 隅の評価
         cornerstat = self.evalCorner(__board, myside)
@@ -134,6 +140,7 @@ class MidEvaluator(Evaluator):
         # 確定石に関して、隅の石を2回数えてしまっているので補正
         edgestat.myside.stable -= cornerstat.myside.corner
         edgestat.opponent.stable -= cornerstat.opponent.corner
+
 
         # パラメータの線型結合
         result = \
