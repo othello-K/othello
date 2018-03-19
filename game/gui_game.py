@@ -12,6 +12,7 @@ from PIL import ImageTk
 import numpy as np
 
 from board.board import Board
+from board.bit_board import BitBoard
 from game.base_game import BaseGame
 
 class GuiGame(BaseGame, Frame):

@@ -132,7 +132,7 @@ class BitBoard():
 
             self.append_board_history(self._bl_board, 1)
             self.append_board_history(self._wh_board, 2)
-
+            print(self._liberty)
 
     def init_board_from_board(self, board):
         """
