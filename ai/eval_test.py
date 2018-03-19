@@ -75,7 +75,7 @@ class WLDEvaluator(Evaluator):
     def __init__(self):
         self.WIN  =  1
         self.DRAW =  0
-        self.LOSE = -1 
+        self.LOSE = -1
 
     def evaluate(self, __board, attacker ,myside):
         self.discdiff = __board.count_stone(myside) - __board.count_stone(__board.get_opponent(myside))
@@ -108,7 +108,7 @@ class MidEvaluator(Evaluator):
 
 
     # テーブルのindexを算出
-    def idxLine(self, __board, m_line, o_line , myside):  
+    def idxLine(self, __board, m_line, o_line , myside):
         opponent = __board.get_opponent(myside)
         l = []
 

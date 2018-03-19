@@ -124,10 +124,10 @@ class BitBoard():
                 col = row.split(self.PARSER)
                 for j, stone in enumerate(col):
                     if stone == '1':
-                        self._bl_board |= (1<< (i+8*j))
+                        self._bl_board |= (1<< (j+8*i))
                         self.change_liberty(i, j, -1)
                     elif stone == '2':
-                        self._wh_board |= (1<< (i+8*j))
+                        self._wh_board |= (1<< (j+8*i))
                         self.change_liberty(i, j, -1)
 
             self.append_board_history(self._bl_board, 1)

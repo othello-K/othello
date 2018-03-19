@@ -17,6 +17,4 @@ class AiUser(BaseUser):
         search = Search(board, atk)
         evaluation, x, y = search.AlphaBeta(tmp_board, tmp_board.get_puttable_list(),\
                                     atk, opp, game.get_turn())
-        board.put_stone(int(x), int(y), atk)
-        board.listing_puttable(opp)
-        game.display_gui_board(opp)
+        game.game_process(None, int(x), int(y), atk)
