@@ -28,6 +28,9 @@ class BaseGame():
         #game keeper flag ゲームの終了判定をするフラッグ
         self._flag = False
 
+    def get_turn(self):
+        return self._turn
+
     def get_attacker(self):
         return self._attacker
 
