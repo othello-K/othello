@@ -11,7 +11,6 @@ class Search():
         evaluations = self.AlphaBeta_evaluate1(board, list, own, opponent, turn)
         maximum_evaluation_index = evaluations.index(max(evaluations))
         x, y = list[maximum_evaluation_index]
-        print(evaluations)
         return evaluations, x, y
 
     def AlphaBeta_evaluate1(self, board, list, own, opponent, turn):
