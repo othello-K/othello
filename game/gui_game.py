@@ -60,18 +60,19 @@ class GuiGame(BaseGame, ttk.Frame):
         self.set_nstone()
         opp = self.get_opponent(bow)
         self._board.listing_puttable(opp)
+        self.display_gui_board()
         self.print_state(x, y, bow)
         if self._board.is_no_puttable():
             self._board.listing_puttable(bow)
             if self._board.is_no_puttable():
                 print('game finished')
-                self.display_gui_board(opp)
+                self.display_gui_board()
                 self.end_game()
             else:
                 print('nowhere to put stone')
                 print(str(opp) + ' pass')
                 self.next_turn()
-                self.display_gui_board(bow)
+                self.input_coord(bow)
         else:
             self.input_coord(opp)
 
@@ -97,6 +98,7 @@ class GuiGame(BaseGame, ttk.Frame):
 
 
     def init_gui_board(self):
+        self.grid(column=0, row=0)
         bsize = self._board.get_board_size()
         self._button_map = [[ Button() for i in range(bsize)] for j in range(bsize)]
         for x, btns in enumerate(self._button_map):
@@ -104,11 +106,13 @@ class GuiGame(BaseGame, ttk.Frame):
                 btn.configure(height = self._grid_size, width = self._grid_size)
                 btn.grid(column=x, row=y)
 
-        self.grid(column=0, row=0)
+        start_button  = Button(text = 'UNDO', command=lambda: self.undo_process())
+        start_button.grid(column=bsize, row=3)
+
         undo_button  = Button(text = 'UNDO', command=lambda: self.undo_process())
         undo_button.grid(column=bsize, row=3)
 
-    def display_gui_board(self, bow):
+    def display_gui_board(self):
         bsize = self._board.get_board_size()
         grid_size = self._grid_size
 
@@ -117,29 +121,44 @@ class GuiGame(BaseGame, ttk.Frame):
         for i in range(bsize):
             for j in range(bsize):
                 img = self._bg_img
-                command = None
                 if tmp_board.get_stone(i, j, 1) == 1:
                     img = self._bk_img
                 elif tmp_board.get_stone(i, j, 2) == 1:
                     img = self._wh_img
                 elif tmp_board.is_puttable(i, j):
                     img = self._pt_img
-                    command = lambda event, row=i, col=j: self.game_process(event, row, col, bow)
 
                 self._button_map[i][j].configure(image=img)
-                self._button_map[i][j].bind("<Button-1>", command)
 
-    def start_game(self, root):
-        """
-        ゲームの流れが書いてあるメソッド
-        """
+    def enable_gui_board(self, bow):
+
+        bsize = self._board.get_board_size()
+        tmp_board = self._board
+
+        for i in range(bsize):
+            for j in range(bsize):
+                if tmp_board.is_puttable(i, j):
+                    command = lambda event, row=i, col=j: self.game_process(event, row, col, bow)
+                    self._button_map[i][j].bind("<Button-1>", command)
+                else:
+                    self._button_map[i][j].unbind("<Button-1>")
+
+    def start_process(self):
         self._board.listing_puttable(self._attacker)
         #ボードを表示
         self.init_gui_board()
-        self.display_gui_board(self._attacker)
+        self.display_gui_board()
+        self.input_coord(self._attacker)
+
+    def start_game(self, root):
+        """
+        ゲーム開始までの処理
+        """
+        start_button = Button(text='start', command=self.start_process)
+        start_button.grid(column=0, row=0)
+        print("player {}'s attack".format(self._attacker))
         root.mainloop()
 
-        print("player {}'s attack".format(self._attacker))
 
     def end_game(self):
         """
