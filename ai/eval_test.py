@@ -60,7 +60,7 @@ class Evaluator:
         pass
 
 # 終盤の完全読み切り用評価関数
-class PerfectEvaluator(Evaluator):
+class PerfectEvaluator(Evaluator):     
     def evaluate(self, __board, attacker , myside):
         self.discdiff = __board.count_stone(myside) - __board.count_stone(__board.get_opponent(myside))
 
@@ -153,10 +153,17 @@ class MidEvaluator(Evaluator):
            + edgestat.myside.Cmove * self.EvalWeight.Cmove_w\
            - edgestat.myside.Cmove * self.EvalWeight.Cmove_w\
 
+        print("--------------------------")
+        print("stable : " + str(edgestat.myside.stable) + " , " + str(edgestat.opponent.stable))
+        print("wing : " + str(edgestat.myside.wing) + " , " + str(edgestat.opponent.wing))
+        print("Xmove : " + str(cornerstat.myside.Xmove) + " , " + str(cornerstat.opponent.Xmove))
+        print("Cmove : " + str(edgestat.myside.Cmove) + " , " + str(edgestat.opponent.Cmove))
+
 
         # 開放度・着手可能手数の評価
         if(self.EvalWeight.liberty_w != 0):
             liberty = self.countLiberty(__board, myside)
+            print("liberty : " + str(liberty.myside) + " , " + str(liberty.opponent))
             result += liberty.myside * self.EvalWeight.liberty_w
             result -= liberty.opponent * self.EvalWeight.liberty_w
 
@@ -164,6 +171,7 @@ class MidEvaluator(Evaluator):
         __board.listing_puttable(attacker)
 
         value = len(__board.get_puttable_list()) * self.EvalWeight.movility_w
+        print("value : " + str(value))
         
         """
         自分視点の場合 正の値なので+ 敵視点の場合 負の値なので-  
@@ -171,9 +179,13 @@ class MidEvaluator(Evaluator):
         """
         if(myside == attacker):
             result += value
+            print("result : " + str(result))
+            print("--------------------------")
             return result
         else:
             result -= value
+            print("result : " + str(result))
+            print("--------------------------")
             return -result
 
 
@@ -230,6 +242,7 @@ class MidEvaluator(Evaluator):
                 if(line[6] == 1):
                     edgeparam.Cmove += 1;
 
+        # 確定石のカウント
         # 左から右方向へ走査
         for i in range(8):
             if(line[i] != 1):
@@ -325,7 +338,7 @@ class MidEvaluator(Evaluator):
                 elif(__board.get_stone(x, y, opponent) == 1):
                     liberty.opponent += value
 
-            return liberty
+        return liberty
 
     # 各箇所についてのインデックスの計算  
     def idxTop(self, __board):
