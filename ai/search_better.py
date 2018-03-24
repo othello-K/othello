@@ -22,14 +22,13 @@ class Search():
 
     def beta_cut(self, board, depth):
         if(depth == 0):
-            evaluation = self._eval.evaluate(board, self._opponent)
+            print('aaaaaaaaaaaaaaaaaaaa')
+            evaluation = self._eval.evaluate(board, self._own)
             print(evaluation)
             return evaluation
         score_max = -math.inf
-        board.display_board()
         board.listing_puttable(self._own)
         for coord in board.get_puttable_list():
-            print(coord)
             board1 = copy.deepcopy(board)
             board1.put_stone(int(coord[0]),int(coord[1]), self._own)
             score1 = self.alpha_cut(board1, depth-1)
@@ -38,9 +37,8 @@ class Search():
                 score_max = score1
                 if(depth == 6):
                     self._index = coord
-                    print("hhh")
                 #beta_値を更新
-                self._beta = min([self._beta,score_max])
+                self._beta = min([self._beta, score_max])
             if(score1 >= self._beta):
                 #betacut
                 return score1
@@ -56,12 +54,13 @@ class Search():
             board2 = copy.deepcopy(board)
             board2.put_stone(int(coord[0]),int(coord[1]), self._opponent)
             score2 = self.beta_cut(board2, depth-1)
-            if(score2 <= self._alpha):
-                #alphacut
-                return score2
             if(score2 < score_min):
                 #より悪い手が見つかった
                 score_min = score2
                 #Alpha値を更新
                 self._alpha = max([self._alpha,score_min])
+            if(score2 <= self._alpha):
+                #alphacut
+                return score2
         return score_min
+
