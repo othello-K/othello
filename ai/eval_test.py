@@ -144,7 +144,7 @@ class MidEvaluator(Evaluator):
         edgestat.black.set_value(stat.black.stable, stat.black.wing, stat.black.mountain, stat.black.Cmove)
         edgestat.white.set_value(stat.white.stable, stat.white.wing, stat.white.mountain, stat.white.Cmove) 
 
-        """        
+        """
         print("black-stable-bottom : " + str(self.EdgeTable[self.idxBottom(__board)].black.stable))
         print("white-stable-bottom : " + str(self.EdgeTable[self.idxBottom(__board)].white.stable))
         print("black-stable-right : " + str(self.EdgeTable[self.idxRight(__board)].black.stable))
@@ -152,7 +152,6 @@ class MidEvaluator(Evaluator):
         print("black-stable-left : " + str(self.EdgeTable[self.idxLeft(__board)].black.stable))
         print("white-stable-left : " + str(self.EdgeTable[self.idxLeft(__board)].white.stable))
         """
-        
 
         edgestat += self.EdgeTable[self.idxBottom(__board)]
         edgestat += self.EdgeTable[self.idxRight(__board)]

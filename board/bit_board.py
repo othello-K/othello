@@ -164,8 +164,7 @@ class BitBoard():
         tmp_bl_board = self.get_board_half(1)
         tmp_wh_board = self.get_board_half(2)
 
-        for puttable in self._puttable_list:
-            tmp_board[puttable[0], puttable[1]] = -1
+        tmp_pt_board = self._puttable_map
 
         print(" ", end="")
         for i in range(self._board_size):
@@ -182,7 +181,7 @@ class BitBoard():
                     stone = "B"
                 elif tmp_wh_board >> coord & 1 == 1:
                     stone = "W"
-                elif coord == -1:
+                elif tmp_pt_board >> coord & 1 == 1:
                     stone = "*"
 
                 print("{}|".format(stone), end="")
@@ -287,6 +286,9 @@ class BitBoard():
            return True
        else:
            return False
+
+    def get_puttable_map():
+        return self._puttable_map
 
 
     def get_puttable_list(self):

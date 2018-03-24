@@ -1,7 +1,7 @@
 import copy
 
 from user.base_user import BaseUser
-from ai.search import Search
+from ai.search_better import Search
 
 class AiUser(BaseUser):
 
@@ -14,7 +14,6 @@ class AiUser(BaseUser):
         opp = board.get_opponent(atk)
         game = kwargs['game']
         tmp_board = copy.deepcopy(board)
-        search = Search(board, atk)
-        evaluation, x, y = search.AlphaBeta(tmp_board, tmp_board.get_puttable_list(),\
-                                    atk, opp, game.get_turn())
+        search = Search(board, atk, opp, game.get_turn())
+        evaluation, x, y = search.search()
         game.game_process(None, int(x), int(y), atk)
