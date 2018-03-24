@@ -23,7 +23,7 @@ def maxlevel(board, own, opponent, depth):
 def minlevel(board, own, opponent, depth):
     if(depth <= 0):
         evaluation_min = evaluate(board, opponent)
-        return evaluation_min    
+        return evaluation_min
     board.listing_puttable(opponent)
     evaluation_min = math.inf
     for coord in board.get_puttable_list():
