@@ -51,9 +51,10 @@ class BitBoard():
         指定されたbowの盤面のcoord_sumの状態を判定
         """
         if bow == 1:
-            return (self._bl_board >> (x + 8*y)) & 0b1
+            return (self._bl_board >> (x + 8*y)) & 0b1  
         elif bow == 2:
             return (self._wh_board >> (x + 8*y)) & 0b1
+
 
     def get_player(self, x, y):
         """
@@ -132,7 +133,7 @@ class BitBoard():
 
             self.append_board_history(self._bl_board, 1)
             self.append_board_history(self._wh_board, 2)
-
+            print(self._liberty)
 
     def init_board_from_board(self, board):
         """
@@ -163,8 +164,7 @@ class BitBoard():
         tmp_bl_board = self.get_board_half(1)
         tmp_wh_board = self.get_board_half(2)
 
-        for puttable in self._puttable_list:
-            tmp_board[puttable[0], puttable[1]] = -1
+        tmp_pt_board = self._puttable_map
 
         print(" ", end="")
         for i in range(self._board_size):
@@ -181,7 +181,7 @@ class BitBoard():
                     stone = "B"
                 elif tmp_wh_board >> coord & 1 == 1:
                     stone = "W"
-                elif coord == -1:
+                elif tmp_pt_board >> coord & 1 == 1:
                     stone = "*"
 
                 print("{}|".format(stone), end="")
@@ -286,6 +286,9 @@ class BitBoard():
            return True
        else:
            return False
+
+    def get_puttable_map():
+        return self._puttable_map
 
 
     def get_puttable_list(self):

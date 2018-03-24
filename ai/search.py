@@ -5,12 +5,15 @@ from board.bit_board import BitBoard
 class Search():
 
     def __init__(self, board,  own):
-        self._eval = eval_test.MidEvaluator(board, own)
+        self._eval = eval_test.MidEvaluator(board)
 
     def AlphaBeta(self, board, list, own, opponent, turn):  # AlphaBeta法で探索する
         evaluations = self.AlphaBeta_evaluate1(board, list, own, opponent, turn)
         maximum_evaluation_index = evaluations.index(max(evaluations))
         x, y = list[maximum_evaluation_index]
+        print(evaluations)
+        print("###########curent board status ############ ")
+        self._eval.evaluate(board, 1)
         return evaluations, x, y
 
     def AlphaBeta_evaluate1(self, board, list, own, opponent, turn):
@@ -96,7 +99,7 @@ class Search():
         for coord in board.get_puttable_list():
             board6 = copy.deepcopy(board)
             board6.put_stone(int(coord[0]),int(coord[1]), opponent)
-            evaluation = self._eval.evaluate(board6, opponent, opponent)
+            evaluation = self._eval.evaluate(board6, 1)
             evaluations6 += [evaluation]
             if pruning(evaluation):
                 break
