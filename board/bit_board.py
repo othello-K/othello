@@ -51,9 +51,10 @@ class BitBoard():
         指定されたbowの盤面のcoord_sumの状態を判定
         """
         if bow == 1:
-            return (self._bl_board >> (x + 8*y)) & 0b1
+            return (self._bl_board >> (x + 8*y)) & 0b1  
         elif bow == 2:
             return (self._wh_board >> (x + 8*y)) & 0b1
+
 
     def get_player(self, x, y):
         """
