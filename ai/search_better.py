@@ -33,6 +33,7 @@ class Search():
         board.listing_puttable(self._own)
         #beta cut
         legals = board.get_puttable_list()
+        print('depth:{}'.format(depth), legals)
         if len(legals) != 0:
             i = 0
             max_score = -math.inf

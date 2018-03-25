@@ -379,9 +379,9 @@ class MidEvaluator(Evaluator):
 
         return liberty
 
-    # 各箇所についてのインデックスの計算  
+    # 各箇所についてのインデックスの計算
     def idxTop(self, __board):
-        # 各箇所についてのインデックスの計算  
+        # 各箇所についてのインデックスの計算
         index = \
               2187 * (__board.get_player(0,0) )\
               +729 * (__board.get_player(1,0) )\
