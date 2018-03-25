@@ -12,13 +12,18 @@ class Search():
         self._opponent = opponent
         self._index = None
         self._board = board
+        self._depth = 7
         if(turn >= 0 and turn <= 54):
             self._eval = eval_test.MidEvaluator(board)
         else:
-            self._eval = eval_test.PerfectEvaluator()
+            self._eval = eval_test.WLDEvaluator()
 
     def search(self):
-        return self.beta_cut(self._board, 6), self._index[0], self._index[1]
+        tmp = self.beta_cut(self._board, self._depth)
+        print('current status')
+        self._board.display_board()
+        self._eval.evaluate(self._board, self._own)
+        return tmp, self._index[0], self._index[1]
 
     def beta_cut(self, board, depth):
         if(depth == 0):
@@ -38,7 +43,7 @@ class Search():
                 score1 = self.alpha_cut(board1, depth-1)
                 if(score1 >= max_score):
                     #より良い手が見つかった
-                    if(depth == 6):
+                    if(depth == self._depth):
                         self._index = coord
                     #beta_値を更新
                     max_score = score1
@@ -65,6 +70,8 @@ class Search():
                 score2 = self.beta_cut(board2, depth-1)
                 if(score2 <= min_score):
                     #より悪い手が見つかった
+                    if(depth == self._depth):
+                        self._index = coord
                     #Alpha値を更新
                     min_score = score2
                     self._alpha = score2
