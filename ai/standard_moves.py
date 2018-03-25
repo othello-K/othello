@@ -15,34 +15,52 @@ class StandardMoves:
 			Mirror = True
 
 
-	def rotatePoint(self, old_point_x, old_point_y, rotate):
+	def rotatePoint(self, old_point, rotate):
+		new_p = []
 		rotate %= 4
 
 		if(rotate < 0): rotate += 4
 
 		if(rotate == 1):
-			new_point_x = old_point_y
-			new_point_y = self.BOARD_SIZE - old_point_x - 1
+			new_p.append(old_point[1])
+			new_p.append(self.BOARD_SIZE - old_point[0] - 1)
 		elif(ratate == 2):
-			new_point_x = self.BOARD_SIZE - old_point_x - 1
-			new_point_y = self.BOARD_SIZE - old_point_y - 1
+			new_p.append(self.BOARD_SIZE - old_point[0] - 1)
+			new_p.append(self.BOARD_SIZE - old_point[1] - 1)
 		elif(rotate == 3):
-			new_point_x = self.BOARD_SIZE - old_point_y - 1
-			new_point_y = old_point_x
+			new_p.append(self.BOARD_SIZE - old_point[1] - 1)
+			new_p.append(old_point[0])
 		else:
-			new_point_x = old_point_x
-			new_point_y = old_point_y
+			new_p.append(old_point[0])
+			new_p.append(old_point[1])
 
-		return new_point_x, new_point_y
-
-
-	def mirrorPoinnt(self, old_point_x, old_point_y):
-		new_point_x = self.BOARD_SIZE - new_point_x - 1
-		new_point_y = new_point_y
-
-		return new_point_x, new_point_y
+		return new_p
 
 
-    def normalize(point_x, point_y):
-    	new_x , new_y = rotatePoint(point_x, point_y, self.Rotate)
+	def mirrorPoint(self, old_point):
+		new_p = []
+
+		new_p.append(self.BOARD_SIZE - old_point[0] - 1)
+		new_p.append(old_point[1])
+
+		return new_p
+
+
+    def normalize(self, point):
+    	new_p = rotatePoint(point, self.Rotate)
+    	if(Mirror): 
+    		new_p= mirrorPoint(new_p)
+
+    	new_p = rotatePoint(new_p, -self.Rotate)
+
+    	return new_p
+
+
+    def denormalize(self, point):
+    	if(Mirror):
+    		new_p = mirrorPoint(point)
+
+    		new_p = rotatePoint(new_p, -self.Rotate)
+
+
 

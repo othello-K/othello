@@ -93,8 +93,8 @@ class WLDEvaluator(Evaluator):
         if(attacker != 1):
             self.discdiff = -self.discdiff
 
-        if(discdiff > 0): return self.WIN;
-        elif (discdiff < 0): return self.LOSE;
+        if(self.discdiff > 0): return self.WIN;
+        elif (self.discdiff < 0): return self.LOSE;
         else: return self.DRAW
 
 class MidEvaluator(Evaluator):
