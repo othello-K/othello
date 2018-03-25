@@ -27,7 +27,7 @@ class Search():
 
     def beta_cut(self, board, depth):
         if(depth == 0):
-            evaluation = self._eval.evaluate(board, self._own)
+            evaluation = self._eval.evaluate(board, self._opponent)
             return evaluation
         score_max = -math.inf
         board.listing_puttable(self._own)
