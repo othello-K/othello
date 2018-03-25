@@ -42,7 +42,7 @@ class Search():
                 board1 = copy.deepcopy(board)
                 board1.put_stone(int(coord[0]), int(coord[1]), self._own)
                 score1 = self.alpha_cut(board1, depth-1)
-                if(score1 >= max_score):
+                if(score1 > max_score):
                     #より良い手が見つかった
                     if(depth == self._depth):
                         self._index = coord
@@ -69,7 +69,7 @@ class Search():
                 board2 = copy.deepcopy(board)
                 board2.put_stone(int(coord[0]), int(coord[1]), self._opponent)
                 score2 = self.beta_cut(board2, depth-1)
-                if(score2 <= min_score):
+                if(score2 < min_score):
                     #より悪い手が見つかった
                     if(depth == self._depth):
                         self._index = coord
