@@ -14,7 +14,7 @@ if __name__ == '__main__':
     BOARD_INIT_FILE = 'init/init.csv'
 
     user1 = AiUser(1)
-    user2 = RandomUser(2)
+    user2 = User(2)
     board = BitBoard()
     board.init_board(BOARD_INIT_FILE)
     game = GuiGame(board=board)

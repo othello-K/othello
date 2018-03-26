@@ -189,6 +189,11 @@ class BitBoard():
                 print("{}|".format(stone), end="")
             print("")
 
+        for i in range(8):
+            for j in range(8):
+                print(self.get_liberty(j, i), end='')
+            print('')
+
 
     def listing_puttable(self, bow):
         """
@@ -407,7 +412,7 @@ class BitBoard():
     def get_liberty(self, x, y):
         x += 1
         y += 1
-        return self._liberty[y][x]
+        return self._liberty[x][y]
 
 
     def create_board(self):
