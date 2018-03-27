@@ -5,14 +5,12 @@ import numba
 import cython
 
 from ai import eval_test
-from board.bit_board import BitBoard
 from ai import book_manager
+from board.bit_board import BitBoard
 
 class Search():
     def __init__(self, board, own, opponent, turn, game):
         self._turn = turn
-        self._alpha = math.inf
-        self._beta = -math.inf
         self._own = own
         self._opponent = opponent
         self._index = None

@@ -102,6 +102,9 @@ cdef class BitBoard():
         elif bow == 2:
             self._wh_board = board
 
+    def get_input_history(self):
+        return self._input_history
+
     def append_input_history(self, int x, int y):
         self._input_history.append(np.array([x, y]))
 

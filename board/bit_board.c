@@ -1900,25 +1900,26 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_8get_player(struct __pyx_obj_9bit
 static PyObject *__pyx_pf_9bit_board_8BitBoard_10undo_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
 static PyObject *__pyx_pf_9bit_board_8BitBoard_12get_board_size(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_9bit_board_8BitBoard_14set_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_board, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_18pop_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_board, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_file_path); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_board); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_36get_puttable_map(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_put, int __pyx_v_way); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_pm); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_bow); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_52get_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_16get_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_18append_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_20pop_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_22append_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_board, int __pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_24pop_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_file_path); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_28init_board_from_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_board); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_30get_board_half(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_32display_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_34listing_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_36is_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_map(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_40get_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_42transfer(CYTHON_UNUSED struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_put, int __pyx_v_way); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_in_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_46is_no_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_48count_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_50change_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_pm); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_52put_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_bow); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_54get_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y); /* proto */
 static PyObject *__pyx_pf_9bit_board_8BitBoard_7_nstone___get__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
 static int __pyx_pf_9bit_board_8BitBoard_7_nstone_2__set__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
 static PyObject *__pyx_pf_9bit_board_8BitBoard_11_board_size___get__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
@@ -1929,8 +1930,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_9_wh_board___get__(struct __pyx_o
 static int __pyx_pf_9bit_board_8BitBoard_9_wh_board_2__set__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
 static PyObject *__pyx_pf_9bit_board_8BitBoard_13_puttable_map___get__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
 static int __pyx_pf_9bit_board_8BitBoard_13_puttable_map_2__set__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_54__reduce_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_9bit_board_8BitBoard_56__setstate_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_56__reduce_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_9bit_board_8BitBoard_58__setstate_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_9bit_board___pyx_unpickle_BitBoard(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
@@ -3526,7 +3527,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_14set_board(struct __pyx_obj_9bit
  *         elif bow == 2:
  *             self._wh_board = board             # <<<<<<<<<<<<<<
  * 
- *     def append_input_history(self, int x, int y):
+ *     def get_input_history(self):
  */
     __pyx_t_1 = __Pyx_PyInt_As_uint64_t(__pyx_v_board); if (unlikely((__pyx_t_1 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 103, __pyx_L1_error)
     __pyx_v_self->_wh_board = __pyx_t_1;
@@ -3565,14 +3566,67 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_14set_board(struct __pyx_obj_9bit
 /* "bit_board.pyx":105
  *             self._wh_board = board
  * 
+ *     def get_input_history(self):             # <<<<<<<<<<<<<<
+ *         return self._input_history
+ * 
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9bit_board_8BitBoard_17get_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_17get_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("get_input_history (wrapper)", 0);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_16get_input_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9bit_board_8BitBoard_16get_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("get_input_history", 0);
+
+  /* "bit_board.pyx":106
+ * 
+ *     def get_input_history(self):
+ *         return self._input_history             # <<<<<<<<<<<<<<
+ * 
+ *     def append_input_history(self, int x, int y):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(__pyx_v_self->_input_history);
+  __pyx_r = __pyx_v_self->_input_history;
+  goto __pyx_L0;
+
+  /* "bit_board.pyx":105
+ *             self._wh_board = board
+ * 
+ *     def get_input_history(self):             # <<<<<<<<<<<<<<
+ *         return self._input_history
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "bit_board.pyx":108
+ *         return self._input_history
+ * 
  *     def append_input_history(self, int x, int y):             # <<<<<<<<<<<<<<
  *         self._input_history.append(np.array([x, y]))
  * 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_17append_input_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_17append_input_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_19append_input_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_19append_input_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   PyObject *__pyx_r = 0;
@@ -3601,11 +3655,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_17append_input_history(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("append_input_history", 1, 2, 2, 1); __PYX_ERR(0, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("append_input_history", 1, 2, 2, 1); __PYX_ERR(0, 108, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "append_input_history") < 0)) __PYX_ERR(0, 105, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "append_input_history") < 0)) __PYX_ERR(0, 108, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3613,25 +3667,25 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_17append_input_history(PyObject *
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("append_input_history", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 105, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("append_input_history", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 108, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.append_input_history", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_16append_input_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_18append_input_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_18append_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3642,7 +3696,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
   int __pyx_t_6;
   __Pyx_RefNannySetupContext("append_input_history", 0);
 
-  /* "bit_board.pyx":106
+  /* "bit_board.pyx":109
  * 
  *     def append_input_history(self, int x, int y):
  *         self._input_history.append(np.array([x, y]))             # <<<<<<<<<<<<<<
@@ -3651,18 +3705,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
  */
   if (unlikely(__pyx_v_self->_input_history == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "append");
-    __PYX_ERR(0, 106, __pyx_L1_error)
+    __PYX_ERR(0, 109, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_2);
   PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -3681,14 +3735,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3697,30 +3751,30 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_2, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_self->_input_history, __pyx_t_1); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_self->_input_history, __pyx_t_1); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":105
- *             self._wh_board = board
+  /* "bit_board.pyx":108
+ *         return self._input_history
  * 
  *     def append_input_history(self, int x, int y):             # <<<<<<<<<<<<<<
  *         self._input_history.append(np.array([x, y]))
@@ -3744,7 +3798,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
   return __pyx_r;
 }
 
-/* "bit_board.pyx":108
+/* "bit_board.pyx":111
  *         self._input_history.append(np.array([x, y]))
  * 
  *     def pop_input_history(self):             # <<<<<<<<<<<<<<
@@ -3753,25 +3807,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_16append_input_history(struct __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_19pop_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_19pop_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_21pop_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_21pop_input_history(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("pop_input_history (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_18pop_input_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_20pop_input_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_18pop_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_20pop_input_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("pop_input_history", 0);
 
-  /* "bit_board.pyx":109
+  /* "bit_board.pyx":112
  * 
  *     def pop_input_history(self):
  *         self._input_history.pop()             # <<<<<<<<<<<<<<
@@ -3780,13 +3834,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_18pop_input_history(struct __pyx_
  */
   if (unlikely(__pyx_v_self->_input_history == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "pop");
-    __PYX_ERR(0, 109, __pyx_L1_error)
+    __PYX_ERR(0, 112, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_input_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_input_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":108
+  /* "bit_board.pyx":111
  *         self._input_history.append(np.array([x, y]))
  * 
  *     def pop_input_history(self):             # <<<<<<<<<<<<<<
@@ -3807,7 +3861,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_18pop_input_history(struct __pyx_
   return __pyx_r;
 }
 
-/* "bit_board.pyx":111
+/* "bit_board.pyx":114
  *         self._input_history.pop()
  * 
  *     def append_board_history(self, uintmax_t board, int bow):             # <<<<<<<<<<<<<<
@@ -3816,8 +3870,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_18pop_input_history(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_21append_board_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_21append_board_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_23append_board_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_23append_board_history(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_board;
   int __pyx_v_bow;
   PyObject *__pyx_r = 0;
@@ -3846,11 +3900,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_21append_board_history(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_bow)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("append_board_history", 1, 2, 2, 1); __PYX_ERR(0, 111, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("append_board_history", 1, 2, 2, 1); __PYX_ERR(0, 114, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "append_board_history") < 0)) __PYX_ERR(0, 111, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "append_board_history") < 0)) __PYX_ERR(0, 114, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3858,32 +3912,32 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_21append_board_history(PyObject *
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_board = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_board == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 111, __pyx_L3_error)
-    __pyx_v_bow = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 111, __pyx_L3_error)
+    __pyx_v_board = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_board == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 114, __pyx_L3_error)
+    __pyx_v_bow = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 114, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("append_board_history", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 111, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("append_board_history", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 114, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.append_board_history", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_20append_board_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_board, __pyx_v_bow);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_22append_board_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_board, __pyx_v_bow);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_board, int __pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_22append_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_board, int __pyx_v_bow) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("append_board_history", 0);
 
-  /* "bit_board.pyx":112
+  /* "bit_board.pyx":115
  * 
  *     def append_board_history(self, uintmax_t board, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -3893,7 +3947,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
   switch (__pyx_v_bow) {
     case 1:
 
-    /* "bit_board.pyx":113
+    /* "bit_board.pyx":116
  *     def append_board_history(self, uintmax_t board, int bow):
  *         if bow == 1:
  *             self._bl_board_history.append(board)             # <<<<<<<<<<<<<<
@@ -3902,14 +3956,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
  */
     if (unlikely(__pyx_v_self->_bl_board_history == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "append");
-      __PYX_ERR(0, 113, __pyx_L1_error)
+      __PYX_ERR(0, 116, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyList_Append(__pyx_v_self->_bl_board_history, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyList_Append(__pyx_v_self->_bl_board_history, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "bit_board.pyx":112
+    /* "bit_board.pyx":115
  * 
  *     def append_board_history(self, uintmax_t board, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -3918,7 +3972,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
  */
     break;
 
-    /* "bit_board.pyx":114
+    /* "bit_board.pyx":117
  *         if bow == 1:
  *             self._bl_board_history.append(board)
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -3927,7 +3981,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
  */
     case 2:
 
-    /* "bit_board.pyx":115
+    /* "bit_board.pyx":118
  *             self._bl_board_history.append(board)
  *         elif bow == 2:
  *             self._wh_board_history.append(board)             # <<<<<<<<<<<<<<
@@ -3936,14 +3990,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
  */
     if (unlikely(__pyx_v_self->_wh_board_history == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "append");
-      __PYX_ERR(0, 115, __pyx_L1_error)
+      __PYX_ERR(0, 118, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyList_Append(__pyx_v_self->_wh_board_history, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyList_Append(__pyx_v_self->_wh_board_history, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 118, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "bit_board.pyx":114
+    /* "bit_board.pyx":117
  *         if bow == 1:
  *             self._bl_board_history.append(board)
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -3954,7 +4008,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
     default: break;
   }
 
-  /* "bit_board.pyx":111
+  /* "bit_board.pyx":114
  *         self._input_history.pop()
  * 
  *     def append_board_history(self, uintmax_t board, int bow):             # <<<<<<<<<<<<<<
@@ -3975,7 +4029,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
   return __pyx_r;
 }
 
-/* "bit_board.pyx":118
+/* "bit_board.pyx":121
  * 
  * 
  *     def pop_board_history(self, int bow):             # <<<<<<<<<<<<<<
@@ -3984,14 +4038,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_20append_board_history(struct __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_23pop_board_history(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_23pop_board_history(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_25pop_board_history(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_25pop_board_history(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
   int __pyx_v_bow;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("pop_board_history (wrapper)", 0);
   assert(__pyx_arg_bow); {
-    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L3_error)
+    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 121, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3999,20 +4053,20 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_23pop_board_history(PyObject *__p
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_22pop_board_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_24pop_board_history(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_24pop_board_history(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("pop_board_history", 0);
 
-  /* "bit_board.pyx":119
+  /* "bit_board.pyx":122
  * 
  *     def pop_board_history(self, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -4022,7 +4076,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
   switch (__pyx_v_bow) {
     case 1:
 
-    /* "bit_board.pyx":120
+    /* "bit_board.pyx":123
  *     def pop_board_history(self, int bow):
  *         if bow == 1:
  *             self._bl_board_history.pop()             # <<<<<<<<<<<<<<
@@ -4031,13 +4085,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
  */
     if (unlikely(__pyx_v_self->_bl_board_history == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "pop");
-      __PYX_ERR(0, 120, __pyx_L1_error)
+      __PYX_ERR(0, 123, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_bl_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_bl_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "bit_board.pyx":119
+    /* "bit_board.pyx":122
  * 
  *     def pop_board_history(self, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -4046,7 +4100,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
  */
     break;
 
-    /* "bit_board.pyx":121
+    /* "bit_board.pyx":124
  *         if bow == 1:
  *             self._bl_board_history.pop()
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -4055,7 +4109,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
  */
     case 2:
 
-    /* "bit_board.pyx":122
+    /* "bit_board.pyx":125
  *             self._bl_board_history.pop()
  *         elif bow == 2:
  *             self._wh_board_history.pop()             # <<<<<<<<<<<<<<
@@ -4064,13 +4118,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
  */
     if (unlikely(__pyx_v_self->_wh_board_history == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "pop");
-      __PYX_ERR(0, 122, __pyx_L1_error)
+      __PYX_ERR(0, 125, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_wh_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyList_Pop(__pyx_v_self->_wh_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "bit_board.pyx":121
+    /* "bit_board.pyx":124
  *         if bow == 1:
  *             self._bl_board_history.pop()
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -4081,7 +4135,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
     default: break;
   }
 
-  /* "bit_board.pyx":118
+  /* "bit_board.pyx":121
  * 
  * 
  *     def pop_board_history(self, int bow):             # <<<<<<<<<<<<<<
@@ -4102,7 +4156,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
   return __pyx_r;
 }
 
-/* "bit_board.pyx":125
+/* "bit_board.pyx":128
  * 
  * 
  *     def init_board(self, file_path):             # <<<<<<<<<<<<<<
@@ -4111,20 +4165,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_22pop_board_history(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_25init_board(PyObject *__pyx_v_self, PyObject *__pyx_v_file_path); /*proto*/
-static char __pyx_doc_9bit_board_8BitBoard_24init_board[] = "\n        csv\343\203\225\343\202\241\343\202\244\343\203\253\343\202\222\345\205\203\343\201\253\357\274\214\343\203\234\343\203\274\343\203\211\343\202\222\345\210\235\346\234\237\345\214\226\n        ";
-static PyObject *__pyx_pw_9bit_board_8BitBoard_25init_board(PyObject *__pyx_v_self, PyObject *__pyx_v_file_path) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_27init_board(PyObject *__pyx_v_self, PyObject *__pyx_v_file_path); /*proto*/
+static char __pyx_doc_9bit_board_8BitBoard_26init_board[] = "\n        csv\343\203\225\343\202\241\343\202\244\343\203\253\343\202\222\345\205\203\343\201\253\357\274\214\343\203\234\343\203\274\343\203\211\343\202\222\345\210\235\346\234\237\345\214\226\n        ";
+static PyObject *__pyx_pw_9bit_board_8BitBoard_27init_board(PyObject *__pyx_v_self, PyObject *__pyx_v_file_path) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("init_board (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_24init_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_file_path));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_26init_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_file_path));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_file_path) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_file_path) {
   PyObject *__pyx_v_f = NULL;
   PyObject *__pyx_v_i = NULL;
   PyObject *__pyx_v_row = NULL;
@@ -4156,7 +4210,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
   int __pyx_t_21;
   __Pyx_RefNannySetupContext("init_board", 0);
 
-  /* "bit_board.pyx":129
+  /* "bit_board.pyx":132
  *         csv
  *         """
  *         with open(file_path) as f:             # <<<<<<<<<<<<<<
@@ -4164,11 +4218,11 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
  *                 col = row.split(self.PARSER)
  */
   /*with:*/ {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_open, __pyx_v_file_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_open, __pyx_v_file_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L3_error)
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L3_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -4181,10 +4235,10 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
       }
     }
     if (__pyx_t_5) {
-      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L3_error)
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
-      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L3_error)
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L3_error)
     }
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4203,7 +4257,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           __pyx_v_f = __pyx_t_4;
           __pyx_t_4 = 0;
 
-          /* "bit_board.pyx":130
+          /* "bit_board.pyx":133
  *         """
  *         with open(file_path) as f:
  *             for i, row in enumerate(f):             # <<<<<<<<<<<<<<
@@ -4216,26 +4270,26 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __pyx_t_1 = __pyx_v_f; __Pyx_INCREF(__pyx_t_1); __pyx_t_9 = 0;
             __pyx_t_10 = NULL;
           } else {
-            __pyx_t_9 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_f); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L7_error)
+            __pyx_t_9 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_f); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
-            __pyx_t_10 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 130, __pyx_L7_error)
+            __pyx_t_10 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 133, __pyx_L7_error)
           }
           for (;;) {
             if (likely(!__pyx_t_10)) {
               if (likely(PyList_CheckExact(__pyx_t_1))) {
                 if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_1)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_3); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 130, __pyx_L7_error)
+                __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_3); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 133, __pyx_L7_error)
                 #else
-                __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L7_error)
+                __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_3);
                 #endif
               } else {
                 if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_3); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 130, __pyx_L7_error)
+                __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_3); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 133, __pyx_L7_error)
                 #else
-                __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L7_error)
+                __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_3);
                 #endif
               }
@@ -4245,7 +4299,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 130, __pyx_L7_error)
+                  else __PYX_ERR(0, 133, __pyx_L7_error)
                 }
                 break;
               }
@@ -4255,22 +4309,22 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __pyx_t_3 = 0;
             __Pyx_INCREF(__pyx_t_4);
             __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_4);
-            __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L7_error)
+            __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_3);
             __Pyx_DECREF(__pyx_t_4);
             __pyx_t_4 = __pyx_t_3;
             __pyx_t_3 = 0;
 
-            /* "bit_board.pyx":131
+            /* "bit_board.pyx":134
  *         with open(file_path) as f:
  *             for i, row in enumerate(f):
  *                 col = row.split(self.PARSER)             # <<<<<<<<<<<<<<
  *                 for j, stone in enumerate(col):
  *                     if stone == '1':
  */
-            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_split); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L7_error)
+            __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_split); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_5);
-            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_PARSER); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 131, __pyx_L7_error)
+            __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_PARSER); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 134, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_11);
             __pyx_t_12 = NULL;
             if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -4283,14 +4337,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
               }
             }
             if (!__pyx_t_12) {
-              __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L7_error)
+              __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L7_error)
               __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
               __Pyx_GOTREF(__pyx_t_3);
             } else {
               #if CYTHON_FAST_PYCALL
               if (PyFunction_Check(__pyx_t_5)) {
                 PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_t_11};
-                __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L7_error)
+                __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L7_error)
                 __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
                 __Pyx_GOTREF(__pyx_t_3);
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -4299,20 +4353,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
               #if CYTHON_FAST_PYCCALL
               if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
                 PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_t_11};
-                __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L7_error)
+                __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L7_error)
                 __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
                 __Pyx_GOTREF(__pyx_t_3);
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
               } else
               #endif
               {
-                __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 131, __pyx_L7_error)
+                __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 134, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_13);
                 __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_12); __pyx_t_12 = NULL;
                 __Pyx_GIVEREF(__pyx_t_11);
                 PyTuple_SET_ITEM(__pyx_t_13, 0+1, __pyx_t_11);
                 __pyx_t_11 = 0;
-                __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L7_error)
+                __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_3);
                 __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
               }
@@ -4321,7 +4375,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __Pyx_XDECREF_SET(__pyx_v_col, __pyx_t_3);
             __pyx_t_3 = 0;
 
-            /* "bit_board.pyx":132
+            /* "bit_board.pyx":135
  *             for i, row in enumerate(f):
  *                 col = row.split(self.PARSER)
  *                 for j, stone in enumerate(col):             # <<<<<<<<<<<<<<
@@ -4334,26 +4388,26 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
               __pyx_t_5 = __pyx_v_col; __Pyx_INCREF(__pyx_t_5); __pyx_t_14 = 0;
               __pyx_t_15 = NULL;
             } else {
-              __pyx_t_14 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_col); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L7_error)
+              __pyx_t_14 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_v_col); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_5);
-              __pyx_t_15 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 132, __pyx_L7_error)
+              __pyx_t_15 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 135, __pyx_L7_error)
             }
             for (;;) {
               if (likely(!__pyx_t_15)) {
                 if (likely(PyList_CheckExact(__pyx_t_5))) {
                   if (__pyx_t_14 >= PyList_GET_SIZE(__pyx_t_5)) break;
                   #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                  __pyx_t_13 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_14); __Pyx_INCREF(__pyx_t_13); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 132, __pyx_L7_error)
+                  __pyx_t_13 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_14); __Pyx_INCREF(__pyx_t_13); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 135, __pyx_L7_error)
                   #else
-                  __pyx_t_13 = PySequence_ITEM(__pyx_t_5, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 132, __pyx_L7_error)
+                  __pyx_t_13 = PySequence_ITEM(__pyx_t_5, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 135, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_13);
                   #endif
                 } else {
                   if (__pyx_t_14 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
                   #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                  __pyx_t_13 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_14); __Pyx_INCREF(__pyx_t_13); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 132, __pyx_L7_error)
+                  __pyx_t_13 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_14); __Pyx_INCREF(__pyx_t_13); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 135, __pyx_L7_error)
                   #else
-                  __pyx_t_13 = PySequence_ITEM(__pyx_t_5, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 132, __pyx_L7_error)
+                  __pyx_t_13 = PySequence_ITEM(__pyx_t_5, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 135, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_13);
                   #endif
                 }
@@ -4363,7 +4417,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                   PyObject* exc_type = PyErr_Occurred();
                   if (exc_type) {
                     if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                    else __PYX_ERR(0, 132, __pyx_L7_error)
+                    else __PYX_ERR(0, 135, __pyx_L7_error)
                   }
                   break;
                 }
@@ -4373,55 +4427,55 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
               __pyx_t_13 = 0;
               __Pyx_INCREF(__pyx_t_3);
               __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_3);
-              __pyx_t_13 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 132, __pyx_L7_error)
+              __pyx_t_13 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 135, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_13);
               __Pyx_DECREF(__pyx_t_3);
               __pyx_t_3 = __pyx_t_13;
               __pyx_t_13 = 0;
 
-              /* "bit_board.pyx":133
+              /* "bit_board.pyx":136
  *                 col = row.split(self.PARSER)
  *                 for j, stone in enumerate(col):
  *                     if stone == '1':             # <<<<<<<<<<<<<<
  *                         self._bl_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)
  */
-              __pyx_t_16 = (__Pyx_PyUnicode_Equals(__pyx_v_stone, __pyx_kp_u_1, Py_EQ)); if (unlikely(__pyx_t_16 < 0)) __PYX_ERR(0, 133, __pyx_L7_error)
+              __pyx_t_16 = (__Pyx_PyUnicode_Equals(__pyx_v_stone, __pyx_kp_u_1, Py_EQ)); if (unlikely(__pyx_t_16 < 0)) __PYX_ERR(0, 136, __pyx_L7_error)
               if (__pyx_t_16) {
 
-                /* "bit_board.pyx":134
+                /* "bit_board.pyx":137
  *                 for j, stone in enumerate(col):
  *                     if stone == '1':
  *                         self._bl_board |= (1<< (j+8*i))             # <<<<<<<<<<<<<<
  *                         self.change_liberty(i, j, -1)
  *                     elif stone == '2':
  */
-                __pyx_t_13 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_13 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_13);
-                __pyx_t_11 = PyNumber_Multiply(__pyx_int_8, __pyx_v_i); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_11 = PyNumber_Multiply(__pyx_int_8, __pyx_v_i); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
-                __pyx_t_12 = PyNumber_Add(__pyx_v_j, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_12 = PyNumber_Add(__pyx_v_j, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_12);
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-                __pyx_t_11 = PyNumber_Lshift(__pyx_int_1, __pyx_t_12); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_11 = PyNumber_Lshift(__pyx_int_1, __pyx_t_12); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
                 __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-                __pyx_t_12 = PyNumber_InPlaceOr(__pyx_t_13, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_12 = PyNumber_InPlaceOr(__pyx_t_13, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_12);
                 __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-                __pyx_t_17 = __Pyx_PyInt_As_uint64_t(__pyx_t_12); if (unlikely((__pyx_t_17 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 134, __pyx_L7_error)
+                __pyx_t_17 = __Pyx_PyInt_As_uint64_t(__pyx_t_12); if (unlikely((__pyx_t_17 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 137, __pyx_L7_error)
                 __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
                 __pyx_v_self->_bl_board = __pyx_t_17;
 
-                /* "bit_board.pyx":135
+                /* "bit_board.pyx":138
  *                     if stone == '1':
  *                         self._bl_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)             # <<<<<<<<<<<<<<
  *                     elif stone == '2':
  *                         self._wh_board |= (1<< (j+8*i))
  */
-                __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 135, __pyx_L7_error)
+                __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 138, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
                 __pyx_t_13 = NULL;
                 __pyx_t_18 = 0;
@@ -4438,7 +4492,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 #if CYTHON_FAST_PYCALL
                 if (PyFunction_Check(__pyx_t_11)) {
                   PyObject *__pyx_temp[4] = {__pyx_t_13, __pyx_v_i, __pyx_v_j, __pyx_int_neg_1};
-                  __pyx_t_12 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 135, __pyx_L7_error)
+                  __pyx_t_12 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 138, __pyx_L7_error)
                   __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
                   __Pyx_GOTREF(__pyx_t_12);
                 } else
@@ -4446,13 +4500,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 #if CYTHON_FAST_PYCCALL
                 if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
                   PyObject *__pyx_temp[4] = {__pyx_t_13, __pyx_v_i, __pyx_v_j, __pyx_int_neg_1};
-                  __pyx_t_12 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 135, __pyx_L7_error)
+                  __pyx_t_12 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 138, __pyx_L7_error)
                   __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
                   __Pyx_GOTREF(__pyx_t_12);
                 } else
                 #endif
                 {
-                  __pyx_t_19 = PyTuple_New(3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 135, __pyx_L7_error)
+                  __pyx_t_19 = PyTuple_New(3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 138, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_19);
                   if (__pyx_t_13) {
                     __Pyx_GIVEREF(__pyx_t_13); PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_13); __pyx_t_13 = NULL;
@@ -4466,14 +4520,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                   __Pyx_INCREF(__pyx_int_neg_1);
                   __Pyx_GIVEREF(__pyx_int_neg_1);
                   PyTuple_SET_ITEM(__pyx_t_19, 2+__pyx_t_18, __pyx_int_neg_1);
-                  __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_19, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 135, __pyx_L7_error)
+                  __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_19, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 138, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_12);
                   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
                 }
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
                 __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 
-                /* "bit_board.pyx":133
+                /* "bit_board.pyx":136
  *                 col = row.split(self.PARSER)
  *                 for j, stone in enumerate(col):
  *                     if stone == '1':             # <<<<<<<<<<<<<<
@@ -4483,49 +4537,49 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 goto __pyx_L17;
               }
 
-              /* "bit_board.pyx":136
+              /* "bit_board.pyx":139
  *                         self._bl_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)
  *                     elif stone == '2':             # <<<<<<<<<<<<<<
  *                         self._wh_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)
  */
-              __pyx_t_16 = (__Pyx_PyUnicode_Equals(__pyx_v_stone, __pyx_kp_u_2, Py_EQ)); if (unlikely(__pyx_t_16 < 0)) __PYX_ERR(0, 136, __pyx_L7_error)
+              __pyx_t_16 = (__Pyx_PyUnicode_Equals(__pyx_v_stone, __pyx_kp_u_2, Py_EQ)); if (unlikely(__pyx_t_16 < 0)) __PYX_ERR(0, 139, __pyx_L7_error)
               if (__pyx_t_16) {
 
-                /* "bit_board.pyx":137
+                /* "bit_board.pyx":140
  *                         self.change_liberty(i, j, -1)
  *                     elif stone == '2':
  *                         self._wh_board |= (1<< (j+8*i))             # <<<<<<<<<<<<<<
  *                         self.change_liberty(i, j, -1)
  *             self.append_board_history(self._bl_board, 1)
  */
-                __pyx_t_12 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_12 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_12);
-                __pyx_t_11 = PyNumber_Multiply(__pyx_int_8, __pyx_v_i); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_11 = PyNumber_Multiply(__pyx_int_8, __pyx_v_i); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
-                __pyx_t_19 = PyNumber_Add(__pyx_v_j, __pyx_t_11); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_19 = PyNumber_Add(__pyx_v_j, __pyx_t_11); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_19);
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-                __pyx_t_11 = PyNumber_Lshift(__pyx_int_1, __pyx_t_19); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_11 = PyNumber_Lshift(__pyx_int_1, __pyx_t_19); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
                 __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-                __pyx_t_19 = PyNumber_InPlaceOr(__pyx_t_12, __pyx_t_11); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_19 = PyNumber_InPlaceOr(__pyx_t_12, __pyx_t_11); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_19);
                 __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-                __pyx_t_17 = __Pyx_PyInt_As_uint64_t(__pyx_t_19); if (unlikely((__pyx_t_17 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 137, __pyx_L7_error)
+                __pyx_t_17 = __Pyx_PyInt_As_uint64_t(__pyx_t_19); if (unlikely((__pyx_t_17 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 140, __pyx_L7_error)
                 __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
                 __pyx_v_self->_wh_board = __pyx_t_17;
 
-                /* "bit_board.pyx":138
+                /* "bit_board.pyx":141
  *                     elif stone == '2':
  *                         self._wh_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)             # <<<<<<<<<<<<<<
  *             self.append_board_history(self._bl_board, 1)
  *             self.append_board_history(self._wh_board, 2)
  */
-                __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 138, __pyx_L7_error)
+                __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 141, __pyx_L7_error)
                 __Pyx_GOTREF(__pyx_t_11);
                 __pyx_t_12 = NULL;
                 __pyx_t_18 = 0;
@@ -4542,7 +4596,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 #if CYTHON_FAST_PYCALL
                 if (PyFunction_Check(__pyx_t_11)) {
                   PyObject *__pyx_temp[4] = {__pyx_t_12, __pyx_v_i, __pyx_v_j, __pyx_int_neg_1};
-                  __pyx_t_19 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 138, __pyx_L7_error)
+                  __pyx_t_19 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 141, __pyx_L7_error)
                   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
                   __Pyx_GOTREF(__pyx_t_19);
                 } else
@@ -4550,13 +4604,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                 #if CYTHON_FAST_PYCCALL
                 if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
                   PyObject *__pyx_temp[4] = {__pyx_t_12, __pyx_v_i, __pyx_v_j, __pyx_int_neg_1};
-                  __pyx_t_19 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 138, __pyx_L7_error)
+                  __pyx_t_19 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_18, 3+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 141, __pyx_L7_error)
                   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
                   __Pyx_GOTREF(__pyx_t_19);
                 } else
                 #endif
                 {
-                  __pyx_t_13 = PyTuple_New(3+__pyx_t_18); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 138, __pyx_L7_error)
+                  __pyx_t_13 = PyTuple_New(3+__pyx_t_18); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 141, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_13);
                   if (__pyx_t_12) {
                     __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_12); __pyx_t_12 = NULL;
@@ -4570,14 +4624,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
                   __Pyx_INCREF(__pyx_int_neg_1);
                   __Pyx_GIVEREF(__pyx_int_neg_1);
                   PyTuple_SET_ITEM(__pyx_t_13, 2+__pyx_t_18, __pyx_int_neg_1);
-                  __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_13, NULL); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 138, __pyx_L7_error)
+                  __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_13, NULL); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 141, __pyx_L7_error)
                   __Pyx_GOTREF(__pyx_t_19);
                   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
                 }
                 __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
                 __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
 
-                /* "bit_board.pyx":136
+                /* "bit_board.pyx":139
  *                         self._bl_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)
  *                     elif stone == '2':             # <<<<<<<<<<<<<<
@@ -4587,7 +4641,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
               }
               __pyx_L17:;
 
-              /* "bit_board.pyx":132
+              /* "bit_board.pyx":135
  *             for i, row in enumerate(f):
  *                 col = row.split(self.PARSER)
  *                 for j, stone in enumerate(col):             # <<<<<<<<<<<<<<
@@ -4598,7 +4652,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-            /* "bit_board.pyx":130
+            /* "bit_board.pyx":133
  *         """
  *         with open(file_path) as f:
  *             for i, row in enumerate(f):             # <<<<<<<<<<<<<<
@@ -4609,16 +4663,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "bit_board.pyx":139
+          /* "bit_board.pyx":142
  *                         self._wh_board |= (1<< (j+8*i))
  *                         self.change_liberty(i, j, -1)
  *             self.append_board_history(self._bl_board, 1)             # <<<<<<<<<<<<<<
  *             self.append_board_history(self._wh_board, 2)
  * 
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L7_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L7_error)
+          __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_3);
           __pyx_t_5 = NULL;
           __pyx_t_18 = 0;
@@ -4635,7 +4689,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           #if CYTHON_FAST_PYCALL
           if (PyFunction_Check(__pyx_t_1)) {
             PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_int_1};
-            __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L7_error)
             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -4644,14 +4698,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           #if CYTHON_FAST_PYCCALL
           if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
             PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_int_1};
-            __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L7_error)
             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           } else
           #endif
           {
-            __pyx_t_19 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 139, __pyx_L7_error)
+            __pyx_t_19 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 142, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_19);
             if (__pyx_t_5) {
               __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -4662,23 +4716,23 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __Pyx_GIVEREF(__pyx_int_1);
             PyTuple_SET_ITEM(__pyx_t_19, 1+__pyx_t_18, __pyx_int_1);
             __pyx_t_3 = 0;
-            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_19, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_19, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
           }
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "bit_board.pyx":140
+          /* "bit_board.pyx":143
  *                         self.change_liberty(i, j, -1)
  *             self.append_board_history(self._bl_board, 1)
  *             self.append_board_history(self._wh_board, 2)             # <<<<<<<<<<<<<<
  * 
  *     def init_board_from_board(self, board):
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L7_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_19 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 140, __pyx_L7_error)
+          __pyx_t_19 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 143, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_19);
           __pyx_t_3 = NULL;
           __pyx_t_18 = 0;
@@ -4695,7 +4749,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           #if CYTHON_FAST_PYCALL
           if (PyFunction_Check(__pyx_t_1)) {
             PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_19, __pyx_int_2};
-            __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L7_error)
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
@@ -4704,14 +4758,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
           #if CYTHON_FAST_PYCCALL
           if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
             PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_19, __pyx_int_2};
-            __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L7_error)
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
           } else
           #endif
           {
-            __pyx_t_5 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L7_error)
+            __pyx_t_5 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_5);
             if (__pyx_t_3) {
               __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -4722,14 +4776,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __Pyx_GIVEREF(__pyx_int_2);
             PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_18, __pyx_int_2);
             __pyx_t_19 = 0;
-            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L7_error)
+            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           }
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "bit_board.pyx":129
+          /* "bit_board.pyx":132
  *         csv
  *         """
  *         with open(file_path) as f:             # <<<<<<<<<<<<<<
@@ -4752,20 +4806,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("bit_board.BitBoard.init_board", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_1, &__pyx_t_5) < 0) __PYX_ERR(0, 129, __pyx_L9_except_error)
+          if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_1, &__pyx_t_5) < 0) __PYX_ERR(0, 132, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_19 = PyTuple_Pack(3, __pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 129, __pyx_L9_except_error)
+          __pyx_t_19 = PyTuple_Pack(3, __pyx_t_4, __pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 132, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_19);
           __pyx_t_20 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_19, NULL);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-          if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 129, __pyx_L9_except_error)
+          if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 132, __pyx_L9_except_error)
           __Pyx_GOTREF(__pyx_t_20);
           __pyx_t_16 = __Pyx_PyObject_IsTrue(__pyx_t_20);
           __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
-          if (__pyx_t_16 < 0) __PYX_ERR(0, 129, __pyx_L9_except_error)
+          if (__pyx_t_16 < 0) __PYX_ERR(0, 132, __pyx_L9_except_error)
           __pyx_t_21 = ((!(__pyx_t_16 != 0)) != 0);
           if (__pyx_t_21) {
             __Pyx_GIVEREF(__pyx_t_4);
@@ -4773,7 +4827,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_5);
             __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
-            __PYX_ERR(0, 129, __pyx_L9_except_error)
+            __PYX_ERR(0, 132, __pyx_L9_except_error)
           }
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4799,7 +4853,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
         if (__pyx_t_2) {
           __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__3, NULL);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 129, __pyx_L1_error)
+          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 132, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
@@ -4814,7 +4868,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
     __pyx_L21:;
   }
 
-  /* "bit_board.pyx":125
+  /* "bit_board.pyx":128
  * 
  * 
  *     def init_board(self, file_path):             # <<<<<<<<<<<<<<
@@ -4848,7 +4902,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
   return __pyx_r;
 }
 
-/* "bit_board.pyx":142
+/* "bit_board.pyx":145
  *             self.append_board_history(self._wh_board, 2)
  * 
  *     def init_board_from_board(self, board):             # <<<<<<<<<<<<<<
@@ -4857,20 +4911,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_24init_board(struct __pyx_obj_9bi
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_27init_board_from_board(PyObject *__pyx_v_self, PyObject *__pyx_v_board); /*proto*/
-static char __pyx_doc_9bit_board_8BitBoard_26init_board_from_board[] = "\n        Board\343\202\252\343\203\226\343\202\270\343\202\247\343\202\257\343\203\210\343\202\222\345\205\203\343\201\253\347\233\244\351\235\242\343\202\222\345\210\235\346\234\237\345\214\226\n        ";
-static PyObject *__pyx_pw_9bit_board_8BitBoard_27init_board_from_board(PyObject *__pyx_v_self, PyObject *__pyx_v_board) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_29init_board_from_board(PyObject *__pyx_v_self, PyObject *__pyx_v_board); /*proto*/
+static char __pyx_doc_9bit_board_8BitBoard_28init_board_from_board[] = "\n        Board\343\202\252\343\203\226\343\202\270\343\202\247\343\202\257\343\203\210\343\202\222\345\205\203\343\201\253\347\233\244\351\235\242\343\202\222\345\210\235\346\234\237\345\214\226\n        ";
+static PyObject *__pyx_pw_9bit_board_8BitBoard_29init_board_from_board(PyObject *__pyx_v_self, PyObject *__pyx_v_board) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("init_board_from_board (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_26init_board_from_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_board));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_28init_board_from_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_board));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_board) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_28init_board_from_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_board) {
   PyObject *__pyx_v_board_size = NULL;
   PyObject *__pyx_v_i = NULL;
   PyObject *__pyx_v_j = NULL;
@@ -4894,14 +4948,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
   __pyx_t_9bit_board_uintmax_t __pyx_t_15;
   __Pyx_RefNannySetupContext("init_board_from_board", 0);
 
-  /* "bit_board.pyx":146
+  /* "bit_board.pyx":149
  *         Board
  *         """
  *         board_size = board.get_board_size()             # <<<<<<<<<<<<<<
  *         for i in range(board_size):
  *             for j in range(board_size):
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_board, __pyx_n_s_get_board_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_board, __pyx_n_s_get_board_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4914,32 +4968,32 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_board_size = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":147
+  /* "bit_board.pyx":150
  *         """
  *         board_size = board.get_board_size()
  *         for i in range(board_size):             # <<<<<<<<<<<<<<
  *             for j in range(board_size):
  *                 stone = board.get_stone(np.array([i,j]))
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_board_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_board_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -4947,17 +5001,17 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 150, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 150, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -4967,7 +5021,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 147, __pyx_L1_error)
+          else __PYX_ERR(0, 150, __pyx_L1_error)
         }
         break;
       }
@@ -4976,22 +5030,22 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "bit_board.pyx":148
+    /* "bit_board.pyx":151
  *         board_size = board.get_board_size()
  *         for i in range(board_size):
  *             for j in range(board_size):             # <<<<<<<<<<<<<<
  *                 stone = board.get_stone(np.array([i,j]))
  *                 if stone == 1:
  */
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_board_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_board_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
       __pyx_t_3 = __pyx_t_1; __Pyx_INCREF(__pyx_t_3); __pyx_t_6 = 0;
       __pyx_t_7 = NULL;
     } else {
-      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __pyx_t_7 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 151, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     for (;;) {
@@ -4999,17 +5053,17 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 148, __pyx_L1_error)
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 151, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         } else {
           if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 148, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 151, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         }
@@ -5019,7 +5073,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 148, __pyx_L1_error)
+            else __PYX_ERR(0, 151, __pyx_L1_error)
           }
           break;
         }
@@ -5028,21 +5082,21 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
       __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "bit_board.pyx":149
+      /* "bit_board.pyx":152
  *         for i in range(board_size):
  *             for j in range(board_size):
  *                 stone = board.get_stone(np.array([i,j]))             # <<<<<<<<<<<<<<
  *                 if stone == 1:
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_board, __pyx_n_s_get_stone); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_board, __pyx_n_s_get_stone); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_10 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 149, __pyx_L1_error)
+      __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_INCREF(__pyx_v_i);
       __Pyx_GIVEREF(__pyx_v_i);
@@ -5061,14 +5115,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         }
       }
       if (!__pyx_t_12) {
-        __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 152, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __Pyx_GOTREF(__pyx_t_9);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_11)) {
           PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_t_10};
-          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -5077,20 +5131,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
           PyObject *__pyx_temp[2] = {__pyx_t_12, __pyx_t_10};
-          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         } else
         #endif
         {
-          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_13);
           __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_12); __pyx_t_12 = NULL;
           __Pyx_GIVEREF(__pyx_t_10);
           PyTuple_SET_ITEM(__pyx_t_13, 0+1, __pyx_t_10);
           __pyx_t_10 = 0;
-          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_13, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_13, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         }
@@ -5107,14 +5161,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         }
       }
       if (!__pyx_t_11) {
-        __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_GOTREF(__pyx_t_1);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_8)) {
           PyObject *__pyx_temp[2] = {__pyx_t_11, __pyx_t_9};
-          __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -5123,20 +5177,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
           PyObject *__pyx_temp[2] = {__pyx_t_11, __pyx_t_9};
-          __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         } else
         #endif
         {
-          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_13 = PyTuple_New(1+1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_13);
           __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_11); __pyx_t_11 = NULL;
           __Pyx_GIVEREF(__pyx_t_9);
           PyTuple_SET_ITEM(__pyx_t_13, 0+1, __pyx_t_9);
           __pyx_t_9 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         }
@@ -5145,45 +5199,45 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
       __Pyx_XDECREF_SET(__pyx_v_stone, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "bit_board.pyx":150
+      /* "bit_board.pyx":153
  *             for j in range(board_size):
  *                 stone = board.get_stone(np.array([i,j]))
  *                 if stone == 1:             # <<<<<<<<<<<<<<
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))
  *                 elif stone == 2:
  */
-      __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_stone, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_stone, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 150, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 153, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_14) {
 
-        /* "bit_board.pyx":151
+        /* "bit_board.pyx":154
  *                 stone = board.get_stone(np.array([i,j]))
  *                 if stone == 1:
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))             # <<<<<<<<<<<<<<
  *                 elif stone == 2:
  *                     self._wh_board = self._bl_board | (1<<(i+j*8))
  */
-        __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_8 = PyNumber_Multiply(__pyx_v_j, __pyx_int_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_8 = PyNumber_Multiply(__pyx_v_j, __pyx_int_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_13 = PyNumber_Add(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_13 = PyNumber_Add(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_8 = PyNumber_Lshift(__pyx_int_1, __pyx_t_13); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_8 = PyNumber_Lshift(__pyx_int_1, __pyx_t_13); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-        __pyx_t_13 = PyNumber_Or(__pyx_t_1, __pyx_t_8); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_13 = PyNumber_Or(__pyx_t_1, __pyx_t_8); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_15 = __Pyx_PyInt_As_uint64_t(__pyx_t_13); if (unlikely((__pyx_t_15 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_15 = __Pyx_PyInt_As_uint64_t(__pyx_t_13); if (unlikely((__pyx_t_15 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 154, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         __pyx_v_self->_bl_board = __pyx_t_15;
 
-        /* "bit_board.pyx":150
+        /* "bit_board.pyx":153
  *             for j in range(board_size):
  *                 stone = board.get_stone(np.array([i,j]))
  *                 if stone == 1:             # <<<<<<<<<<<<<<
@@ -5193,45 +5247,45 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
         goto __pyx_L7;
       }
 
-      /* "bit_board.pyx":152
+      /* "bit_board.pyx":155
  *                 if stone == 1:
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))
  *                 elif stone == 2:             # <<<<<<<<<<<<<<
  *                     self._wh_board = self._bl_board | (1<<(i+j*8))
  * 
  */
-      __pyx_t_13 = __Pyx_PyInt_EqObjC(__pyx_v_stone, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 152, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyInt_EqObjC(__pyx_v_stone, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 155, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_13); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 152, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_13); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 155, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       if (__pyx_t_14) {
 
-        /* "bit_board.pyx":153
+        /* "bit_board.pyx":156
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))
  *                 elif stone == 2:
  *                     self._wh_board = self._bl_board | (1<<(i+j*8))             # <<<<<<<<<<<<<<
  * 
  * 
  */
-        __pyx_t_13 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_13 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
-        __pyx_t_8 = PyNumber_Multiply(__pyx_v_j, __pyx_int_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_8 = PyNumber_Multiply(__pyx_v_j, __pyx_int_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_1 = PyNumber_Add(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_1 = PyNumber_Add(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_8 = PyNumber_Lshift(__pyx_int_1, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_8 = PyNumber_Lshift(__pyx_int_1, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = PyNumber_Or(__pyx_t_13, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_1 = PyNumber_Or(__pyx_t_13, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_15 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_15 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 153, __pyx_L1_error)
+        __pyx_t_15 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_15 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 156, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_self->_wh_board = __pyx_t_15;
 
-        /* "bit_board.pyx":152
+        /* "bit_board.pyx":155
  *                 if stone == 1:
  *                     self._bl_board = self._bl_board | (1<<(i+j*8))
  *                 elif stone == 2:             # <<<<<<<<<<<<<<
@@ -5241,7 +5295,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
       }
       __pyx_L7:;
 
-      /* "bit_board.pyx":148
+      /* "bit_board.pyx":151
  *         board_size = board.get_board_size()
  *         for i in range(board_size):
  *             for j in range(board_size):             # <<<<<<<<<<<<<<
@@ -5251,7 +5305,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "bit_board.pyx":147
+    /* "bit_board.pyx":150
  *         """
  *         board_size = board.get_board_size()
  *         for i in range(board_size):             # <<<<<<<<<<<<<<
@@ -5261,7 +5315,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "bit_board.pyx":142
+  /* "bit_board.pyx":145
  *             self.append_board_history(self._wh_board, 2)
  * 
  *     def init_board_from_board(self, board):             # <<<<<<<<<<<<<<
@@ -5294,7 +5348,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
   return __pyx_r;
 }
 
-/* "bit_board.pyx":156
+/* "bit_board.pyx":159
  * 
  * 
  *     def get_board_half(self, int bow):             # <<<<<<<<<<<<<<
@@ -5303,14 +5357,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_26init_board_from_board(struct __
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_29get_board_half(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_29get_board_half(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_31get_board_half(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_31get_board_half(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
   int __pyx_v_bow;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_board_half (wrapper)", 0);
   assert(__pyx_arg_bow); {
-    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 156, __pyx_L3_error)
+    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 159, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5318,20 +5372,20 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_29get_board_half(PyObject *__pyx_
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_28get_board_half(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_30get_board_half(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_30get_board_half(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("get_board_half", 0);
 
-  /* "bit_board.pyx":157
+  /* "bit_board.pyx":160
  * 
  *     def get_board_half(self, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -5341,7 +5395,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
   switch (__pyx_v_bow) {
     case 1:
 
-    /* "bit_board.pyx":158
+    /* "bit_board.pyx":161
  *     def get_board_half(self, int bow):
  *         if bow == 1:
  *             return self._bl_board             # <<<<<<<<<<<<<<
@@ -5349,13 +5403,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
  *             return self._wh_board
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":157
+    /* "bit_board.pyx":160
  * 
  *     def get_board_half(self, int bow):
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -5364,7 +5418,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
  */
     break;
 
-    /* "bit_board.pyx":159
+    /* "bit_board.pyx":162
  *         if bow == 1:
  *             return self._bl_board
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -5373,7 +5427,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
  */
     case 2:
 
-    /* "bit_board.pyx":160
+    /* "bit_board.pyx":163
  *             return self._bl_board
  *         elif bow == 2:
  *             return self._wh_board             # <<<<<<<<<<<<<<
@@ -5381,13 +5435,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_wh_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":159
+    /* "bit_board.pyx":162
  *         if bow == 1:
  *             return self._bl_board
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -5398,7 +5452,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
     default: break;
   }
 
-  /* "bit_board.pyx":156
+  /* "bit_board.pyx":159
  * 
  * 
  *     def get_board_half(self, int bow):             # <<<<<<<<<<<<<<
@@ -5419,7 +5473,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "bit_board.pyx":163
+/* "bit_board.pyx":166
  * 
  * 
  *     def display_board(self):             # <<<<<<<<<<<<<<
@@ -5428,20 +5482,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_28get_board_half(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_31display_board(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_9bit_board_8BitBoard_30display_board[] = "\n        board\343\202\222\350\241\250\347\244\272\n        ";
-static PyObject *__pyx_pw_9bit_board_8BitBoard_31display_board(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_33display_board(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_9bit_board_8BitBoard_32display_board[] = "\n        board\343\202\222\350\241\250\347\244\272\n        ";
+static PyObject *__pyx_pw_9bit_board_8BitBoard_33display_board(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("display_board (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_30display_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_32display_board(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_32display_board(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_tmp_bl_board;
   __pyx_t_9bit_board_uintmax_t __pyx_v_tmp_wh_board;
   __pyx_t_9bit_board_uintmax_t __pyx_v_tmp_pt_board;
@@ -5468,39 +5522,39 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("display_board", 0);
 
-  /* "bit_board.pyx":168
+  /* "bit_board.pyx":171
  *         """
  * 
  *         cdef uintmax_t tmp_bl_board = self.get_board_half(1)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)
  *         cdef uintmax_t tmp_pt_board = self._puttable_map
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_tmp_bl_board = __pyx_t_3;
 
-  /* "bit_board.pyx":169
+  /* "bit_board.pyx":172
  * 
  *         cdef uintmax_t tmp_bl_board = self.get_board_half(1)
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t tmp_pt_board = self._puttable_map
  *         cdef int board_size = self._board_size
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_tmp_wh_board = __pyx_t_3;
 
-  /* "bit_board.pyx":170
+  /* "bit_board.pyx":173
  *         cdef uintmax_t tmp_bl_board = self.get_board_half(1)
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)
  *         cdef uintmax_t tmp_pt_board = self._puttable_map             # <<<<<<<<<<<<<<
@@ -5510,7 +5564,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   __pyx_t_3 = __pyx_v_self->_puttable_map;
   __pyx_v_tmp_pt_board = __pyx_t_3;
 
-  /* "bit_board.pyx":171
+  /* "bit_board.pyx":174
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)
  *         cdef uintmax_t tmp_pt_board = self._puttable_map
  *         cdef int board_size = self._board_size             # <<<<<<<<<<<<<<
@@ -5520,22 +5574,22 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   __pyx_t_4 = __pyx_v_self->_board_size;
   __pyx_v_board_size = __pyx_t_4;
 
-  /* "bit_board.pyx":175
+  /* "bit_board.pyx":178
  *         cdef uintmax_t coord
  * 
  *         print(" ", end="")             # <<<<<<<<<<<<<<
  *         for i in range(board_size):
  *             print(" {}".format(i), end="")
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__7, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__7, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "bit_board.pyx":176
+  /* "bit_board.pyx":179
  * 
  *         print(" ", end="")
  *         for i in range(board_size):             # <<<<<<<<<<<<<<
@@ -5547,16 +5601,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
     __pyx_v_i = __pyx_t_6;
 
-    /* "bit_board.pyx":177
+    /* "bit_board.pyx":180
  *         print(" ", end="")
  *         for i in range(board_size):
  *             print(" {}".format(i), end="")             # <<<<<<<<<<<<<<
  *         print("")
  *         bar = "-"*18
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__9, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__9, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -5569,14 +5623,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       }
     }
     if (!__pyx_t_8) {
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_2);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_7};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -5585,52 +5639,52 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[2] = {__pyx_t_8, __pyx_t_7};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       } else
       #endif
       {
-        __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 177, __pyx_L1_error)
+        __pyx_t_9 = PyTuple_New(1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 180, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_8); __pyx_t_8 = NULL;
         __Pyx_GIVEREF(__pyx_t_7);
         PyTuple_SET_ITEM(__pyx_t_9, 0+1, __pyx_t_7);
         __pyx_t_7 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       }
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 177, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
 
-  /* "bit_board.pyx":178
+  /* "bit_board.pyx":181
  *         for i in range(board_size):
  *             print(" {}".format(i), end="")
  *         print("")             # <<<<<<<<<<<<<<
  *         bar = "-"*18
  *         print(bar)
  */
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "bit_board.pyx":179
+  /* "bit_board.pyx":182
  *             print(" {}".format(i), end="")
  *         print("")
  *         bar = "-"*18             # <<<<<<<<<<<<<<
@@ -5640,18 +5694,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   __Pyx_INCREF(__pyx_kp_u__11);
   __pyx_v_bar = __pyx_kp_u__11;
 
-  /* "bit_board.pyx":180
+  /* "bit_board.pyx":183
  *         print("")
  *         bar = "-"*18
  *         print(bar)             # <<<<<<<<<<<<<<
  * 
  *         for i in range(board_size):
  */
-  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_v_bar); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_v_bar); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-  /* "bit_board.pyx":182
+  /* "bit_board.pyx":185
  *         print(bar)
  * 
  *         for i in range(board_size):             # <<<<<<<<<<<<<<
@@ -5663,16 +5717,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
     __pyx_v_i = __pyx_t_6;
 
-    /* "bit_board.pyx":183
+    /* "bit_board.pyx":186
  * 
  *         for i in range(board_size):
  *             print("{}|".format(i), end="")             # <<<<<<<<<<<<<<
  *             for j in range(board_size):
  *                 coord = j + i*8
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__12, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__12, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -5685,14 +5739,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       }
     }
     if (!__pyx_t_7) {
-      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_GOTREF(__pyx_t_9);
     } else {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_1};
-        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5701,40 +5755,40 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_1};
-        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
         __Pyx_GIVEREF(__pyx_t_1);
         PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_1);
         __pyx_t_1 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_9);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_9);
     __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 183, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "bit_board.pyx":184
+    /* "bit_board.pyx":187
  *         for i in range(board_size):
  *             print("{}|".format(i), end="")
  *             for j in range(board_size):             # <<<<<<<<<<<<<<
@@ -5746,7 +5800,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      /* "bit_board.pyx":185
+      /* "bit_board.pyx":188
  *             print("{}|".format(i), end="")
  *             for j in range(board_size):
  *                 coord = j + i*8             # <<<<<<<<<<<<<<
@@ -5755,7 +5809,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
  */
       __pyx_v_coord = (__pyx_v_j + (__pyx_v_i * 8));
 
-      /* "bit_board.pyx":186
+      /* "bit_board.pyx":189
  *             for j in range(board_size):
  *                 coord = j + i*8
  *                 stone = " "             # <<<<<<<<<<<<<<
@@ -5765,7 +5819,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       __Pyx_INCREF(__pyx_kp_u__6);
       __Pyx_XDECREF_SET(__pyx_v_stone, __pyx_kp_u__6);
 
-      /* "bit_board.pyx":187
+      /* "bit_board.pyx":190
  *                 coord = j + i*8
  *                 stone = " "
  *                 if tmp_bl_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5775,7 +5829,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       __pyx_t_13 = ((((__pyx_v_tmp_bl_board >> __pyx_v_coord) & 1) == 1) != 0);
       if (__pyx_t_13) {
 
-        /* "bit_board.pyx":188
+        /* "bit_board.pyx":191
  *                 stone = " "
  *                 if tmp_bl_board >> coord & 1 == 1:
  *                     stone = "B"             # <<<<<<<<<<<<<<
@@ -5785,7 +5839,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         __Pyx_INCREF(__pyx_n_u_B);
         __Pyx_DECREF_SET(__pyx_v_stone, __pyx_n_u_B);
 
-        /* "bit_board.pyx":187
+        /* "bit_board.pyx":190
  *                 coord = j + i*8
  *                 stone = " "
  *                 if tmp_bl_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5795,7 +5849,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         goto __pyx_L9;
       }
 
-      /* "bit_board.pyx":189
+      /* "bit_board.pyx":192
  *                 if tmp_bl_board >> coord & 1 == 1:
  *                     stone = "B"
  *                 elif tmp_wh_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5805,7 +5859,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       __pyx_t_13 = ((((__pyx_v_tmp_wh_board >> __pyx_v_coord) & 1) == 1) != 0);
       if (__pyx_t_13) {
 
-        /* "bit_board.pyx":190
+        /* "bit_board.pyx":193
  *                     stone = "B"
  *                 elif tmp_wh_board >> coord & 1 == 1:
  *                     stone = "W"             # <<<<<<<<<<<<<<
@@ -5815,7 +5869,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         __Pyx_INCREF(__pyx_n_u_W);
         __Pyx_DECREF_SET(__pyx_v_stone, __pyx_n_u_W);
 
-        /* "bit_board.pyx":189
+        /* "bit_board.pyx":192
  *                 if tmp_bl_board >> coord & 1 == 1:
  *                     stone = "B"
  *                 elif tmp_wh_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5825,7 +5879,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         goto __pyx_L9;
       }
 
-      /* "bit_board.pyx":191
+      /* "bit_board.pyx":194
  *                 elif tmp_wh_board >> coord & 1 == 1:
  *                     stone = "W"
  *                 elif tmp_pt_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5835,7 +5889,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       __pyx_t_13 = ((((__pyx_v_tmp_pt_board >> __pyx_v_coord) & 1) == 1) != 0);
       if (__pyx_t_13) {
 
-        /* "bit_board.pyx":192
+        /* "bit_board.pyx":195
  *                     stone = "W"
  *                 elif tmp_pt_board >> coord & 1 == 1:
  *                     stone = "*"             # <<<<<<<<<<<<<<
@@ -5845,7 +5899,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         __Pyx_INCREF(__pyx_kp_u__13);
         __Pyx_DECREF_SET(__pyx_v_stone, __pyx_kp_u__13);
 
-        /* "bit_board.pyx":191
+        /* "bit_board.pyx":194
  *                 elif tmp_wh_board >> coord & 1 == 1:
  *                     stone = "W"
  *                 elif tmp_pt_board >> coord & 1 == 1:             # <<<<<<<<<<<<<<
@@ -5855,14 +5909,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
       }
       __pyx_L9:;
 
-      /* "bit_board.pyx":194
+      /* "bit_board.pyx":197
  *                     stone = "*"
  * 
  *                 print("{}|".format(stone), end="")             # <<<<<<<<<<<<<<
  *             print("")
  * 
  */
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__12, __pyx_n_s_format); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u__12, __pyx_n_s_format); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __pyx_t_2 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
@@ -5875,13 +5929,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         }
       }
       if (!__pyx_t_2) {
-        __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_stone); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 194, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_stone); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_stone};
-          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 194, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_GOTREF(__pyx_t_8);
         } else
@@ -5889,52 +5943,52 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_v_stone};
-          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 194, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_GOTREF(__pyx_t_8);
         } else
         #endif
         {
-          __pyx_t_1 = PyTuple_New(1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_New(1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2); __pyx_t_2 = NULL;
           __Pyx_INCREF(__pyx_v_stone);
           __Pyx_GIVEREF(__pyx_v_stone);
           PyTuple_SET_ITEM(__pyx_t_1, 0+1, __pyx_v_stone);
-          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_1, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 194, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_1, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_GIVEREF(__pyx_t_8);
       PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_8);
       __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_9, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_end, __pyx_kp_u__8) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_9, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
 
-    /* "bit_board.pyx":195
+    /* "bit_board.pyx":198
  * 
  *                 print("{}|".format(stone), end="")
  *             print("")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "bit_board.pyx":163
+  /* "bit_board.pyx":166
  * 
  * 
  *     def display_board(self):             # <<<<<<<<<<<<<<
@@ -5961,7 +6015,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "bit_board.pyx":198
+/* "bit_board.pyx":201
  * 
  * 
  *     def listing_puttable(self, int bow):             # <<<<<<<<<<<<<<
@@ -5970,15 +6024,15 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_30display_board(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_33listing_puttable(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
-static char __pyx_doc_9bit_board_8BitBoard_32listing_puttable[] = "\n        \347\237\263\343\202\222\347\275\256\343\201\221\343\202\213\345\240\264\346\211\200\343\201\256\343\203\252\343\202\271\343\203\210\343\202\222\344\275\234\346\210\220\n        ";
-static PyObject *__pyx_pw_9bit_board_8BitBoard_33listing_puttable(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_35listing_puttable(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow); /*proto*/
+static char __pyx_doc_9bit_board_8BitBoard_34listing_puttable[] = "\n        \347\237\263\343\202\222\347\275\256\343\201\221\343\202\213\345\240\264\346\211\200\343\201\256\343\203\252\343\202\271\343\203\210\343\202\222\344\275\234\346\210\220\n        ";
+static PyObject *__pyx_pw_9bit_board_8BitBoard_35listing_puttable(PyObject *__pyx_v_self, PyObject *__pyx_arg_bow) {
   int __pyx_v_bow;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("listing_puttable (wrapper)", 0);
   assert(__pyx_arg_bow); {
-    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 198, __pyx_L3_error)
+    __pyx_v_bow = __Pyx_PyInt_As_int(__pyx_arg_bow); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 201, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5986,14 +6040,14 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_33listing_puttable(PyObject *__py
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_32listing_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_34listing_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((int)__pyx_v_bow));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_34listing_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_bow) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_atk_board;
   int __pyx_v_opp;
   __pyx_t_9bit_board_uintmax_t __pyx_v_opp_board;
@@ -6014,16 +6068,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
   int __pyx_t_7;
   __Pyx_RefNannySetupContext("listing_puttable", 0);
 
-  /* "bit_board.pyx":202
+  /* "bit_board.pyx":205
  * 
  *         """
  *         cdef uintmax_t atk_board = self.get_board_half(bow)             # <<<<<<<<<<<<<<
  *         cdef int opp = self.get_opponent(bow)
  *         cdef uintmax_t opp_board = self.get_board_half(opp)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -6036,14 +6090,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6052,39 +6106,39 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 202, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 202, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_atk_board = __pyx_t_6;
 
-  /* "bit_board.pyx":203
+  /* "bit_board.pyx":206
  *         """
  *         cdef uintmax_t atk_board = self.get_board_half(bow)
  *         cdef int opp = self.get_opponent(bow)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t opp_board = self.get_board_half(opp)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_opponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_opponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -6097,14 +6151,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6113,39 +6167,39 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 203, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_opp = __pyx_t_7;
 
-  /* "bit_board.pyx":204
+  /* "bit_board.pyx":207
  *         cdef uintmax_t atk_board = self.get_board_half(bow)
  *         cdef int opp = self.get_opponent(bow)
  *         cdef uintmax_t opp_board = self.get_board_half(opp)             # <<<<<<<<<<<<<<
  * 
  *         #
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -6158,14 +6212,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -6174,78 +6228,78 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 204, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 207, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_4);
       PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_t_4);
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 204, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_opp_board = __pyx_t_6;
 
-  /* "bit_board.pyx":207
+  /* "bit_board.pyx":210
  * 
  *         #
  *         cdef uintmax_t horizontal_watch_board = opp_board & 0x7e7e7e7e7e7e7e7e             # <<<<<<<<<<<<<<
  *         #
  *         cdef uintmax_t vertical_watch_board = opp_board & 0x00FFFFFFFFFFFF00
  */
-  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_9114861777597660798); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_9114861777597660798); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_horizontal_watch_board = __pyx_t_6;
 
-  /* "bit_board.pyx":209
+  /* "bit_board.pyx":212
  *         cdef uintmax_t horizontal_watch_board = opp_board & 0x7e7e7e7e7e7e7e7e
  *         #
  *         cdef uintmax_t vertical_watch_board = opp_board & 0x00FFFFFFFFFFFF00             # <<<<<<<<<<<<<<
  *         #
  *         cdef uintmax_t all_side_watch_board = opp_board & 0x007e7e7e7e7e7e00
  */
-  __pyx_t_2 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_72057594037927680); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_72057594037927680); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_vertical_watch_board = __pyx_t_6;
 
-  /* "bit_board.pyx":211
+  /* "bit_board.pyx":214
  *         cdef uintmax_t vertical_watch_board = opp_board & 0x00FFFFFFFFFFFF00
  *         #
  *         cdef uintmax_t all_side_watch_board = opp_board & 0x007e7e7e7e7e7e00             # <<<<<<<<<<<<<<
  *         #
  *         cdef uintmax_t blank_board = ~(atk_board | opp_board)
  */
-  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_35604928818740736); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_35604928818740736); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_2); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_all_side_watch_board = __pyx_t_6;
 
-  /* "bit_board.pyx":213
+  /* "bit_board.pyx":216
  *         cdef uintmax_t all_side_watch_board = opp_board & 0x007e7e7e7e7e7e00
  *         #
  *         cdef uintmax_t blank_board = ~(atk_board | opp_board)             # <<<<<<<<<<<<<<
@@ -6254,7 +6308,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_blank_board = (~(__pyx_v_atk_board | __pyx_v_opp_board));
 
-  /* "bit_board.pyx":217
+  /* "bit_board.pyx":220
  *         #8 (6 for)
  *         #
  *         cdef uintmax_t tmp = horizontal_watch_board & (atk_board << 1)             # <<<<<<<<<<<<<<
@@ -6263,7 +6317,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_horizontal_watch_board & (__pyx_v_atk_board << 1));
 
-  /* "bit_board.pyx":219
+  /* "bit_board.pyx":222
  *         cdef uintmax_t tmp = horizontal_watch_board & (atk_board << 1)
  *         cdef uintmax_t legal_board
  *         tmp |= horizontal_watch_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6272,7 +6326,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp << 1)));
 
-  /* "bit_board.pyx":220
+  /* "bit_board.pyx":223
  *         cdef uintmax_t legal_board
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6281,7 +6335,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp << 1)));
 
-  /* "bit_board.pyx":221
+  /* "bit_board.pyx":224
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6290,7 +6344,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp << 1)));
 
-  /* "bit_board.pyx":222
+  /* "bit_board.pyx":225
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6299,7 +6353,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp << 1)));
 
-  /* "bit_board.pyx":223
+  /* "bit_board.pyx":226
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6308,7 +6362,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp << 1)));
 
-  /* "bit_board.pyx":224
+  /* "bit_board.pyx":227
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         tmp |= horizontal_watch_board & (tmp << 1)
  *         legal_board = blank_board & (tmp << 1)             # <<<<<<<<<<<<<<
@@ -6317,7 +6371,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_blank_board & (__pyx_v_tmp << 1));
 
-  /* "bit_board.pyx":227
+  /* "bit_board.pyx":230
  * 
  *         #
  *         tmp = horizontal_watch_board & (atk_board >> 1)             # <<<<<<<<<<<<<<
@@ -6326,7 +6380,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_horizontal_watch_board & (__pyx_v_atk_board >> 1));
 
-  /* "bit_board.pyx":228
+  /* "bit_board.pyx":231
  *         #
  *         tmp = horizontal_watch_board & (atk_board >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6335,7 +6389,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":229
+  /* "bit_board.pyx":232
  *         tmp = horizontal_watch_board & (atk_board >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6344,7 +6398,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":230
+  /* "bit_board.pyx":233
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6353,7 +6407,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":231
+  /* "bit_board.pyx":234
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6362,7 +6416,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":232
+  /* "bit_board.pyx":235
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6371,7 +6425,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_horizontal_watch_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":233
+  /* "bit_board.pyx":236
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         tmp |= horizontal_watch_board & (tmp >> 1)
  *         legal_board |= blank_board & (tmp >> 1)             # <<<<<<<<<<<<<<
@@ -6380,7 +6434,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp >> 1)));
 
-  /* "bit_board.pyx":236
+  /* "bit_board.pyx":239
  * 
  *         #
  *         tmp = vertical_watch_board & (atk_board << 8)             # <<<<<<<<<<<<<<
@@ -6389,7 +6443,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_vertical_watch_board & (__pyx_v_atk_board << 8));
 
-  /* "bit_board.pyx":237
+  /* "bit_board.pyx":240
  *         #
  *         tmp = vertical_watch_board & (atk_board << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6398,7 +6452,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":238
+  /* "bit_board.pyx":241
  *         tmp = vertical_watch_board & (atk_board << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6407,7 +6461,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":239
+  /* "bit_board.pyx":242
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6416,7 +6470,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":240
+  /* "bit_board.pyx":243
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6425,7 +6479,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":241
+  /* "bit_board.pyx":244
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6434,7 +6488,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":242
+  /* "bit_board.pyx":245
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         tmp |= vertical_watch_board & (tmp << 8)
  *         legal_board |= blank_board & (tmp << 8)             # <<<<<<<<<<<<<<
@@ -6443,7 +6497,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp << 8)));
 
-  /* "bit_board.pyx":245
+  /* "bit_board.pyx":248
  * 
  *         #
  *         tmp = vertical_watch_board & (atk_board >> 8)             # <<<<<<<<<<<<<<
@@ -6452,7 +6506,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_vertical_watch_board & (__pyx_v_atk_board >> 8));
 
-  /* "bit_board.pyx":246
+  /* "bit_board.pyx":249
  *         #
  *         tmp = vertical_watch_board & (atk_board >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6461,7 +6515,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":247
+  /* "bit_board.pyx":250
  *         tmp = vertical_watch_board & (atk_board >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6470,7 +6524,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":248
+  /* "bit_board.pyx":251
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6479,7 +6533,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":249
+  /* "bit_board.pyx":252
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6488,7 +6542,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":250
+  /* "bit_board.pyx":253
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6497,7 +6551,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_vertical_watch_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":251
+  /* "bit_board.pyx":254
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         tmp |= vertical_watch_board & (tmp >> 8)
  *         legal_board |= blank_board & (tmp >> 8)             # <<<<<<<<<<<<<<
@@ -6506,7 +6560,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp >> 8)));
 
-  /* "bit_board.pyx":254
+  /* "bit_board.pyx":257
  * 
  *         #
  *         tmp = all_side_watch_board & (atk_board << 7)             # <<<<<<<<<<<<<<
@@ -6515,7 +6569,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_all_side_watch_board & (__pyx_v_atk_board << 7));
 
-  /* "bit_board.pyx":255
+  /* "bit_board.pyx":258
  *         #
  *         tmp = all_side_watch_board & (atk_board << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6524,7 +6578,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":256
+  /* "bit_board.pyx":259
  *         tmp = all_side_watch_board & (atk_board << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6533,7 +6587,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":257
+  /* "bit_board.pyx":260
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6542,7 +6596,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":258
+  /* "bit_board.pyx":261
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6551,7 +6605,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":259
+  /* "bit_board.pyx":262
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6560,7 +6614,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":260
+  /* "bit_board.pyx":263
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         tmp |= all_side_watch_board & (tmp << 7)
  *         legal_board |= blank_board & (tmp << 7)             # <<<<<<<<<<<<<<
@@ -6569,7 +6623,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp << 7)));
 
-  /* "bit_board.pyx":263
+  /* "bit_board.pyx":266
  * 
  *         #
  *         tmp = all_side_watch_board & (atk_board << 9)             # <<<<<<<<<<<<<<
@@ -6578,7 +6632,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_all_side_watch_board & (__pyx_v_atk_board << 9));
 
-  /* "bit_board.pyx":264
+  /* "bit_board.pyx":267
  *         #
  *         tmp = all_side_watch_board & (atk_board << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6587,7 +6641,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":265
+  /* "bit_board.pyx":268
  *         tmp = all_side_watch_board & (atk_board << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6596,7 +6650,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":266
+  /* "bit_board.pyx":269
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6605,7 +6659,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":267
+  /* "bit_board.pyx":270
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6614,7 +6668,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":268
+  /* "bit_board.pyx":271
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6623,7 +6677,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":269
+  /* "bit_board.pyx":272
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         tmp |= all_side_watch_board & (tmp << 9)
  *         legal_board |= blank_board & (tmp << 9)             # <<<<<<<<<<<<<<
@@ -6632,7 +6686,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp << 9)));
 
-  /* "bit_board.pyx":272
+  /* "bit_board.pyx":275
  * 
  *         #
  *         tmp = all_side_watch_board & (atk_board >> 9)             # <<<<<<<<<<<<<<
@@ -6641,7 +6695,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_all_side_watch_board & (__pyx_v_atk_board >> 9));
 
-  /* "bit_board.pyx":273
+  /* "bit_board.pyx":276
  *         #
  *         tmp = all_side_watch_board & (atk_board >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6650,7 +6704,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":274
+  /* "bit_board.pyx":277
  *         tmp = all_side_watch_board & (atk_board >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6659,7 +6713,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":275
+  /* "bit_board.pyx":278
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6668,7 +6722,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":276
+  /* "bit_board.pyx":279
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6677,7 +6731,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":277
+  /* "bit_board.pyx":280
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6686,7 +6740,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":278
+  /* "bit_board.pyx":281
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         tmp |= all_side_watch_board & (tmp >> 9)
  *         legal_board |= blank_board & (tmp >> 9)             # <<<<<<<<<<<<<<
@@ -6695,7 +6749,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp >> 9)));
 
-  /* "bit_board.pyx":281
+  /* "bit_board.pyx":284
  * 
  *         #
  *         tmp = all_side_watch_board & (atk_board >> 7)             # <<<<<<<<<<<<<<
@@ -6704,7 +6758,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_all_side_watch_board & (__pyx_v_atk_board >> 7));
 
-  /* "bit_board.pyx":282
+  /* "bit_board.pyx":285
  *         #
  *         tmp = all_side_watch_board & (atk_board >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6713,7 +6767,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":283
+  /* "bit_board.pyx":286
  *         tmp = all_side_watch_board & (atk_board >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6722,7 +6776,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":284
+  /* "bit_board.pyx":287
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6731,7 +6785,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":285
+  /* "bit_board.pyx":288
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6740,7 +6794,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":286
+  /* "bit_board.pyx":289
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6749,7 +6803,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_tmp = (__pyx_v_tmp | (__pyx_v_all_side_watch_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":287
+  /* "bit_board.pyx":290
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         tmp |= all_side_watch_board & (tmp >> 7)
  *         legal_board |= blank_board & (tmp >> 7)             # <<<<<<<<<<<<<<
@@ -6758,7 +6812,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_legal_board = (__pyx_v_legal_board | (__pyx_v_blank_board & (__pyx_v_tmp >> 7)));
 
-  /* "bit_board.pyx":289
+  /* "bit_board.pyx":292
  *         legal_board |= blank_board & (tmp >> 7)
  * 
  *         self._puttable_map = legal_board             # <<<<<<<<<<<<<<
@@ -6767,7 +6821,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
   __pyx_v_self->_puttable_map = __pyx_v_legal_board;
 
-  /* "bit_board.pyx":198
+  /* "bit_board.pyx":201
  * 
  * 
  *     def listing_puttable(self, int bow):             # <<<<<<<<<<<<<<
@@ -6792,7 +6846,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
   return __pyx_r;
 }
 
-/* "bit_board.pyx":292
+/* "bit_board.pyx":295
  * 
  * 
  *     def is_puttable(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -6801,8 +6855,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_32listing_puttable(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_35is_puttable(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_35is_puttable(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_37is_puttable(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_37is_puttable(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   PyObject *__pyx_r = 0;
@@ -6831,11 +6885,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_35is_puttable(PyObject *__pyx_v_s
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("is_puttable", 1, 2, 2, 1); __PYX_ERR(0, 292, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("is_puttable", 1, 2, 2, 1); __PYX_ERR(0, 295, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_puttable") < 0)) __PYX_ERR(0, 292, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_puttable") < 0)) __PYX_ERR(0, 295, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -6843,31 +6897,31 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_35is_puttable(PyObject *__pyx_v_s
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 292, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 292, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 295, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 295, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("is_puttable", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 292, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("is_puttable", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 295, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.is_puttable", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_34is_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_36is_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_36is_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("is_puttable", 0);
 
-  /* "bit_board.pyx":293
+  /* "bit_board.pyx":296
  * 
  *     def is_puttable(self, int x, int y):
  *        if self._puttable_map >> (x + 8*y) & 0b1 == 1:             # <<<<<<<<<<<<<<
@@ -6877,7 +6931,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
   __pyx_t_1 = ((((__pyx_v_self->_puttable_map >> (__pyx_v_x + (8 * __pyx_v_y))) & 1) == 1) != 0);
   if (__pyx_t_1) {
 
-    /* "bit_board.pyx":294
+    /* "bit_board.pyx":297
  *     def is_puttable(self, int x, int y):
  *        if self._puttable_map >> (x + 8*y) & 0b1 == 1:
  *            return True             # <<<<<<<<<<<<<<
@@ -6889,7 +6943,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":293
+    /* "bit_board.pyx":296
  * 
  *     def is_puttable(self, int x, int y):
  *        if self._puttable_map >> (x + 8*y) & 0b1 == 1:             # <<<<<<<<<<<<<<
@@ -6898,7 +6952,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
  */
   }
 
-  /* "bit_board.pyx":296
+  /* "bit_board.pyx":299
  *            return True
  *        else:
  *            return False             # <<<<<<<<<<<<<<
@@ -6912,7 +6966,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
     goto __pyx_L0;
   }
 
-  /* "bit_board.pyx":292
+  /* "bit_board.pyx":295
  * 
  * 
  *     def is_puttable(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -6927,7 +6981,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
   return __pyx_r;
 }
 
-/* "bit_board.pyx":298
+/* "bit_board.pyx":301
  *            return False
  * 
  *     def get_puttable_map(self):             # <<<<<<<<<<<<<<
@@ -6936,25 +6990,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_34is_puttable(struct __pyx_obj_9b
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_37get_puttable_map(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_37get_puttable_map(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_39get_puttable_map(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_39get_puttable_map(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_puttable_map (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_36get_puttable_map(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_38get_puttable_map(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_36get_puttable_map(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_map(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("get_puttable_map", 0);
 
-  /* "bit_board.pyx":299
+  /* "bit_board.pyx":302
  * 
  *     def get_puttable_map(self):
  *         return self._puttable_map             # <<<<<<<<<<<<<<
@@ -6962,13 +7016,13 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_36get_puttable_map(struct __pyx_o
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_puttable_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_self->_puttable_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 302, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "bit_board.pyx":298
+  /* "bit_board.pyx":301
  *            return False
  * 
  *     def get_puttable_map(self):             # <<<<<<<<<<<<<<
@@ -6987,7 +7041,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_36get_puttable_map(struct __pyx_o
   return __pyx_r;
 }
 
-/* "bit_board.pyx":302
+/* "bit_board.pyx":305
  * 
  * 
  *     def get_puttable_list(self):             # <<<<<<<<<<<<<<
@@ -6996,20 +7050,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_36get_puttable_map(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_39get_puttable_list(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_9bit_board_8BitBoard_38get_puttable_list[] = "\n        \347\237\263\343\202\222\347\275\256\343\201\221\343\202\213\345\240\264\346\211\200\343\201\256\343\203\252\343\202\271\343\203\210\343\202\222\343\202\262\343\203\203\343\203\210\n        ";
-static PyObject *__pyx_pw_9bit_board_8BitBoard_39get_puttable_list(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_41get_puttable_list(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_9bit_board_8BitBoard_40get_puttable_list[] = "\n        \347\237\263\343\202\222\347\275\256\343\201\221\343\202\213\345\240\264\346\211\200\343\201\256\343\203\252\343\202\271\343\203\210\343\202\222\343\202\262\343\203\203\343\203\210\n        ";
+static PyObject *__pyx_pw_9bit_board_8BitBoard_41get_puttable_list(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_puttable_list (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_38get_puttable_list(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_40get_puttable_list(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_40get_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   int __pyx_v_board_size;
   int __pyx_v_i;
   int __pyx_v_j;
@@ -7032,14 +7086,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   int __pyx_t_15;
   __Pyx_RefNannySetupContext("get_puttable_list", 0);
 
-  /* "bit_board.pyx":306
+  /* "bit_board.pyx":309
  * 
  *         """
  *         self._puttable_list = []             # <<<<<<<<<<<<<<
  *         cdef int board_size = self._board_size
  *         cdef int i, j
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v_self->_puttable_list);
@@ -7047,7 +7101,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   __pyx_v_self->_puttable_list = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":307
+  /* "bit_board.pyx":310
  *         """
  *         self._puttable_list = []
  *         cdef int board_size = self._board_size             # <<<<<<<<<<<<<<
@@ -7057,7 +7111,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   __pyx_t_2 = __pyx_v_self->_board_size;
   __pyx_v_board_size = __pyx_t_2;
 
-  /* "bit_board.pyx":309
+  /* "bit_board.pyx":312
  *         cdef int board_size = self._board_size
  *         cdef int i, j
  *         for i in range(board_size):             # <<<<<<<<<<<<<<
@@ -7069,7 +7123,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_i = __pyx_t_4;
 
-    /* "bit_board.pyx":310
+    /* "bit_board.pyx":313
  *         cdef int i, j
  *         for i in range(board_size):
  *             for j in range(board_size):             # <<<<<<<<<<<<<<
@@ -7081,18 +7135,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      /* "bit_board.pyx":311
+      /* "bit_board.pyx":314
  *         for i in range(board_size):
  *             for j in range(board_size):
  *                 if self.is_puttable(i, j):             # <<<<<<<<<<<<<<
  *                     self._puttable_list.append(np.array([i,j], dtype='int32'))
  * 
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_puttable); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 311, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_puttable); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 314, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 311, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 314, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 311, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 314, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __pyx_t_11 = NULL;
       __pyx_t_12 = 0;
@@ -7109,7 +7163,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_9, __pyx_t_10};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 311, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 314, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -7119,7 +7173,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_9, __pyx_t_10};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 311, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_12, 2+__pyx_t_12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 314, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -7127,7 +7181,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
       } else
       #endif
       {
-        __pyx_t_13 = PyTuple_New(2+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 311, __pyx_L1_error)
+        __pyx_t_13 = PyTuple_New(2+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 314, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         if (__pyx_t_11) {
           __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -7138,16 +7192,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
         PyTuple_SET_ITEM(__pyx_t_13, 1+__pyx_t_12, __pyx_t_10);
         __pyx_t_9 = 0;
         __pyx_t_10 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 311, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 314, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 311, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 314, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_14) {
 
-        /* "bit_board.pyx":312
+        /* "bit_board.pyx":315
  *             for j in range(board_size):
  *                 if self.is_puttable(i, j):
  *                     self._puttable_list.append(np.array([i,j], dtype='int32'))             # <<<<<<<<<<<<<<
@@ -7156,18 +7210,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
  */
         if (unlikely(__pyx_v_self->_puttable_list == Py_None)) {
           PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "append");
-          __PYX_ERR(0, 312, __pyx_L1_error)
+          __PYX_ERR(0, 315, __pyx_L1_error)
         }
-        __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
-        __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_GIVEREF(__pyx_t_1);
         PyList_SET_ITEM(__pyx_t_10, 0, __pyx_t_1);
@@ -7175,23 +7229,23 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
         PyList_SET_ITEM(__pyx_t_10, 1, __pyx_t_13);
         __pyx_t_1 = 0;
         __pyx_t_13 = 0;
-        __pyx_t_13 = PyTuple_New(1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_13 = PyTuple_New(1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         __Pyx_GIVEREF(__pyx_t_10);
         PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_10);
         __pyx_t_10 = 0;
-        __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_dtype, __pyx_n_u_int32) < 0) __PYX_ERR(0, 312, __pyx_L1_error)
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 312, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_dtype, __pyx_n_u_int32) < 0) __PYX_ERR(0, 315, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_13, __pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_self->_puttable_list, __pyx_t_1); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 312, __pyx_L1_error)
+        __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_self->_puttable_list, __pyx_t_1); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 315, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "bit_board.pyx":311
+        /* "bit_board.pyx":314
  *         for i in range(board_size):
  *             for j in range(board_size):
  *                 if self.is_puttable(i, j):             # <<<<<<<<<<<<<<
@@ -7202,7 +7256,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
     }
   }
 
-  /* "bit_board.pyx":314
+  /* "bit_board.pyx":317
  *                     self._puttable_list.append(np.array([i,j], dtype='int32'))
  * 
  *         return self._puttable_list             # <<<<<<<<<<<<<<
@@ -7214,7 +7268,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   __pyx_r = __pyx_v_self->_puttable_list;
   goto __pyx_L0;
 
-  /* "bit_board.pyx":302
+  /* "bit_board.pyx":305
  * 
  * 
  *     def get_puttable_list(self):             # <<<<<<<<<<<<<<
@@ -7238,7 +7292,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
   return __pyx_r;
 }
 
-/* "bit_board.pyx":317
+/* "bit_board.pyx":320
  * 
  * 
  *     def transfer(self, uintmax_t put, int way):             # <<<<<<<<<<<<<<
@@ -7247,8 +7301,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_38get_puttable_list(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_41transfer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_41transfer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_43transfer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_43transfer(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_put;
   int __pyx_v_way;
   PyObject *__pyx_r = 0;
@@ -7277,11 +7331,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_41transfer(PyObject *__pyx_v_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_way)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("transfer", 1, 2, 2, 1); __PYX_ERR(0, 317, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("transfer", 1, 2, 2, 1); __PYX_ERR(0, 320, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "transfer") < 0)) __PYX_ERR(0, 317, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "transfer") < 0)) __PYX_ERR(0, 320, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7289,32 +7343,32 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_41transfer(PyObject *__pyx_v_self
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_put = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_put == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 317, __pyx_L3_error)
-    __pyx_v_way = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_way == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 317, __pyx_L3_error)
+    __pyx_v_put = __Pyx_PyInt_As_uint64_t(values[0]); if (unlikely((__pyx_v_put == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 320, __pyx_L3_error)
+    __pyx_v_way = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_way == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 320, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("transfer", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 317, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("transfer", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 320, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.transfer", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_40transfer(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_put, __pyx_v_way);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_42transfer(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_put, __pyx_v_way);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_put, int __pyx_v_way) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_42transfer(CYTHON_UNUSED struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, __pyx_t_9bit_board_uintmax_t __pyx_v_put, int __pyx_v_way) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("transfer", 0);
 
-  /* "bit_board.pyx":318
+  /* "bit_board.pyx":321
  * 
  *     def transfer(self, uintmax_t put, int way):
  *         if way == 0: #             # <<<<<<<<<<<<<<
@@ -7324,7 +7378,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
   switch (__pyx_v_way) {
     case 0:
 
-    /* "bit_board.pyx":319
+    /* "bit_board.pyx":322
  *     def transfer(self, uintmax_t put, int way):
  *         if way == 0: #
  *             return (put << 8) & 0xffffffffffffff00             # <<<<<<<<<<<<<<
@@ -7332,16 +7386,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put << 7) & 0x7f7f7f7f7f7f7f00
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_18446744073709551360); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 319, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_18446744073709551360); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 322, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":318
+    /* "bit_board.pyx":321
  * 
  *     def transfer(self, uintmax_t put, int way):
  *         if way == 0: #             # <<<<<<<<<<<<<<
@@ -7350,7 +7404,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":320
+    /* "bit_board.pyx":323
  *         if way == 0: #
  *             return (put << 8) & 0xffffffffffffff00
  *         elif way == 1: #             # <<<<<<<<<<<<<<
@@ -7359,7 +7413,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 1:
 
-    /* "bit_board.pyx":321
+    /* "bit_board.pyx":324
  *             return (put << 8) & 0xffffffffffffff00
  *         elif way == 1: #
  *             return (put << 7) & 0x7f7f7f7f7f7f7f00             # <<<<<<<<<<<<<<
@@ -7367,16 +7421,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put >> 1) & 0x7f7f7f7f7f7f7f7f
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 324, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_9187201950435737344); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_9187201950435737344); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 324, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":320
+    /* "bit_board.pyx":323
  *         if way == 0: #
  *             return (put << 8) & 0xffffffffffffff00
  *         elif way == 1: #             # <<<<<<<<<<<<<<
@@ -7385,7 +7439,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":322
+    /* "bit_board.pyx":325
  *         elif way == 1: #
  *             return (put << 7) & 0x7f7f7f7f7f7f7f00
  *         elif way == 2: #             # <<<<<<<<<<<<<<
@@ -7394,7 +7448,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 2:
 
-    /* "bit_board.pyx":323
+    /* "bit_board.pyx":326
  *             return (put << 7) & 0x7f7f7f7f7f7f7f00
  *         elif way == 2: #
  *             return (put >> 1) & 0x7f7f7f7f7f7f7f7f             # <<<<<<<<<<<<<<
@@ -7402,16 +7456,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put >> 9) & 0x007f7f7f7f7f7f7f
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 323, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_9187201950435737471); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 323, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_9187201950435737471); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 326, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":322
+    /* "bit_board.pyx":325
  *         elif way == 1: #
  *             return (put << 7) & 0x7f7f7f7f7f7f7f00
  *         elif way == 2: #             # <<<<<<<<<<<<<<
@@ -7420,7 +7474,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":324
+    /* "bit_board.pyx":327
  *         elif way == 2: #
  *             return (put >> 1) & 0x7f7f7f7f7f7f7f7f
  *         elif way == 3: #             # <<<<<<<<<<<<<<
@@ -7429,7 +7483,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 3:
 
-    /* "bit_board.pyx":325
+    /* "bit_board.pyx":328
  *             return (put >> 1) & 0x7f7f7f7f7f7f7f7f
  *         elif way == 3: #
  *             return (put >> 9) & 0x007f7f7f7f7f7f7f             # <<<<<<<<<<<<<<
@@ -7437,16 +7491,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put >> 8) & 0x00ffffffffffffff
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 328, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_35887507618889599); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 325, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_35887507618889599); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 328, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":324
+    /* "bit_board.pyx":327
  *         elif way == 2: #
  *             return (put >> 1) & 0x7f7f7f7f7f7f7f7f
  *         elif way == 3: #             # <<<<<<<<<<<<<<
@@ -7455,7 +7509,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":326
+    /* "bit_board.pyx":329
  *         elif way == 3: #
  *             return (put >> 9) & 0x007f7f7f7f7f7f7f
  *         elif way == 4: #             # <<<<<<<<<<<<<<
@@ -7464,7 +7518,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 4:
 
-    /* "bit_board.pyx":327
+    /* "bit_board.pyx":330
  *             return (put >> 9) & 0x007f7f7f7f7f7f7f
  *         elif way == 4: #
  *             return (put >> 8) & 0x00ffffffffffffff             # <<<<<<<<<<<<<<
@@ -7472,16 +7526,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put >> 7) & 0x00fefefefefefefe
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 327, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 330, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_72057594037927935); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 327, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_72057594037927935); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 330, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":326
+    /* "bit_board.pyx":329
  *         elif way == 3: #
  *             return (put >> 9) & 0x007f7f7f7f7f7f7f
  *         elif way == 4: #             # <<<<<<<<<<<<<<
@@ -7490,7 +7544,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":328
+    /* "bit_board.pyx":331
  *         elif way == 4: #
  *             return (put >> 8) & 0x00ffffffffffffff
  *         elif way == 5: #             # <<<<<<<<<<<<<<
@@ -7499,7 +7553,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 5:
 
-    /* "bit_board.pyx":329
+    /* "bit_board.pyx":332
  *             return (put >> 8) & 0x00ffffffffffffff
  *         elif way == 5: #
  *             return (put >> 7) & 0x00fefefefefefefe             # <<<<<<<<<<<<<<
@@ -7507,16 +7561,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put << 1) & 0xfefefefefefefefe
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 329, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put >> 7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 332, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_71775015237779198); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_71775015237779198); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":328
+    /* "bit_board.pyx":331
  *         elif way == 4: #
  *             return (put >> 8) & 0x00ffffffffffffff
  *         elif way == 5: #             # <<<<<<<<<<<<<<
@@ -7525,7 +7579,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":330
+    /* "bit_board.pyx":333
  *         elif way == 5: #
  *             return (put >> 7) & 0x00fefefefefefefe
  *         elif way == 6: #             # <<<<<<<<<<<<<<
@@ -7534,7 +7588,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 6:
 
-    /* "bit_board.pyx":331
+    /* "bit_board.pyx":334
  *             return (put >> 7) & 0x00fefefefefefefe
  *         elif way == 6: #
  *             return (put << 1) & 0xfefefefefefefefe             # <<<<<<<<<<<<<<
@@ -7542,16 +7596,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return (put << 9) & 0xfefefefefefefe00
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_18374403900871474942); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_And(__pyx_t_1, __pyx_int_18374403900871474942); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":330
+    /* "bit_board.pyx":333
  *         elif way == 5: #
  *             return (put >> 7) & 0x00fefefefefefefe
  *         elif way == 6: #             # <<<<<<<<<<<<<<
@@ -7560,7 +7614,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     break;
 
-    /* "bit_board.pyx":332
+    /* "bit_board.pyx":335
  *         elif way == 6: #
  *             return (put << 1) & 0xfefefefefefefefe
  *         elif way == 7: #             # <<<<<<<<<<<<<<
@@ -7569,7 +7623,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
     case 7:
 
-    /* "bit_board.pyx":333
+    /* "bit_board.pyx":336
  *             return (put << 1) & 0xfefefefefefefefe
  *         elif way == 7: #
  *             return (put << 9) & 0xfefefefefefefe00             # <<<<<<<<<<<<<<
@@ -7577,16 +7631,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  *             return 0
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 333, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_uint64_t((__pyx_v_put << 9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_18374403900871474688); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 333, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_2, __pyx_int_18374403900871474688); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 336, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":332
+    /* "bit_board.pyx":335
  *         elif way == 6: #
  *             return (put << 1) & 0xfefefefefefefefe
  *         elif way == 7: #             # <<<<<<<<<<<<<<
@@ -7596,7 +7650,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
     break;
     default:
 
-    /* "bit_board.pyx":335
+    /* "bit_board.pyx":338
  *             return (put << 9) & 0xfefefefefefefe00
  *         else:
  *             return 0             # <<<<<<<<<<<<<<
@@ -7610,7 +7664,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
     break;
   }
 
-  /* "bit_board.pyx":317
+  /* "bit_board.pyx":320
  * 
  * 
  *     def transfer(self, uintmax_t put, int way):             # <<<<<<<<<<<<<<
@@ -7630,7 +7684,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
   return __pyx_r;
 }
 
-/* "bit_board.pyx":338
+/* "bit_board.pyx":341
  * 
  * 
  *     def is_in_puttable_list(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -7639,8 +7693,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_40transfer(CYTHON_UNUSED struct _
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_43is_in_puttable_list(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_43is_in_puttable_list(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_45is_in_puttable_list(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_45is_in_puttable_list(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   PyObject *__pyx_r = 0;
@@ -7669,11 +7723,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_43is_in_puttable_list(PyObject *_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("is_in_puttable_list", 1, 2, 2, 1); __PYX_ERR(0, 338, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("is_in_puttable_list", 1, 2, 2, 1); __PYX_ERR(0, 341, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_in_puttable_list") < 0)) __PYX_ERR(0, 338, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "is_in_puttable_list") < 0)) __PYX_ERR(0, 341, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7681,31 +7735,31 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_43is_in_puttable_list(PyObject *_
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 338, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 338, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 341, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 341, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("is_in_puttable_list", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 338, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("is_in_puttable_list", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 341, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.is_in_puttable_list", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_44is_in_puttable_list(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_in_puttable_list(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("is_in_puttable_list", 0);
 
-  /* "bit_board.pyx":339
+  /* "bit_board.pyx":342
  * 
  *     def is_in_puttable_list(self, int x, int y):
  *         if self._puttable_map >> (x + 8*y) & 0b1 != 0:             # <<<<<<<<<<<<<<
@@ -7715,7 +7769,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
   __pyx_t_1 = ((((__pyx_v_self->_puttable_map >> (__pyx_v_x + (8 * __pyx_v_y))) & 1) != 0) != 0);
   if (__pyx_t_1) {
 
-    /* "bit_board.pyx":340
+    /* "bit_board.pyx":343
  *     def is_in_puttable_list(self, int x, int y):
  *         if self._puttable_map >> (x + 8*y) & 0b1 != 0:
  *             return True             # <<<<<<<<<<<<<<
@@ -7727,7 +7781,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":339
+    /* "bit_board.pyx":342
  * 
  *     def is_in_puttable_list(self, int x, int y):
  *         if self._puttable_map >> (x + 8*y) & 0b1 != 0:             # <<<<<<<<<<<<<<
@@ -7736,7 +7790,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
  */
   }
 
-  /* "bit_board.pyx":342
+  /* "bit_board.pyx":345
  *             return True
  *         else:
  *             return False             # <<<<<<<<<<<<<<
@@ -7750,7 +7804,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
     goto __pyx_L0;
   }
 
-  /* "bit_board.pyx":338
+  /* "bit_board.pyx":341
  * 
  * 
  *     def is_in_puttable_list(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -7765,7 +7819,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
   return __pyx_r;
 }
 
-/* "bit_board.pyx":345
+/* "bit_board.pyx":348
  * 
  * 
  *     def is_no_puttable(self):             # <<<<<<<<<<<<<<
@@ -7774,25 +7828,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_42is_in_puttable_list(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_45is_no_puttable(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_45is_no_puttable(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_47is_no_puttable(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_47is_no_puttable(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_no_puttable (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_44is_no_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_46is_no_puttable(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_46is_no_puttable(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("is_no_puttable", 0);
 
-  /* "bit_board.pyx":346
+  /* "bit_board.pyx":349
  * 
  *     def is_no_puttable(self):
  *         if self._puttable_map == 0:             # <<<<<<<<<<<<<<
@@ -7802,7 +7856,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
   __pyx_t_1 = ((__pyx_v_self->_puttable_map == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "bit_board.pyx":347
+    /* "bit_board.pyx":350
  *     def is_no_puttable(self):
  *         if self._puttable_map == 0:
  *             return True             # <<<<<<<<<<<<<<
@@ -7814,7 +7868,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
     __pyx_r = Py_True;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":346
+    /* "bit_board.pyx":349
  * 
  *     def is_no_puttable(self):
  *         if self._puttable_map == 0:             # <<<<<<<<<<<<<<
@@ -7823,7 +7877,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
  */
   }
 
-  /* "bit_board.pyx":349
+  /* "bit_board.pyx":352
  *             return True
  *         else:
  *             return False             # <<<<<<<<<<<<<<
@@ -7837,7 +7891,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
     goto __pyx_L0;
   }
 
-  /* "bit_board.pyx":345
+  /* "bit_board.pyx":348
  * 
  * 
  *     def is_no_puttable(self):             # <<<<<<<<<<<<<<
@@ -7852,7 +7906,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "bit_board.pyx":352
+/* "bit_board.pyx":355
  * 
  * 
  *     def count_stone(self, bow):             # <<<<<<<<<<<<<<
@@ -7861,19 +7915,19 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_44is_no_puttable(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_47count_stone(PyObject *__pyx_v_self, PyObject *__pyx_v_bow); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_47count_stone(PyObject *__pyx_v_self, PyObject *__pyx_v_bow) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_49count_stone(PyObject *__pyx_v_self, PyObject *__pyx_v_bow); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_49count_stone(PyObject *__pyx_v_self, PyObject *__pyx_v_bow) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("count_stone (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_46count_stone(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_bow));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_48count_stone(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v_bow));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_48count_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v_bow) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_nbit;
   __pyx_t_9bit_board_uintmax_t __pyx_v_bl_board;
   __pyx_t_9bit_board_uintmax_t __pyx_v_wh_board;
@@ -7886,20 +7940,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
   PyObject *__pyx_t_5 = NULL;
   __Pyx_RefNannySetupContext("count_stone", 0);
 
-  /* "bit_board.pyx":355
+  /* "bit_board.pyx":358
  *         cdef uintmax_t nbit
  *         cdef uintmax_t bl_board, wh_board
  *         if bow == 1:             # <<<<<<<<<<<<<<
  *             bl_board = self._bl_board
  *             nbit = (bl_board & 0x5555555555555555) + (( bl_board >> 1 ) & 0x5555555555555555)
  */
-  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_bow, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 355, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_EqObjC(__pyx_v_bow, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 355, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "bit_board.pyx":356
+    /* "bit_board.pyx":359
  *         cdef uintmax_t bl_board, wh_board
  *         if bow == 1:
  *             bl_board = self._bl_board             # <<<<<<<<<<<<<<
@@ -7909,132 +7963,132 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
     __pyx_t_3 = __pyx_v_self->_bl_board;
     __pyx_v_bl_board = __pyx_t_3;
 
-    /* "bit_board.pyx":357
+    /* "bit_board.pyx":360
  *         if bow == 1:
  *             bl_board = self._bl_board
  *             nbit = (bl_board & 0x5555555555555555) + (( bl_board >> 1 ) & 0x5555555555555555)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  */
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_bl_board); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_bl_board >> 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_bl_board >> 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 357, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 360, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":358
+    /* "bit_board.pyx":361
  *             bl_board = self._bl_board
  *             nbit = (bl_board & 0x5555555555555555) + (( bl_board >> 1 ) & 0x5555555555555555)
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  */
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 358, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 361, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":359
+    /* "bit_board.pyx":362
  *             nbit = (bl_board & 0x5555555555555555) + (( bl_board >> 1 ) & 0x5555555555555555)
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
  */
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 359, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 362, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":360
+    /* "bit_board.pyx":363
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  */
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 360, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 363, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":361
+    /* "bit_board.pyx":364
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)             # <<<<<<<<<<<<<<
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  *         elif bow == 2:
  */
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_281470681808895); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_int_281470681808895); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 16)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 16)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_281470681808895); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_281470681808895); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 361, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":362
+    /* "bit_board.pyx":365
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)             # <<<<<<<<<<<<<<
@@ -8042,14 +8096,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
  *             wh_board = self._wh_board
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 365, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_4294967295); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 362, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_1, __pyx_int_4294967295); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 365, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 32)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 32)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 365, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 362, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 365, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -8057,7 +8111,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
     __pyx_t_4 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":355
+    /* "bit_board.pyx":358
  *         cdef uintmax_t nbit
  *         cdef uintmax_t bl_board, wh_board
  *         if bow == 1:             # <<<<<<<<<<<<<<
@@ -8066,20 +8120,20 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
  */
   }
 
-  /* "bit_board.pyx":363
+  /* "bit_board.pyx":366
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  *         elif bow == 2:             # <<<<<<<<<<<<<<
  *             wh_board = self._wh_board
  *             nbit = (wh_board & 0x5555555555555555) + (( wh_board >> 1 ) & 0x5555555555555555)
  */
-  __pyx_t_4 = __Pyx_PyInt_EqObjC(__pyx_v_bow, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 363, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_EqObjC(__pyx_v_bow, __pyx_int_2, 2, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 363, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 366, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (__pyx_t_2) {
 
-    /* "bit_board.pyx":364
+    /* "bit_board.pyx":367
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  *         elif bow == 2:
  *             wh_board = self._wh_board             # <<<<<<<<<<<<<<
@@ -8089,132 +8143,132 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
     __pyx_t_3 = __pyx_v_self->_wh_board;
     __pyx_v_wh_board = __pyx_t_3;
 
-    /* "bit_board.pyx":365
+    /* "bit_board.pyx":368
  *         elif bow == 2:
  *             wh_board = self._wh_board
  *             nbit = (wh_board & 0x5555555555555555) + (( wh_board >> 1 ) & 0x5555555555555555)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  */
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_wh_board); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_wh_board); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_wh_board >> 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_wh_board >> 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_6148914691236517205); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 365, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 368, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":366
+    /* "bit_board.pyx":369
  *             wh_board = self._wh_board
  *             nbit = (wh_board & 0x5555555555555555) + (( wh_board >> 1 ) & 0x5555555555555555)
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  */
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 2)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 2)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_3689348814741910323); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 366, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 369, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":367
+    /* "bit_board.pyx":370
  *             nbit = (wh_board & 0x5555555555555555) + (( wh_board >> 1 ) & 0x5555555555555555)
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (( nbit >> 16 ) & 0x0000ffff0000ffff)
  */
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 4)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 4)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_1085102592571150095); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 367, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 370, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":368
+    /* "bit_board.pyx":371
  *             nbit = (nbit & 0x3333333333333333) + (( nbit >> 2 ) & 0x3333333333333333)
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)             # <<<<<<<<<<<<<<
  *             nbit = (nbit & 0x0000ffff0000ffff) + (( nbit >> 16 ) & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  */
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 8)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 8)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_71777214294589695); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 368, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 371, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":369
+    /* "bit_board.pyx":372
  *             nbit = (nbit & 0x0f0f0f0f0f0f0f0f) + (( nbit >> 4 ) & 0x0f0f0f0f0f0f0f0f)
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (( nbit >> 16 ) & 0x0000ffff0000ffff)             # <<<<<<<<<<<<<<
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  * 
  */
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_281470681808895); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_int_281470681808895); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 16)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 16)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_281470681808895); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_281470681808895); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 369, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_As_uint64_t(__pyx_t_4); if (unlikely((__pyx_t_3 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 372, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_nbit = __pyx_t_3;
 
-    /* "bit_board.pyx":370
+    /* "bit_board.pyx":373
  *             nbit = (nbit & 0x00ff00ff00ff00ff) + (( nbit >> 8 ) & 0x00ff00ff00ff00ff)
  *             nbit = (nbit & 0x0000ffff0000ffff) + (( nbit >> 16 ) & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)             # <<<<<<<<<<<<<<
@@ -8222,14 +8276,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t(__pyx_v_nbit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 373, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_4294967295); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 370, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_And(__pyx_t_4, __pyx_int_4294967295); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 373, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 32)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 370, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_uint64_t((__pyx_v_nbit >> 32)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 373, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 373, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8237,7 +8291,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "bit_board.pyx":363
+    /* "bit_board.pyx":366
  *             nbit = (nbit & 0x0000ffff0000ffff) + (nbit >> 16 & 0x0000ffff0000ffff)
  *             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
  *         elif bow == 2:             # <<<<<<<<<<<<<<
@@ -8246,7 +8300,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
  */
   }
 
-  /* "bit_board.pyx":352
+  /* "bit_board.pyx":355
  * 
  * 
  *     def count_stone(self, bow):             # <<<<<<<<<<<<<<
@@ -8269,7 +8323,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
   return __pyx_r;
 }
 
-/* "bit_board.pyx":374
+/* "bit_board.pyx":377
  * 
  * 
  *     def change_liberty(self, int x, int y, int pm):             # <<<<<<<<<<<<<<
@@ -8278,8 +8332,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_46count_stone(struct __pyx_obj_9b
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_49change_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_49change_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_51change_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_51change_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   int __pyx_v_pm;
@@ -8311,17 +8365,17 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_49change_liberty(PyObject *__pyx_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, 1); __PYX_ERR(0, 374, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, 1); __PYX_ERR(0, 377, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pm)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, 2); __PYX_ERR(0, 374, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, 2); __PYX_ERR(0, 377, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "change_liberty") < 0)) __PYX_ERR(0, 374, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "change_liberty") < 0)) __PYX_ERR(0, 377, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -8330,26 +8384,26 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_49change_liberty(PyObject *__pyx_
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 374, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 374, __pyx_L3_error)
-    __pyx_v_pm = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_pm == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 374, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 377, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 377, __pyx_L3_error)
+    __pyx_v_pm = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_pm == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 377, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 374, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("change_liberty", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 377, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.change_liberty", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_48change_liberty(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_pm);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_50change_liberty(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_pm);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_pm) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_50change_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_pm) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8360,7 +8414,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
   int __pyx_t_6;
   __Pyx_RefNannySetupContext("change_liberty", 0);
 
-  /* "bit_board.pyx":376
+  /* "bit_board.pyx":379
  *     def change_liberty(self, int x, int y, int pm):
  *         # reduce liberty
  *         x += 1             # <<<<<<<<<<<<<<
@@ -8369,7 +8423,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   __pyx_v_x = (__pyx_v_x + 1);
 
-  /* "bit_board.pyx":377
+  /* "bit_board.pyx":380
  *         # reduce liberty
  *         x += 1
  *         y += 1             # <<<<<<<<<<<<<<
@@ -8378,7 +8432,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   __pyx_v_y = (__pyx_v_y + 1);
 
-  /* "bit_board.pyx":378
+  /* "bit_board.pyx":381
  *         x += 1
  *         y += 1
  *         self._liberty[x][y-1] += pm             # <<<<<<<<<<<<<<
@@ -8387,24 +8441,24 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 378, __pyx_L1_error)
+    __PYX_ERR(0, 381, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 378, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y - 1);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 378, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 378, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 378, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 378, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":379
+  /* "bit_board.pyx":382
  *         y += 1
  *         self._liberty[x][y-1] += pm
  *         self._liberty[x-1][y-1] += pm             # <<<<<<<<<<<<<<
@@ -8413,25 +8467,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 379, __pyx_L1_error)
+    __PYX_ERR(0, 382, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x - 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 379, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y - 1);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 379, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 379, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 379, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 379, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 382, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":380
+  /* "bit_board.pyx":383
  *         self._liberty[x][y-1] += pm
  *         self._liberty[x-1][y-1] += pm
  *         self._liberty[x-1][y] += pm             # <<<<<<<<<<<<<<
@@ -8440,25 +8494,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 380, __pyx_L1_error)
+    __PYX_ERR(0, 383, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x - 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 380, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_6 = __pyx_v_y;
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 380, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 380, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 380, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_6, __pyx_t_5, int, 1, __Pyx_PyInt_From_int, 0, 1, 0) < 0)) __PYX_ERR(0, 380, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_6, __pyx_t_5, int, 1, __Pyx_PyInt_From_int, 0, 1, 0) < 0)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":381
+  /* "bit_board.pyx":384
  *         self._liberty[x-1][y-1] += pm
  *         self._liberty[x-1][y] += pm
  *         self._liberty[x-1][y+1] += pm             # <<<<<<<<<<<<<<
@@ -8467,25 +8521,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 381, __pyx_L1_error)
+    __PYX_ERR(0, 384, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x - 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 381, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y + 1);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 381, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 381, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 381, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":382
+  /* "bit_board.pyx":385
  *         self._liberty[x-1][y] += pm
  *         self._liberty[x-1][y+1] += pm
  *         self._liberty[x][y+1] += pm             # <<<<<<<<<<<<<<
@@ -8494,24 +8548,24 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 382, __pyx_L1_error)
+    __PYX_ERR(0, 385, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y + 1);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 382, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 382, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":383
+  /* "bit_board.pyx":386
  *         self._liberty[x-1][y+1] += pm
  *         self._liberty[x][y+1] += pm
  *         self._liberty[x+1][y+1] += pm             # <<<<<<<<<<<<<<
@@ -8520,25 +8574,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 383, __pyx_L1_error)
+    __PYX_ERR(0, 386, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x + 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y + 1);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 383, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 383, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 383, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 383, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":384
+  /* "bit_board.pyx":387
  *         self._liberty[x][y+1] += pm
  *         self._liberty[x+1][y+1] += pm
  *         self._liberty[x+1][y] += pm             # <<<<<<<<<<<<<<
@@ -8547,25 +8601,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 384, __pyx_L1_error)
+    __PYX_ERR(0, 387, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x + 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 384, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_6 = __pyx_v_y;
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 384, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_6, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 384, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 384, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_InPlaceAdd(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_6, __pyx_t_5, int, 1, __Pyx_PyInt_From_int, 0, 1, 0) < 0)) __PYX_ERR(0, 384, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_6, __pyx_t_5, int, 1, __Pyx_PyInt_From_int, 0, 1, 0) < 0)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":385
+  /* "bit_board.pyx":388
  *         self._liberty[x+1][y+1] += pm
  *         self._liberty[x+1][y] += pm
  *         self._liberty[x+1][y-1] += pm             # <<<<<<<<<<<<<<
@@ -8574,25 +8628,25 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 385, __pyx_L1_error)
+    __PYX_ERR(0, 388, __pyx_L1_error)
   }
   __pyx_t_2 = (__pyx_v_x + 1);
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 385, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_v_y - 1);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 385, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_1, __pyx_t_2, long, 1, __Pyx_PyInt_From_long, 0, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 385, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_pm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 385, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 385, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_t_2, __pyx_t_3, long, 1, __Pyx_PyInt_From_long, 0, 1, 0) < 0)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":374
+  /* "bit_board.pyx":377
  * 
  * 
  *     def change_liberty(self, int x, int y, int pm):             # <<<<<<<<<<<<<<
@@ -8616,7 +8670,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "bit_board.pyx":388
+/* "bit_board.pyx":391
  * 
  * 
  *     def put_stone(self, int x, int y, int bow):             # <<<<<<<<<<<<<<
@@ -8625,8 +8679,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_48change_liberty(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_51put_stone(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_51put_stone(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_53put_stone(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_53put_stone(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   int __pyx_v_bow;
@@ -8658,17 +8712,17 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_51put_stone(PyObject *__pyx_v_sel
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, 1); __PYX_ERR(0, 388, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, 1); __PYX_ERR(0, 391, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_bow)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, 2); __PYX_ERR(0, 388, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, 2); __PYX_ERR(0, 391, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "put_stone") < 0)) __PYX_ERR(0, 388, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "put_stone") < 0)) __PYX_ERR(0, 391, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -8677,26 +8731,26 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_51put_stone(PyObject *__pyx_v_sel
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 388, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 388, __pyx_L3_error)
-    __pyx_v_bow = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 388, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 391, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 391, __pyx_L3_error)
+    __pyx_v_bow = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_bow == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 391, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 388, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("put_stone", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 391, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.put_stone", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_50put_stone(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_bow);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_52put_stone(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_bow);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_bow) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_52put_stone(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_bow) {
   __pyx_t_9bit_board_uintmax_t __pyx_v_atk_board;
   int __pyx_v_opp;
   __pyx_t_9bit_board_uintmax_t __pyx_v_opp_board;
@@ -8722,16 +8776,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   int __pyx_t_13;
   __Pyx_RefNannySetupContext("put_stone", 0);
 
-  /* "bit_board.pyx":390
+  /* "bit_board.pyx":393
  *     def put_stone(self, int x, int y, int bow):
  *         #
  *         cdef uintmax_t atk_board = self.get_board_half(bow)             # <<<<<<<<<<<<<<
  *         cdef int opp = self.get_opponent(bow)
  *         cdef uintmax_t opp_board = self.get_board_half(opp)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 390, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 390, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -8744,14 +8798,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     }
   }
   if (!__pyx_t_4) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 393, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 393, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -8760,39 +8814,39 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_4, __pyx_t_3};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 393, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 390, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 393, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 393, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 390, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_atk_board = __pyx_t_6;
 
-  /* "bit_board.pyx":391
+  /* "bit_board.pyx":394
  *         #
  *         cdef uintmax_t atk_board = self.get_board_half(bow)
  *         cdef int opp = self.get_opponent(bow)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t opp_board = self.get_board_half(opp)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_opponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 391, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_opponent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 391, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -8805,14 +8859,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 391, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 394, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 391, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 394, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -8821,39 +8875,39 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_3, __pyx_t_5};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 391, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 394, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 391, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 394, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __pyx_t_3 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 391, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 394, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 391, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_opp = __pyx_t_7;
 
-  /* "bit_board.pyx":392
+  /* "bit_board.pyx":395
  *         cdef uintmax_t atk_board = self.get_board_half(bow)
  *         cdef int opp = self.get_opponent(bow)
  *         cdef uintmax_t opp_board = self.get_board_half(opp)             # <<<<<<<<<<<<<<
  * 
  *         cdef int way
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 392, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_get_board_half); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 395, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 392, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 395, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -8866,14 +8920,14 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 392, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 395, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 395, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8882,30 +8936,30 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 395, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 395, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_4);
       PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_t_4);
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 392, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 395, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 392, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 395, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_opp_board = __pyx_t_6;
 
-  /* "bit_board.pyx":395
+  /* "bit_board.pyx":398
  * 
  *         cdef int way
  *         cdef uintmax_t put = 1             # <<<<<<<<<<<<<<
@@ -8914,7 +8968,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
   __pyx_v_put = 1;
 
-  /* "bit_board.pyx":396
+  /* "bit_board.pyx":399
  *         cdef int way
  *         cdef uintmax_t put = 1
  *         cdef uintmax_t rev=0, tmp_rev, mask             # <<<<<<<<<<<<<<
@@ -8923,7 +8977,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
   __pyx_v_rev = 0;
 
-  /* "bit_board.pyx":397
+  /* "bit_board.pyx":400
  *         cdef uintmax_t put = 1
  *         cdef uintmax_t rev=0, tmp_rev, mask
  *         put = put << x+8*y             # <<<<<<<<<<<<<<
@@ -8932,7 +8986,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
   __pyx_v_put = (__pyx_v_put << (__pyx_v_x + (8 * __pyx_v_y)));
 
-  /* "bit_board.pyx":399
+  /* "bit_board.pyx":402
  *         put = put << x+8*y
  * 
  *         for way in range(self._board_size):             # <<<<<<<<<<<<<<
@@ -8944,7 +8998,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
     __pyx_v_way = __pyx_t_9;
 
-    /* "bit_board.pyx":400
+    /* "bit_board.pyx":403
  * 
  *         for way in range(self._board_size):
  *             tmp_rev = 0             # <<<<<<<<<<<<<<
@@ -8953,18 +9007,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
     __pyx_v_tmp_rev = 0;
 
-    /* "bit_board.pyx":401
+    /* "bit_board.pyx":404
  *         for way in range(self._board_size):
  *             tmp_rev = 0
  *             mask = self.transfer(put, way)             # <<<<<<<<<<<<<<
  * 
  *             while (mask != 0) and ((mask & opp_board) != 0):
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_transfer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 401, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_transfer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 404, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_put); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 401, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_put); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 404, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_way); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 401, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_way); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 404, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     __pyx_t_10 = 0;
@@ -8981,7 +9035,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 404, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -8991,7 +9045,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 404, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -8999,7 +9053,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     } else
     #endif
     {
-      __pyx_t_11 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 401, __pyx_L1_error)
+      __pyx_t_11 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 404, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -9010,16 +9064,16 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
       PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_10, __pyx_t_4);
       __pyx_t_3 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 404, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 401, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 404, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_mask = __pyx_t_6;
 
-    /* "bit_board.pyx":403
+    /* "bit_board.pyx":406
  *             mask = self.transfer(put, way)
  * 
  *             while (mask != 0) and ((mask & opp_board) != 0):             # <<<<<<<<<<<<<<
@@ -9038,7 +9092,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
       __pyx_L7_bool_binop_done:;
       if (!__pyx_t_12) break;
 
-      /* "bit_board.pyx":404
+      /* "bit_board.pyx":407
  * 
  *             while (mask != 0) and ((mask & opp_board) != 0):
  *                 tmp_rev |= mask             # <<<<<<<<<<<<<<
@@ -9047,18 +9101,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
       __pyx_v_tmp_rev = (__pyx_v_tmp_rev | __pyx_v_mask);
 
-      /* "bit_board.pyx":405
+      /* "bit_board.pyx":408
  *             while (mask != 0) and ((mask & opp_board) != 0):
  *                 tmp_rev |= mask
  *                 mask = self.transfer(mask, way)             # <<<<<<<<<<<<<<
  * 
  *             if (mask & atk_board) != 0 :
  */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_transfer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 405, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_transfer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 408, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_11 = __Pyx_PyInt_From_uint64_t(__pyx_v_mask); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 405, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyInt_From_uint64_t(__pyx_v_mask); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 408, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_way); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 405, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_way); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 408, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_3 = NULL;
       __pyx_t_10 = 0;
@@ -9075,7 +9129,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 405, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 408, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -9085,7 +9139,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 405, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 408, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -9093,7 +9147,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
       } else
       #endif
       {
-        __pyx_t_5 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 405, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 408, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         if (__pyx_t_3) {
           __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -9104,17 +9158,17 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
         PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_10, __pyx_t_4);
         __pyx_t_11 = 0;
         __pyx_t_4 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 405, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 408, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 405, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_As_uint64_t(__pyx_t_1); if (unlikely((__pyx_t_6 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 408, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_v_mask = __pyx_t_6;
     }
 
-    /* "bit_board.pyx":407
+    /* "bit_board.pyx":410
  *                 mask = self.transfer(mask, way)
  * 
  *             if (mask & atk_board) != 0 :             # <<<<<<<<<<<<<<
@@ -9124,7 +9178,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     __pyx_t_12 = (((__pyx_v_mask & __pyx_v_atk_board) != 0) != 0);
     if (__pyx_t_12) {
 
-      /* "bit_board.pyx":408
+      /* "bit_board.pyx":411
  * 
  *             if (mask & atk_board) != 0 :
  *                 rev |= tmp_rev             # <<<<<<<<<<<<<<
@@ -9133,7 +9187,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
       __pyx_v_rev = (__pyx_v_rev | __pyx_v_tmp_rev);
 
-      /* "bit_board.pyx":407
+      /* "bit_board.pyx":410
  *                 mask = self.transfer(mask, way)
  * 
  *             if (mask & atk_board) != 0 :             # <<<<<<<<<<<<<<
@@ -9143,7 +9197,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     }
   }
 
-  /* "bit_board.pyx":411
+  /* "bit_board.pyx":414
  * 
  *         #
  *         atk_board ^= put | rev             # <<<<<<<<<<<<<<
@@ -9152,7 +9206,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
   __pyx_v_atk_board = (__pyx_v_atk_board ^ (__pyx_v_put | __pyx_v_rev));
 
-  /* "bit_board.pyx":412
+  /* "bit_board.pyx":415
  *         #
  *         atk_board ^= put | rev
  *         opp_board ^= rev             # <<<<<<<<<<<<<<
@@ -9161,18 +9215,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
   __pyx_v_opp_board = (__pyx_v_opp_board ^ __pyx_v_rev);
 
-  /* "bit_board.pyx":415
+  /* "bit_board.pyx":418
  * 
  *         #reduce liberty
  *         self.change_liberty(x, y, -1)             # <<<<<<<<<<<<<<
  * 
  *         # reflect
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_change_liberty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 418, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 418, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 418, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_11 = NULL;
   __pyx_t_7 = 0;
@@ -9189,7 +9243,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_5, __pyx_t_4, __pyx_int_neg_1};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -9199,7 +9253,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_5, __pyx_t_4, __pyx_int_neg_1};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -9207,7 +9261,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   } else
   #endif
   {
-    __pyx_t_3 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 415, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     if (__pyx_t_11) {
       __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -9221,199 +9275,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
     PyTuple_SET_ITEM(__pyx_t_3, 2+__pyx_t_7, __pyx_int_neg_1);
     __pyx_t_5 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "bit_board.pyx":418
- * 
- *         # reflect
- *         self.set_board(atk_board, bow)             # <<<<<<<<<<<<<<
- *         self.set_board(opp_board, opp)
- *         self.append_board_history(atk_board, bow)
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 418, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_atk_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 418, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 418, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = NULL;
-  __pyx_t_7 = 0;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_5)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_5);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-      __pyx_t_7 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  {
-    __pyx_t_11 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 418, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_11);
-    if (__pyx_t_5) {
-      __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_5); __pyx_t_5 = NULL;
-    }
-    __Pyx_GIVEREF(__pyx_t_3);
-    PyTuple_SET_ITEM(__pyx_t_11, 0+__pyx_t_7, __pyx_t_3);
-    __Pyx_GIVEREF(__pyx_t_4);
-    PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_7, __pyx_t_4);
-    __pyx_t_3 = 0;
-    __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "bit_board.pyx":419
- *         # reflect
- *         self.set_board(atk_board, bow)
- *         self.set_board(opp_board, opp)             # <<<<<<<<<<<<<<
- *         self.append_board_history(atk_board, bow)
- *         self.append_board_history(opp_board, opp)
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 419, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_11 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 419, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 419, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = NULL;
-  __pyx_t_7 = 0;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_3)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_3);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-      __pyx_t_7 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 419, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 419, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  {
-    __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 419, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    if (__pyx_t_3) {
-      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
-    }
-    __Pyx_GIVEREF(__pyx_t_11);
-    PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_7, __pyx_t_11);
-    __Pyx_GIVEREF(__pyx_t_4);
-    PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_7, __pyx_t_4);
-    __pyx_t_11 = 0;
-    __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 419, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  }
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "bit_board.pyx":420
- *         self.set_board(atk_board, bow)
- *         self.set_board(opp_board, opp)
- *         self.append_board_history(atk_board, bow)             # <<<<<<<<<<<<<<
- *         self.append_board_history(opp_board, opp)
- *         self.append_input_history(x, y)
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 420, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyInt_From_uint64_t(__pyx_v_atk_board); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 420, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 420, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_11 = NULL;
-  __pyx_t_7 = 0;
-  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_11 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_11)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_11);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_2, function);
-      __pyx_t_7 = 1;
-    }
-  }
-  #if CYTHON_FAST_PYCALL
-  if (PyFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_5, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 420, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  #if CYTHON_FAST_PYCCALL
-  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_5, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 420, __pyx_L1_error)
-    __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  } else
-  #endif
-  {
-    __pyx_t_3 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 420, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    if (__pyx_t_11) {
-      __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_11); __pyx_t_11 = NULL;
-    }
-    __Pyx_GIVEREF(__pyx_t_5);
-    PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_7, __pyx_t_5);
-    __Pyx_GIVEREF(__pyx_t_4);
-    PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_7, __pyx_t_4);
-    __pyx_t_5 = 0;
-    __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 420, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
@@ -9421,17 +9283,17 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "bit_board.pyx":421
+ * 
+ *         # reflect
+ *         self.set_board(atk_board, bow)             # <<<<<<<<<<<<<<
  *         self.set_board(opp_board, opp)
  *         self.append_board_history(atk_board, bow)
- *         self.append_board_history(opp_board, opp)             # <<<<<<<<<<<<<<
- *         self.append_input_history(x, y)
- * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 421, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 421, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_atk_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 421, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_7 = 0;
@@ -9485,17 +9347,17 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "bit_board.pyx":422
+ *         # reflect
+ *         self.set_board(atk_board, bow)
+ *         self.set_board(opp_board, opp)             # <<<<<<<<<<<<<<
  *         self.append_board_history(atk_board, bow)
  *         self.append_board_history(opp_board, opp)
- *         self.append_input_history(x, y)             # <<<<<<<<<<<<<<
- * 
- * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_input_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_board); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 422, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 422, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 422, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = NULL;
   __pyx_t_7 = 0;
@@ -9548,7 +9410,199 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "bit_board.pyx":388
+  /* "bit_board.pyx":423
+ *         self.set_board(atk_board, bow)
+ *         self.set_board(opp_board, opp)
+ *         self.append_board_history(atk_board, bow)             # <<<<<<<<<<<<<<
+ *         self.append_board_history(opp_board, opp)
+ *         self.append_input_history(x, y)
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 423, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = __Pyx_PyInt_From_uint64_t(__pyx_v_atk_board); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 423, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_bow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 423, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_11 = NULL;
+  __pyx_t_7 = 0;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_11 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_11)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_11);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __pyx_t_7 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_5, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 423, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_t_5, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 423, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  {
+    __pyx_t_3 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 423, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    if (__pyx_t_11) {
+      __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_11); __pyx_t_11 = NULL;
+    }
+    __Pyx_GIVEREF(__pyx_t_5);
+    PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_7, __pyx_t_5);
+    __Pyx_GIVEREF(__pyx_t_4);
+    PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_7, __pyx_t_4);
+    __pyx_t_5 = 0;
+    __pyx_t_4 = 0;
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 423, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "bit_board.pyx":424
+ *         self.set_board(opp_board, opp)
+ *         self.append_board_history(atk_board, bow)
+ *         self.append_board_history(opp_board, opp)             # <<<<<<<<<<<<<<
+ *         self.append_input_history(x, y)
+ * 
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_board_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyInt_From_uint64_t(__pyx_v_opp_board); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_opp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 424, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = NULL;
+  __pyx_t_7 = 0;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_5)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_5);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __pyx_t_7 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  {
+    __pyx_t_11 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 424, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_11);
+    if (__pyx_t_5) {
+      __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_5); __pyx_t_5 = NULL;
+    }
+    __Pyx_GIVEREF(__pyx_t_3);
+    PyTuple_SET_ITEM(__pyx_t_11, 0+__pyx_t_7, __pyx_t_3);
+    __Pyx_GIVEREF(__pyx_t_4);
+    PyTuple_SET_ITEM(__pyx_t_11, 1+__pyx_t_7, __pyx_t_4);
+    __pyx_t_3 = 0;
+    __pyx_t_4 = 0;
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 424, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "bit_board.pyx":425
+ *         self.append_board_history(atk_board, bow)
+ *         self.append_board_history(opp_board, opp)
+ *         self.append_input_history(x, y)             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_append_input_history); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 425, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 425, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_11);
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 425, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_3 = NULL;
+  __pyx_t_7 = 0;
+  if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_3)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+      __Pyx_INCREF(__pyx_t_3);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
+      __pyx_t_7 = 1;
+    }
+  }
+  #if CYTHON_FAST_PYCALL
+  if (PyFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 425, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  #if CYTHON_FAST_PYCCALL
+  if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
+    PyObject *__pyx_temp[3] = {__pyx_t_3, __pyx_t_11, __pyx_t_4};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 425, __pyx_L1_error)
+    __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  } else
+  #endif
+  {
+    __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 425, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    if (__pyx_t_3) {
+      __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
+    }
+    __Pyx_GIVEREF(__pyx_t_11);
+    PyTuple_SET_ITEM(__pyx_t_5, 0+__pyx_t_7, __pyx_t_11);
+    __Pyx_GIVEREF(__pyx_t_4);
+    PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_7, __pyx_t_4);
+    __pyx_t_11 = 0;
+    __pyx_t_4 = 0;
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 425, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "bit_board.pyx":391
  * 
  * 
  *     def put_stone(self, int x, int y, int bow):             # <<<<<<<<<<<<<<
@@ -9574,7 +9628,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
   return __pyx_r;
 }
 
-/* "bit_board.pyx":425
+/* "bit_board.pyx":428
  * 
  * 
  *     def get_liberty(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -9583,8 +9637,8 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_50put_stone(struct __pyx_obj_9bit
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_53get_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_53get_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_55get_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_55get_liberty(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_x;
   int __pyx_v_y;
   PyObject *__pyx_r = 0;
@@ -9613,11 +9667,11 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_53get_liberty(PyObject *__pyx_v_s
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("get_liberty", 1, 2, 2, 1); __PYX_ERR(0, 425, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("get_liberty", 1, 2, 2, 1); __PYX_ERR(0, 428, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_liberty") < 0)) __PYX_ERR(0, 425, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_liberty") < 0)) __PYX_ERR(0, 428, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -9625,32 +9679,32 @@ static PyObject *__pyx_pw_9bit_board_8BitBoard_53get_liberty(PyObject *__pyx_v_s
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 425, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 425, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 428, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 428, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_liberty", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 425, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_liberty", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 428, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("bit_board.BitBoard.get_liberty", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_52get_liberty(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_54get_liberty(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_52get_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_54get_liberty(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, int __pyx_v_x, int __pyx_v_y) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("get_liberty", 0);
 
-  /* "bit_board.pyx":426
+  /* "bit_board.pyx":429
  * 
  *     def get_liberty(self, int x, int y):
  *         x += 1             # <<<<<<<<<<<<<<
@@ -9659,7 +9713,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_52get_liberty(struct __pyx_obj_9b
  */
   __pyx_v_x = (__pyx_v_x + 1);
 
-  /* "bit_board.pyx":427
+  /* "bit_board.pyx":430
  *     def get_liberty(self, int x, int y):
  *         x += 1
  *         y += 1             # <<<<<<<<<<<<<<
@@ -9668,7 +9722,7 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_52get_liberty(struct __pyx_obj_9b
  */
   __pyx_v_y = (__pyx_v_y + 1);
 
-  /* "bit_board.pyx":428
+  /* "bit_board.pyx":431
  *         x += 1
  *         y += 1
  *         return self._liberty[x][y]             # <<<<<<<<<<<<<<
@@ -9677,18 +9731,18 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_52get_liberty(struct __pyx_obj_9b
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_self->_liberty == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 428, __pyx_L1_error)
+    __PYX_ERR(0, 431, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_liberty, __pyx_v_x, int, 1, __Pyx_PyInt_From_int, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 431, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, __pyx_v_y, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 428, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, __pyx_v_y, int, 1, __Pyx_PyInt_From_int, 0, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 431, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "bit_board.pyx":425
+  /* "bit_board.pyx":428
  * 
  * 
  *     def get_liberty(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -10071,19 +10125,19 @@ static int __pyx_pf_9bit_board_8BitBoard_13_puttable_map_2__set__(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_55__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_55__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_57__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_57__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_54__reduce_cython__(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_56__reduce_cython__(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_54__reduce_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_56__reduce_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self) {
   int __pyx_v_use_setstate;
   PyObject *__pyx_v_state = NULL;
   PyObject *__pyx_v__dict = NULL;
@@ -10378,19 +10432,19 @@ static PyObject *__pyx_pf_9bit_board_8BitBoard_54__reduce_cython__(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9bit_board_8BitBoard_57__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_9bit_board_8BitBoard_57__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_9bit_board_8BitBoard_59__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_9bit_board_8BitBoard_59__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_9bit_board_8BitBoard_56__setstate_cython__(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_9bit_board_8BitBoard_58__setstate_cython__(((struct __pyx_obj_9bit_board_BitBoard *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9bit_board_8BitBoard_56__setstate_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_9bit_board_8BitBoard_58__setstate_cython__(struct __pyx_obj_9bit_board_BitBoard *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -13594,27 +13648,28 @@ static PyMethodDef __pyx_methods_9bit_board_BitBoard[] = {
   {"undo_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_11undo_board, METH_VARARGS|METH_KEYWORDS, 0},
   {"get_board_size", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_13get_board_size, METH_NOARGS, __pyx_doc_9bit_board_8BitBoard_12get_board_size},
   {"set_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_15set_board, METH_VARARGS|METH_KEYWORDS, 0},
-  {"append_input_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_17append_input_history, METH_VARARGS|METH_KEYWORDS, 0},
-  {"pop_input_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_19pop_input_history, METH_NOARGS, 0},
-  {"append_board_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_21append_board_history, METH_VARARGS|METH_KEYWORDS, 0},
-  {"pop_board_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_23pop_board_history, METH_O, 0},
-  {"init_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_25init_board, METH_O, __pyx_doc_9bit_board_8BitBoard_24init_board},
-  {"init_board_from_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_27init_board_from_board, METH_O, __pyx_doc_9bit_board_8BitBoard_26init_board_from_board},
-  {"get_board_half", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_29get_board_half, METH_O, 0},
-  {"display_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_31display_board, METH_NOARGS, __pyx_doc_9bit_board_8BitBoard_30display_board},
-  {"listing_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_33listing_puttable, METH_O, __pyx_doc_9bit_board_8BitBoard_32listing_puttable},
-  {"is_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_35is_puttable, METH_VARARGS|METH_KEYWORDS, 0},
-  {"get_puttable_map", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_37get_puttable_map, METH_NOARGS, 0},
-  {"get_puttable_list", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_39get_puttable_list, METH_NOARGS, __pyx_doc_9bit_board_8BitBoard_38get_puttable_list},
-  {"transfer", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_41transfer, METH_VARARGS|METH_KEYWORDS, 0},
-  {"is_in_puttable_list", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_43is_in_puttable_list, METH_VARARGS|METH_KEYWORDS, 0},
-  {"is_no_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_45is_no_puttable, METH_NOARGS, 0},
-  {"count_stone", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_47count_stone, METH_O, 0},
-  {"change_liberty", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_49change_liberty, METH_VARARGS|METH_KEYWORDS, 0},
-  {"put_stone", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_51put_stone, METH_VARARGS|METH_KEYWORDS, 0},
-  {"get_liberty", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_53get_liberty, METH_VARARGS|METH_KEYWORDS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_55__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_57__setstate_cython__, METH_O, 0},
+  {"get_input_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_17get_input_history, METH_NOARGS, 0},
+  {"append_input_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_19append_input_history, METH_VARARGS|METH_KEYWORDS, 0},
+  {"pop_input_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_21pop_input_history, METH_NOARGS, 0},
+  {"append_board_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_23append_board_history, METH_VARARGS|METH_KEYWORDS, 0},
+  {"pop_board_history", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_25pop_board_history, METH_O, 0},
+  {"init_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_27init_board, METH_O, __pyx_doc_9bit_board_8BitBoard_26init_board},
+  {"init_board_from_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_29init_board_from_board, METH_O, __pyx_doc_9bit_board_8BitBoard_28init_board_from_board},
+  {"get_board_half", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_31get_board_half, METH_O, 0},
+  {"display_board", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_33display_board, METH_NOARGS, __pyx_doc_9bit_board_8BitBoard_32display_board},
+  {"listing_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_35listing_puttable, METH_O, __pyx_doc_9bit_board_8BitBoard_34listing_puttable},
+  {"is_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_37is_puttable, METH_VARARGS|METH_KEYWORDS, 0},
+  {"get_puttable_map", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_39get_puttable_map, METH_NOARGS, 0},
+  {"get_puttable_list", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_41get_puttable_list, METH_NOARGS, __pyx_doc_9bit_board_8BitBoard_40get_puttable_list},
+  {"transfer", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_43transfer, METH_VARARGS|METH_KEYWORDS, 0},
+  {"is_in_puttable_list", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_45is_in_puttable_list, METH_VARARGS|METH_KEYWORDS, 0},
+  {"is_no_puttable", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_47is_no_puttable, METH_NOARGS, 0},
+  {"count_stone", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_49count_stone, METH_O, 0},
+  {"change_liberty", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_51change_liberty, METH_VARARGS|METH_KEYWORDS, 0},
+  {"put_stone", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_53put_stone, METH_VARARGS|METH_KEYWORDS, 0},
+  {"get_liberty", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_55get_liberty, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_57__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_9bit_board_8BitBoard_59__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
@@ -13810,9 +13865,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 32, __pyx_L1_error)
-  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 129, __pyx_L1_error)
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 130, __pyx_L1_error)
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 178, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(2, 229, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(2, 810, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1000, __pyx_L1_error)
@@ -13847,69 +13902,69 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "bit_board.pyx":129
+  /* "bit_board.pyx":132
  *         csv
  *         """
  *         with open(file_path) as f:             # <<<<<<<<<<<<<<
  *             for i, row in enumerate(f):
  *                 col = row.split(self.PARSER)
  */
-  __pyx_tuple__3 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "bit_board.pyx":168
+  /* "bit_board.pyx":171
  *         """
  * 
  *         cdef uintmax_t tmp_bl_board = self.get_board_half(1)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)
  *         cdef uintmax_t tmp_pt_board = self._puttable_map
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "bit_board.pyx":169
+  /* "bit_board.pyx":172
  * 
  *         cdef uintmax_t tmp_bl_board = self.get_board_half(1)
  *         cdef uintmax_t tmp_wh_board = self.get_board_half(2)             # <<<<<<<<<<<<<<
  *         cdef uintmax_t tmp_pt_board = self._puttable_map
  *         cdef int board_size = self._board_size
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_int_2); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_int_2); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "bit_board.pyx":175
+  /* "bit_board.pyx":178
  *         cdef uintmax_t coord
  * 
  *         print(" ", end="")             # <<<<<<<<<<<<<<
  *         for i in range(board_size):
  *             print(" {}".format(i), end="")
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u__6); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_u__6); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "bit_board.pyx":178
+  /* "bit_board.pyx":181
  *         for i in range(board_size):
  *             print(" {}".format(i), end="")
  *         print("")             # <<<<<<<<<<<<<<
  *         bar = "-"*18
  *         print(bar)
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u__8); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u__8); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "bit_board.pyx":195
+  /* "bit_board.pyx":198
  * 
  *                 print("{}|".format(stone), end="")
  *             print("")             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_u__8); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_kp_u__8); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 

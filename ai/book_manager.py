@@ -35,7 +35,7 @@ class BookManager:
 		return True
 
 
-	def find(self, __board, __game):
+	def find(self, __board):
 		node = self.Root
 		history = __board.get_input_history()
 
@@ -81,7 +81,7 @@ class BookManager:
 		next_move = transformer.denormalize(next_move)
 
 		moves = []
-		value = [next_move.x ,next_move.y]
+		value = np.array([next_move.x ,next_move.y], dtype='int32')
 		moves.append(value)
 
 		return moves
@@ -129,22 +129,3 @@ class BookManager:
 						break
 
 					node = node.sibling
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

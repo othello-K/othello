@@ -6,12 +6,13 @@ import numpy as np
 cimport numpy as np
 
 from ai import eval_test
+from ai import book_manager
 from board.bit_board import BitBoard
 
 cdef class Search():
 
     cdef public int _turn, _own, _opponent, _depth
-    cdef public object _board, _eval
+    cdef public object _board, _eval, _bmanager
     cdef int [:] _index
 
     def __init__(self, board, int own, int opponent, int turn):
@@ -25,6 +26,7 @@ cdef class Search():
             self._eval = eval_test.MidEvaluator(board)
         else:
             self._eval = eval_test.WLDEvaluator()
+        self._bmanager = book_manager.BookManager(own)
 
     def search(self):
         cdef int tmp
@@ -36,6 +38,7 @@ cdef class Search():
         cdef int i, score
         cdef int [:] coord
         cdef object tmp_board
+        cdef list legals
         if depth == 0:
             return  self._eval.evaluate(board, atk)
 
@@ -43,6 +46,7 @@ cdef class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
+                legals = self._bmanager.find(board)
                 for i in range( len(legals) ):
                     coord = legals[i]
                     tmp_board = copy.deepcopy(board)
@@ -63,6 +67,7 @@ cdef class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
+                legals = self._bmanager.find(board)
                 for i in range( len(legals) ):
                     coord = legals[i]
                     tmp_board = copy.deepcopy(board)
