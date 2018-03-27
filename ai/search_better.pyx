@@ -1,17 +1,21 @@
 import copy
 import math
 
-import numba
 import cython
+import numpy as np
+cimport numpy as np
 
 from ai import eval_test
 from board.bit_board import BitBoard
 
-class Search():
-    def __init__(self, board, own, opponent, turn):
+cdef class Search():
+
+    cdef public int _turn, _own, _opponent, _depth
+    cdef public object _board, _eval
+    cdef int [:] _index
+
+    def __init__(self, board, int own, int opponent, int turn):
         self._turn = turn
-        self._alpha = math.inf
-        self._beta = -math.inf
         self._own = own
         self._opponent = opponent
         self._index = None
@@ -23,11 +27,15 @@ class Search():
             self._eval = eval_test.WLDEvaluator()
 
     def search(self):
-        tmp = self.alpha_beta(self._board, self._own, -math.inf, math.inf, self._depth)
+        cdef int tmp
+        tmp = self.alpha_beta(self._board, self._own, -999999999, 999999999, self._depth)
         return tmp, self._index[0], self._index[1]
 
     #alpha beta algorithm
-    def alpha_beta(self, board, atk, alpha, beta, depth):
+    def alpha_beta(self, object board, int atk, int alpha, int beta, int depth):
+        cdef int i, score
+        cdef int [:] coord
+        cdef object tmp_board
         if depth == 0:
             return  self._eval.evaluate(board, atk)
 
@@ -35,7 +43,8 @@ class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
-                for coord in legals:
+                for i in range( len(legals) ):
+                    coord = legals[i]
                     tmp_board = copy.deepcopy(board)
                     tmp_board.put_stone(int(coord[0]), int(coord[1]), atk)
                     score = self.alpha_beta(tmp_board, self._opponent, alpha, beta, depth-1)
@@ -43,8 +52,6 @@ class Search():
                         alpha = score
                         if depth==self._depth:
                             self._index = coord
-                    if depth==self._depth:
-                        print('alpha', alpha, score, coord, self._index)
                     #beta cut
                     if alpha >= beta:
                         break
@@ -56,7 +63,8 @@ class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
-                for coord in legals:
+                for i in range( len(legals) ):
+                    coord = legals[i]
                     tmp_board = copy.deepcopy(board)
                     tmp_board.put_stone(int(coord[0]), int(coord[1]), self._opponent)
                     score = self.alpha_beta(tmp_board, self._own, alpha, beta, depth-1)
@@ -69,13 +77,3 @@ class Search():
                 tmp_board = copy.deepcopy(board)
                 return min([beta, self.alpha_beta(tmp_board, self._own, alpha, beta, depth-1)])
 
-
-    #nega scout algorithm
-    def nega_scout(self, board, atk, alpha, beta, depth):
-        if(depth == 0):
-            return  self._eval.evaluate(board, self._opponent)
-
-    def move_ordering(self, node, board, atk, depth):
-        if depth == 0:
-            return  self._eval.evaluate(board, atk)
-        board.listing_puttable(akt)

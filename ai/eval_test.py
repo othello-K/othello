@@ -1,6 +1,7 @@
 # 参考 : 『リバーシのアルゴリズム』 星 正明 著　工学社
 
 import copy
+import numba
 
 # 辺に関するパラメータをまとめたクラス
 class EdgeParam:
@@ -93,8 +94,8 @@ class WLDEvaluator(Evaluator):
         if(attacker != 1):
             self.discdiff = -self.discdiff
 
-        if(discdiff > 0): return self.WIN;
-        elif (discdiff < 0): return self.LOSE;
+        if(self.discdiff > 0): return self.WIN;
+        elif (self.discdiff < 0): return self.LOSE;
         else: return self.DRAW
 
 class MidEvaluator(Evaluator):
@@ -133,6 +134,7 @@ class MidEvaluator(Evaluator):
         return 3*(3*(3*(3*(3*(3*(3*l[0]+l[1])+l[2])+l[3])+l[4])+l[5])+l[6])+l[7]
 
     # 評価
+    @numba.jit
     def evaluate(self, __board, attacker):
         edgestat = ColorStorage(EdgeParam)
         cornerstat = ColorStorage(CornerParam)
@@ -157,8 +159,8 @@ class MidEvaluator(Evaluator):
         edgestat += self.EdgeTable[self.idxRight(__board)]
         edgestat += self.EdgeTable[self.idxLeft(__board)]
 
-        print("black : " + str(format(__board._bl_board, '016x')))
-        print("white : " + str(format(__board._wh_board, '016x')))
+        #print("black : " + str(format(__board._bl_board, '016x')))
+        #print("white : " + str(format(__board._wh_board, '016x')))
 
 
         # 隅の評価
@@ -183,18 +185,18 @@ class MidEvaluator(Evaluator):
            + edgestat.black.Cmove * self.EvalWeight.Cmove_w\
            - edgestat.white.Cmove * self.EvalWeight.Cmove_w\
 
-        print("--------------------------")
-        print("stable : " + str(edgestat.black.stable) + " , " + str(edgestat.white.stable))
-        print("corner : " + str(cornerstat.black.corner) + " , " + str(cornerstat.white.corner))
-        print("wing : " + str(edgestat.black.wing) + " , " + str(edgestat.white.wing))
-        print("Xmove : " + str(cornerstat.black.Xmove) + " , " + str(cornerstat.white.Xmove))
-        print("Cmove : " + str(edgestat.black.Cmove) + " , " + str(edgestat.white.Cmove))
+        #print("--------------------------")
+        #print("stable : " + str(edgestat.black.stable) + " , " + str(edgestat.white.stable))
+        #print("corner : " + str(cornerstat.black.corner) + " , " + str(cornerstat.white.corner))
+        #print("wing : " + str(edgestat.black.wing) + " , " + str(edgestat.white.wing))
+        #print("Xmove : " + str(cornerstat.black.Xmove) + " , " + str(cornerstat.white.Xmove))
+        #print("Cmove : " + str(edgestat.black.Cmove) + " , " + str(edgestat.white.Cmove))
 
 
         # 開放度・着手可能手数の評価
         if(self.EvalWeight.liberty_w != 0):
             liberty = self.countLiberty(__board)
-            print("liberty : " + str(liberty.black) + " , " + str(liberty.white))
+            #print("liberty : " + str(liberty.black) + " , " + str(liberty.white))
             result += liberty.black * self.EvalWeight.liberty_w
             result -= liberty.white * self.EvalWeight.liberty_w
 
@@ -202,24 +204,24 @@ class MidEvaluator(Evaluator):
         __board.listing_puttable(attacker)
 
         movility = len(__board.get_puttable_list()) * self.EvalWeight.movility_w
-        print("movility : " + str(movility))
-        
+        #print("movility : " + str(movility))
+
         """
         自分視点の場合 正の値なので+ 敵視点の場合 負の値なので-  
         対戦相手視点の時は符号反転して返す
         """
         if(attacker == 1):  # 黒が攻めの時 
             result += movility
-            print("result : " + str(result))
-            print("--------------------------")
+            #print("result : " + str(result))
+            #print("--------------------------")
             return result
         else:               # 白が攻めの時 
             result -= movility
-            print("result : " + str(-result))
-            print("--------------------------")
+            #print("result : " + str(-result))
+            #print("--------------------------")
             return -result
 
-
+    @numba.jit
     def generateEdge(self, count, __board, b_edge, w_edge):
 
         if(count == __board.get_board_size()):
@@ -248,6 +250,7 @@ class MidEvaluator(Evaluator):
         return
 
     # 辺のパラメータを数える  
+    @numba.jit
     def evalEdge(self, line):
         edgeparam = EdgeParam()
         edgeparam.set_value(0, 0, 0, 0)
@@ -290,6 +293,7 @@ class MidEvaluator(Evaluator):
 
 
     # 隅のパラメータを調べる。この関数は各評価時に行う
+    @numba.jit
     def evalCorner(self, __board):
         cornerstat = ColorStorage(CornerParam)
 
@@ -302,67 +306,68 @@ class MidEvaluator(Evaluator):
 
         # 左上
         if(__board.get_stone(0, 0, self._BLACK) == 1):
-            print("left-top1")
+            #print("left-top1")
             cornerstat.black.corner += 1
         elif(__board.get_stone(0, 0, self._WHITE) == 1):
-            print("left-top2")
+            #print("left-top2")
             cornerstat.white.corner += 1
         else:
             if(__board.get_stone(1, 1, self._BLACK) == 1):
-                print("left-top-X1")
+                #print("left-top-X1")
                 cornerstat.black.Xmove += 1
             elif(__board.get_stone(1, 1, self._WHITE) == 1):
-                print("left-top-X2")
+                #print("left-top-X2")
                 cornerstat.white.Xmove += 1
 
 
         # 左下
         if(__board.get_stone(0, 7, self._BLACK) == 1):
-            print("left-bottom1")
+            #print("left-bottom1")
             cornerstat.black.corner += 1
         elif(__board.get_stone(0, 7, self._WHITE) == 1):
-            print("left-bottom2")
+            #print("left-bottom2")
             cornerstat.white.corner += 1
         else:
             if(__board.get_stone(1, 6, self._BLACK) == 1):
-                print("left-bottom-X1")
+                #print("left-bottom-X1")
                 cornerstat.black.Xmove += 1
             elif(__board.get_stone(1, 6, self._WHITE) == 1):
-                print("left-bottom-X2")
+                #print("left-bottom-X2")
                 cornerstat.white.Xmove += 1
 
         # 右下
         if(__board.get_stone(7, 7, self._BLACK) == 1):
-            print("right-bottom1")
+            #print("right-bottom1")
             cornerstat.black.corner += 1
         elif(__board.get_stone(7, 7, self._WHITE) == 1):
-            print("right-bottom2")
+            #print("right-bottom2")
             cornerstat.white.corner += 1
         else:
             if(__board.get_stone(6, 6, self._BLACK) == 1):
-                print("right-bottom-X1")
+                #print("right-bottom-X1")
                 cornerstat.black.Xmove += 1
             elif(__board.get_stone(6, 6, self._WHITE) == 1):
-                print("right-bottom-X2")
+                #print("right-bottom-X2")
                 cornerstat.white.Xmove += 1
 
         # 右上
         if(__board.get_stone(7, 0, self._BLACK) == 1):
-            print("right-top1")
+            #print("right-top1")
             cornerstat.black.corner += 1
         elif(__board.get_stone(7, 0, self._WHITE) == 1):
-            print("right-top2")
+            #print("right-top2")
             cornerstat.white.corner += 1
         else:
             if(__board.get_stone(6, 1, self._BLACK) == 1):
-                print("right-top-X1")
+                #print("right-top-X1")
                 cornerstat.black.Xmove += 1
             elif(__board.get_stone(6, 1, self._WHITE) == 1):
-                print("right-top-X2")
+                #print("right-top-X2")
                 cornerstat.white.Xmove += 1
 
         return cornerstat
 
+    @numba.jit
     def countLiberty(self, __board):
         liberty = ColorStorage(int)
 
@@ -379,9 +384,10 @@ class MidEvaluator(Evaluator):
 
         return liberty
 
-    # 各箇所についてのインデックスの計算  
+    # 各箇所についてのインデックスの計算
+    @numba.jit
     def idxTop(self, __board):
-        # 各箇所についてのインデックスの計算  
+        # 各箇所についてのインデックスの計算
         index = \
               2187 * (__board.get_player(0,0) )\
               +729 * (__board.get_player(1,0) )\
@@ -394,6 +400,7 @@ class MidEvaluator(Evaluator):
 
         return index
 
+    @numba.jit
     def idxBottom(self, __board):
 
         index = \
@@ -408,6 +415,7 @@ class MidEvaluator(Evaluator):
 
         return index
 
+    @numba.jit
     def idxRight(self, __board):
 
         index = \
@@ -423,6 +431,7 @@ class MidEvaluator(Evaluator):
         return index
 
 
+    @numba.jit
     def idxLeft(self, __board):
 
         index = \
