@@ -1,6 +1,7 @@
 # 参考 : 『リバーシのアルゴリズム』 星 正明 著　工学社
 
 import copy
+import numba
 
 # 辺に関するパラメータをまとめたクラス
 class EdgeParam:
@@ -133,6 +134,7 @@ class MidEvaluator(Evaluator):
         return 3*(3*(3*(3*(3*(3*(3*l[0]+l[1])+l[2])+l[3])+l[4])+l[5])+l[6])+l[7]
 
     # 評価
+    @numba.jit
     def evaluate(self, __board, attacker):
         edgestat = ColorStorage(EdgeParam)
         cornerstat = ColorStorage(CornerParam)
@@ -219,7 +221,7 @@ class MidEvaluator(Evaluator):
             #print("--------------------------")
             return -result
 
-
+    @numba.jit
     def generateEdge(self, count, __board, b_edge, w_edge):
 
         if(count == __board.get_board_size()):
@@ -248,6 +250,7 @@ class MidEvaluator(Evaluator):
         return
 
     # 辺のパラメータを数える  
+    @numba.jit
     def evalEdge(self, line):
         edgeparam = EdgeParam()
         edgeparam.set_value(0, 0, 0, 0)
@@ -290,6 +293,7 @@ class MidEvaluator(Evaluator):
 
 
     # 隅のパラメータを調べる。この関数は各評価時に行う
+    @numba.jit
     def evalCorner(self, __board):
         cornerstat = ColorStorage(CornerParam)
 
@@ -363,6 +367,7 @@ class MidEvaluator(Evaluator):
 
         return cornerstat
 
+    @numba.jit
     def countLiberty(self, __board):
         liberty = ColorStorage(int)
 
@@ -380,6 +385,7 @@ class MidEvaluator(Evaluator):
         return liberty
 
     # 各箇所についてのインデックスの計算
+    @numba.jit
     def idxTop(self, __board):
         # 各箇所についてのインデックスの計算
         index = \
@@ -394,6 +400,7 @@ class MidEvaluator(Evaluator):
 
         return index
 
+    @numba.jit
     def idxBottom(self, __board):
 
         index = \
@@ -408,6 +415,7 @@ class MidEvaluator(Evaluator):
 
         return index
 
+    @numba.jit
     def idxRight(self, __board):
 
         index = \
@@ -423,6 +431,7 @@ class MidEvaluator(Evaluator):
         return index
 
 
+    @numba.jit
     def idxLeft(self, __board):
 
         index = \

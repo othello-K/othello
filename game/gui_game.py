@@ -102,7 +102,7 @@ class GuiGame(BaseGame, Frame):
         """
 
     def game_process(self, event, x, y, bow):
-        self.append_history(np.array([x, y]), bow)
+        self.append_history(np.array([x, y], dtype='uint64'), bow)
         self._board.put_stone(x, y, bow)
         self.set_nstone()
         opp = self.get_opponent(bow)

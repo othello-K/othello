@@ -1,11 +1,13 @@
 import numpy as np
 from board.board import Board
 
+#%%cython
+import cython
+
 class BitBoard():
 
 
     PARSER = ','
-
 
     def __init__(self):
         #石の数
@@ -47,7 +49,6 @@ class BitBoard():
             self._bl_board = self._bl_board & (1 << (x + 8*y))
         elif bow == 2:
             self._wh_board = self._wh_board & (1 << (x + 8*y))
-
 
     def get_stone(self, x, y, bow):
         """
@@ -136,6 +137,7 @@ class BitBoard():
 
             self.append_board_history(self._bl_board, 1)
             self.append_board_history(self._wh_board, 2)
+
 
     def init_board_from_board(self, board):
         """
@@ -294,7 +296,7 @@ class BitBoard():
        else:
            return False
 
-    def get_puttable_map():
+    def get_puttable_map(self):
         return self._puttable_map
 
 
@@ -363,6 +365,7 @@ class BitBoard():
             return (nbit & 0x00000000ffffffff) + (nbit >> 32)
 
 
+
     def change_liberty(self, x, y, pm):
         # reduce liberty
         x += 1
@@ -375,6 +378,7 @@ class BitBoard():
         self._liberty[x+1][y+1] += pm
         self._liberty[x+1][y] += pm
         self._liberty[x+1][y-1] += pm
+
 
     def put_stone(self, x, y, bow):
         #着手した場合のボードを生成
