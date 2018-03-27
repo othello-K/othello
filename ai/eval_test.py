@@ -144,16 +144,7 @@ class MidEvaluator(Evaluator):
         stat = self.EdgeTable[self.idxTop(__board)]
         #edgestat  = self.EdgeTable[self.idxTop(__board)]
         edgestat.black.set_value(stat.black.stable, stat.black.wing, stat.black.mountain, stat.black.Cmove)
-        edgestat.white.set_value(stat.white.stable, stat.white.wing, stat.white.mountain, stat.white.Cmove) 
-
-        """
-        print("black-stable-bottom : " + str(self.EdgeTable[self.idxBottom(__board)].black.stable))
-        print("white-stable-bottom : " + str(self.EdgeTable[self.idxBottom(__board)].white.stable))
-        print("black-stable-right : " + str(self.EdgeTable[self.idxRight(__board)].black.stable))
-        print("white-stable-right : " + str(self.EdgeTable[self.idxRight(__board)].white.stable))
-        print("black-stable-left : " + str(self.EdgeTable[self.idxLeft(__board)].black.stable))
-        print("white-stable-left : " + str(self.EdgeTable[self.idxLeft(__board)].white.stable))
-        """
+        edgestat.white.set_value(stat.white.stable, stat.white.wing, stat.white.mountain, stat.white.Cmove)         
 
         edgestat += self.EdgeTable[self.idxBottom(__board)]
         edgestat += self.EdgeTable[self.idxRight(__board)]
@@ -374,14 +365,14 @@ class MidEvaluator(Evaluator):
         liberty.black = 0
         liberty.white = 0
 
-        for x in range(0, __board.get_board_size()):
-            for y in range(0, __board.get_board_size()):
+        for y in range(0, __board.get_board_size()):
+            for x in range(0, __board.get_board_size()):
                 value = __board.get_liberty(x, y)
                 if(__board.get_stone(x, y, self._BLACK) == 1):
                     liberty.black += value
                 elif(__board.get_stone(x, y, self._WHITE) == 1):
                     liberty.white += value
-
+                    
         return liberty
 
     # 各箇所についてのインデックスの計算
