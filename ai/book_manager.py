@@ -35,13 +35,14 @@ class BookManager:
 		return True
 
 
-	def find(self, __board, __game , puttable):
+	def find(self, __board, __game):
 		node = self.Root
 		history = __board.get_input_history()
-		print( "history : " , history)
 
-		print("puttable list : ", puttable)
-		if(not history): return puttable
+		__board.listing_puttable(self.own)
+		legal = __board.get_puttable_list()
+
+		if(not history): return legal
 
 		first = sm.Point(history[0])
 		transformer = sm.StandardMoves(__board, first)
@@ -67,13 +68,12 @@ class BookManager:
 
 			if(node == None):
 				# 定石を外れている
-				print("node == None")
-				return puttable
+				return legal
 
 
 		# 履歴と定石の終わりが一致していた場合
 		if(node.child == None): 
-			return puttable
+			return legal
 
 		next_move = self.get_next_move(node)
 

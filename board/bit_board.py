@@ -18,8 +18,11 @@ class BitBoard():
         self._wh_board = 0x0000000000000000
         #石を置ける場所だけフラグ
         self._puttable_map = 0x0000000000000000
-        #
+        #init liberty
         self._liberty = [[8 for i in range(self._board_size + 2)] for j in range(self._board_size + 2)]
+        self._liberty[1][1] = self._liberty[1][self._board_size] = self._liberty[self._board_size][1] = self._liberty[self._board_size][self._board_size] = 3
+        for i in range(2, self._board_size):
+            self._liberty[1][i] = self._liberty[i][1] = self._liberty[self._board_size][i] = self._liberty[i][self._board_size] = 5
         #各ターンでボードを保存
         self._bl_board_history = []
         self._wh_board_history = []
@@ -52,7 +55,7 @@ class BitBoard():
         指定されたbowの盤面のcoord_sumの状態を判定
         """
         if bow == 1:
-            return (self._bl_board >> (x + 8*y)) & 0b1  
+            return (self._bl_board >> (x + 8*y)) & 0b1
         elif bow == 2:
             return (self._wh_board >> (x + 8*y)) & 0b1
 
@@ -143,7 +146,6 @@ class BitBoard():
 
             self.append_board_history(self._bl_board, 1)
             self.append_board_history(self._wh_board, 2)
-            print(self._liberty)
 
     def init_board_from_board(self, board):
         """
@@ -196,6 +198,11 @@ class BitBoard():
 
                 print("{}|".format(stone), end="")
             print("")
+
+        for i in range(8):
+            for j in range(8):
+                print(self.get_liberty(j, i), end='')
+            print('')
 
 
     def listing_puttable(self, bow):
@@ -368,6 +375,8 @@ class BitBoard():
 
     def change_liberty(self, x, y, pm):
         # reduce liberty
+        x += 1
+        y += 1
         self._liberty[x][y-1] += pm
         self._liberty[x-1][y-1] += pm
         self._liberty[x-1][y] += pm
@@ -376,7 +385,6 @@ class BitBoard():
         self._liberty[x+1][y+1] += pm
         self._liberty[x+1][y] += pm
         self._liberty[x+1][y-1] += pm
-
 
     def put_stone(self, x, y, bow):
         #着手した場合のボードを生成
@@ -413,7 +421,9 @@ class BitBoard():
 
 
     def get_liberty(self, x, y):
-        return self._liberty[y][x]
+        x += 1
+        y += 1
+        return self._liberty[x][y]
 
 
     def create_board(self):

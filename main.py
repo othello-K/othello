@@ -4,7 +4,7 @@ from tkinter import ttk
 from board.board import Board
 from board.bit_board import BitBoard
 from user.user import User
-from user.ai_user import AiUser
+from user.ai_user import AiUser, RandomUser
 from game.gui_game import GuiGame
 
 #import eval_test
