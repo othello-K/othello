@@ -369,14 +369,14 @@ class MidEvaluator(Evaluator):
         liberty.black = 0
         liberty.white = 0
 
-        for x in range(0, __board.get_board_size()):
-            for y in range(0, __board.get_board_size()):
+        for y in range(0, __board.get_board_size()):
+            for x in range(0, __board.get_board_size()):
                 value = __board.get_liberty(x, y)
                 if(__board.get_stone(x, y, self._BLACK) == 1):
                     liberty.black += value
                 elif(__board.get_stone(x, y, self._WHITE) == 1):
                     liberty.white += value
-
+                    
         return liberty
 
     # 各箇所についてのインデックスの計算  

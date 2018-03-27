@@ -23,6 +23,7 @@ class BitBoard():
         #各ターンでボードを保存
         self._bl_board_history = []
         self._wh_board_history = []
+        self.input_history = []
         #石を置ける場所が入っている
         self._puttable_list = []
 
@@ -95,6 +96,10 @@ class BitBoard():
         return self._board_size
 
 
+    def get_input_history(self):
+        return self.input_history
+
+
     def set_board(self, board, bow):
         if bow == 1:
             self._bl_board = board
@@ -107,6 +112,11 @@ class BitBoard():
             self._bl_board_history.append(board)
         elif bow == 2:
             self._wh_board_history.append(board)
+
+
+    def append_input_history(self, x, y):
+        coord = np.array([x,y])
+        self.input_history.append(coord)
 
 
     def pop_board_history(self, bow):
@@ -399,6 +409,7 @@ class BitBoard():
         self.set_board(opp_board, opp)
         self.append_board_history(atk_board, bow)
         self.append_board_history(opp_board, opp)
+        self.append_input_history(x,y)
 
 
     def get_liberty(self, x, y):

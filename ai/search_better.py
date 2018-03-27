@@ -2,9 +2,10 @@ import copy
 from ai import eval_test
 from board.bit_board import BitBoard
 import math
+from ai import book_manager
 
 class Search():
-    def __init__(self, board, own, opponent, turn):
+    def __init__(self, board, own, opponent, turn, game):
         self._turn = turn
         self._alpha = -math.inf
         self._beta = math.inf
@@ -12,13 +13,17 @@ class Search():
         self._opponent = opponent
         self._index = None
         self._board = board
+        self._game = game
         if(turn >= 1 and turn <= 54):
             self._eval = eval_test.MidEvaluator(board)
         else:
             self._eval = eval_test.PerfectEvaluator()
 
     def search(self):
-        return self.beta_cut(self._board, 6), self._index[0], self._index[1]
+        self.bm = book_manager.BookManager(self._own)
+        result = self.beta_cut(self._board, 6)
+
+        return result, self._index[0], self._index[1]
 
     def beta_cut(self, board, depth):
         if(depth == 0):
@@ -27,10 +32,12 @@ class Search():
             return evaluation
         score_max = -math.inf
         board.listing_puttable(self._own)
+        print("depth : ", depth , "puttable : ", board.get_puttable_list())
         for coord in board.get_puttable_list():
-            print(coord)
+            print("coord: " ,coord)
             board1 = copy.deepcopy(board)
             board1.put_stone(int(coord[0]),int(coord[1]), self._own)
+            #print("find : {}".format(self.bm.find(board1, self._game)))
             score1 = self.alpha_cut(board1, depth-1)
             if(score1 > score_max):
                 #より良い手が見つかった
@@ -51,7 +58,9 @@ class Search():
             return evaluation
         score_min = math.inf
         board.listing_puttable(self._opponent)
+        print("depth : ", depth , "puttable : ", board.get_puttable_list())
         for coord in board.get_puttable_list():
+            print("coord: " ,coord)
             board2 = copy.deepcopy(board)
             board2.put_stone(int(coord[0]),int(coord[1]), self._own)
             score2 = self.beta_cut(board2, depth-1)
