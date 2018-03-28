@@ -144,7 +144,7 @@ class MidEvaluator(Evaluator):
         stat = self.EdgeTable[self.idxTop(__board)]
         #edgestat  = self.EdgeTable[self.idxTop(__board)]
         edgestat.black.set_value(stat.black.stable, stat.black.wing, stat.black.mountain, stat.black.Cmove)
-        edgestat.white.set_value(stat.white.stable, stat.white.wing, stat.white.mountain, stat.white.Cmove)         
+        edgestat.white.set_value(stat.white.stable, stat.white.wing, stat.white.mountain, stat.white.Cmove)
 
         edgestat += self.EdgeTable[self.idxBottom(__board)]
         edgestat += self.EdgeTable[self.idxRight(__board)]

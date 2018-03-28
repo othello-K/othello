@@ -2120,7 +2120,6 @@ static PyObject *__pyx_builtin_id;
 static PyObject *__pyx_builtin_IndexError;
 static const char __pyx_k_O[] = "O";
 static const char __pyx_k_c[] = "c";
-static const char __pyx_k_ai[] = "ai";
 static const char __pyx_k_id[] = "id";
 static const char __pyx_k_np[] = "np";
 static const char __pyx_k_atk[] = "atk";
@@ -2143,6 +2142,7 @@ static const char __pyx_k_stop[] = "stop";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_turn[] = "turn";
 static const char __pyx_k_ASCII[] = "ASCII";
+static const char __pyx_k_ai_ai[] = "ai.ai";
 static const char __pyx_k_alpha[] = "alpha";
 static const char __pyx_k_board[] = "board";
 static const char __pyx_k_class[] = "__class__";
@@ -2274,7 +2274,7 @@ static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_View_MemoryView;
 static PyObject *__pyx_n_s_WLDEvaluator;
-static PyObject *__pyx_n_s_ai;
+static PyObject *__pyx_n_s_ai_ai;
 static PyObject *__pyx_n_s_ai_search_better;
 static PyObject *__pyx_n_s_allocate_buffer;
 static PyObject *__pyx_n_s_alpha;
@@ -22390,7 +22390,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_View_MemoryView, __pyx_k_View_MemoryView, sizeof(__pyx_k_View_MemoryView), 0, 0, 1, 1},
   {&__pyx_n_s_WLDEvaluator, __pyx_k_WLDEvaluator, sizeof(__pyx_k_WLDEvaluator), 0, 0, 1, 1},
-  {&__pyx_n_s_ai, __pyx_k_ai, sizeof(__pyx_k_ai), 0, 0, 1, 1},
+  {&__pyx_n_s_ai_ai, __pyx_k_ai_ai, sizeof(__pyx_k_ai_ai), 0, 0, 1, 1},
   {&__pyx_n_s_ai_search_better, __pyx_k_ai_search_better, sizeof(__pyx_k_ai_search_better), 0, 0, 1, 1},
   {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
   {&__pyx_n_s_alpha, __pyx_k_alpha, sizeof(__pyx_k_alpha), 0, 0, 1, 1},
@@ -23270,8 +23270,8 @@ if (!__Pyx_RefNanny) {
   /* "ai/search_better.pyx":8
  * cimport numpy as np
  * 
- * from ai import eval_test             # <<<<<<<<<<<<<<
- * from ai import book_manager
+ * from ai.ai import eval_test             # <<<<<<<<<<<<<<
+ * from ai.ai import book_manager
  * from board.bit_board import BitBoard
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -23279,7 +23279,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_eval_test);
   __Pyx_GIVEREF(__pyx_n_s_eval_test);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_eval_test);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_ai, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_ai_ai, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_eval_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -23290,8 +23290,8 @@ if (!__Pyx_RefNanny) {
 
   /* "ai/search_better.pyx":9
  * 
- * from ai import eval_test
- * from ai import book_manager             # <<<<<<<<<<<<<<
+ * from ai.ai import eval_test
+ * from ai.ai import book_manager             # <<<<<<<<<<<<<<
  * from board.bit_board import BitBoard
  * 
  */
@@ -23300,7 +23300,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_book_manager);
   __Pyx_GIVEREF(__pyx_n_s_book_manager);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_book_manager);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_ai, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_ai_ai, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_book_manager); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -23310,8 +23310,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "ai/search_better.pyx":10
- * from ai import eval_test
- * from ai import book_manager
+ * from ai.ai import eval_test
+ * from ai.ai import book_manager
  * from board.bit_board import BitBoard             # <<<<<<<<<<<<<<
  * 
  * cdef class Search():

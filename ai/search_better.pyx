@@ -5,8 +5,8 @@ import cython
 import numpy as np
 cimport numpy as np
 
-from ai import eval_test
-from ai import book_manager
+from ai.ai import eval_test
+from ai.ai import book_manager
 from board.bit_board import BitBoard
 
 cdef class Search():
