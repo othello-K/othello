@@ -46,7 +46,7 @@ cdef class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
-                #legals = self._bmanager.find(board)
+                legals = self._bmanager.find(board)
                 for i in range( len(legals) ):
                     coord = legals[i]
                     tmp_board = copy.deepcopy(board)
@@ -67,7 +67,7 @@ cdef class Search():
             board.listing_puttable(atk)
             legals = board.get_puttable_list()
             if len(legals) != 0:
-                #legals = self._bmanager.find(board)
+                legals = self._bmanager.find(board)
                 for i in range( len(legals) ):
                     coord = legals[i]
                     tmp_board = copy.deepcopy(board)
