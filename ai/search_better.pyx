@@ -21,11 +21,11 @@ cdef class Search():
         self._opponent = opponent
         self._index = None
         self._board = board
-        self._depth = 10
-        if(turn >= 0 and turn <= 44):
+        self._depth = 12
+        if(turn >= 0 and turn <= 40):
             self._eval = eval_test.MidEvaluator(board)
-        elif(turn >= 43 and turn <= 50):
-            self._depth = 15
+        elif(turn >= 41 and turn <= 50):
+            self._depth = 19
             self._eval = eval_test.WLDEvaluator()
         else:
             self._depth = 10

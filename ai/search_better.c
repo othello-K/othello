@@ -2629,7 +2629,7 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
  *         self._opponent = opponent
  *         self._index = None             # <<<<<<<<<<<<<<
  *         self._board = board
- *         self._depth = 10
+ *         self._depth = 12
  */
   __pyx_t_1 = __Pyx_PyObject_to_MemoryviewSlice_ds_int(Py_None, PyBUF_WRITABLE); if (unlikely(!__pyx_t_1.memview)) __PYX_ERR(0, 22, __pyx_L1_error)
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->_index, 0);
@@ -2641,8 +2641,8 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
  *         self._opponent = opponent
  *         self._index = None
  *         self._board = board             # <<<<<<<<<<<<<<
- *         self._depth = 10
- *         if(turn >= 0 and turn <= 44):
+ *         self._depth = 12
+ *         if(turn >= 0 and turn <= 40):
  */
   __Pyx_INCREF(__pyx_v_board);
   __Pyx_GIVEREF(__pyx_v_board);
@@ -2653,18 +2653,18 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
   /* "ai/search_better.pyx":24
  *         self._index = None
  *         self._board = board
- *         self._depth = 10             # <<<<<<<<<<<<<<
- *         if(turn >= 0 and turn <= 44):
+ *         self._depth = 12             # <<<<<<<<<<<<<<
+ *         if(turn >= 0 and turn <= 40):
  *             self._eval = eval_test.MidEvaluator(board)
  */
-  __pyx_v_self->_depth = 10;
+  __pyx_v_self->_depth = 12;
 
   /* "ai/search_better.pyx":25
  *         self._board = board
- *         self._depth = 10
- *         if(turn >= 0 and turn <= 44):             # <<<<<<<<<<<<<<
+ *         self._depth = 12
+ *         if(turn >= 0 and turn <= 40):             # <<<<<<<<<<<<<<
  *             self._eval = eval_test.MidEvaluator(board)
- *         elif(turn >= 43 and turn <= 50):
+ *         elif(turn >= 41 and turn <= 50):
  */
   __pyx_t_3 = ((__pyx_v_turn >= 0) != 0);
   if (__pyx_t_3) {
@@ -2672,17 +2672,17 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
     __pyx_t_2 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = ((__pyx_v_turn <= 44) != 0);
+  __pyx_t_3 = ((__pyx_v_turn <= 40) != 0);
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_2) {
 
     /* "ai/search_better.pyx":26
- *         self._depth = 10
- *         if(turn >= 0 and turn <= 44):
+ *         self._depth = 12
+ *         if(turn >= 0 and turn <= 40):
  *             self._eval = eval_test.MidEvaluator(board)             # <<<<<<<<<<<<<<
- *         elif(turn >= 43 and turn <= 50):
- *             self._depth = 15
+ *         elif(turn >= 41 and turn <= 50):
+ *             self._depth = 19
  */
     __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_eval_test); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -2740,22 +2740,22 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
 
     /* "ai/search_better.pyx":25
  *         self._board = board
- *         self._depth = 10
- *         if(turn >= 0 and turn <= 44):             # <<<<<<<<<<<<<<
+ *         self._depth = 12
+ *         if(turn >= 0 and turn <= 40):             # <<<<<<<<<<<<<<
  *             self._eval = eval_test.MidEvaluator(board)
- *         elif(turn >= 43 and turn <= 50):
+ *         elif(turn >= 41 and turn <= 50):
  */
     goto __pyx_L3;
   }
 
   /* "ai/search_better.pyx":27
- *         if(turn >= 0 and turn <= 44):
+ *         if(turn >= 0 and turn <= 40):
  *             self._eval = eval_test.MidEvaluator(board)
- *         elif(turn >= 43 and turn <= 50):             # <<<<<<<<<<<<<<
- *             self._depth = 15
+ *         elif(turn >= 41 and turn <= 50):             # <<<<<<<<<<<<<<
+ *             self._depth = 19
  *             self._eval = eval_test.WLDEvaluator()
  */
-  __pyx_t_3 = ((__pyx_v_turn >= 43) != 0);
+  __pyx_t_3 = ((__pyx_v_turn >= 41) != 0);
   if (__pyx_t_3) {
   } else {
     __pyx_t_2 = __pyx_t_3;
@@ -2768,16 +2768,16 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
 
     /* "ai/search_better.pyx":28
  *             self._eval = eval_test.MidEvaluator(board)
- *         elif(turn >= 43 and turn <= 50):
- *             self._depth = 15             # <<<<<<<<<<<<<<
+ *         elif(turn >= 41 and turn <= 50):
+ *             self._depth = 19             # <<<<<<<<<<<<<<
  *             self._eval = eval_test.WLDEvaluator()
  *         else:
  */
-    __pyx_v_self->_depth = 15;
+    __pyx_v_self->_depth = 19;
 
     /* "ai/search_better.pyx":29
- *         elif(turn >= 43 and turn <= 50):
- *             self._depth = 15
+ *         elif(turn >= 41 and turn <= 50):
+ *             self._depth = 19
  *             self._eval = eval_test.WLDEvaluator()             # <<<<<<<<<<<<<<
  *         else:
  *             self._depth = 10
@@ -2812,10 +2812,10 @@ static int __pyx_pf_2ai_13search_better_6Search___init__(struct __pyx_obj_2ai_13
     __pyx_t_4 = 0;
 
     /* "ai/search_better.pyx":27
- *         if(turn >= 0 and turn <= 44):
+ *         if(turn >= 0 and turn <= 40):
  *             self._eval = eval_test.MidEvaluator(board)
- *         elif(turn >= 43 and turn <= 50):             # <<<<<<<<<<<<<<
- *             self._depth = 15
+ *         elif(turn >= 41 and turn <= 50):             # <<<<<<<<<<<<<<
+ *             self._depth = 19
  *             self._eval = eval_test.WLDEvaluator()
  */
     goto __pyx_L3;
