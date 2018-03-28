@@ -21,11 +21,15 @@ cdef class Search():
         self._opponent = opponent
         self._index = None
         self._board = board
-        self._depth = 6
-        if(turn >= 0 and turn <= 50):
+        self._depth = 8
+        if(turn >= 0 and turn <= 44):
             self._eval = eval_test.MidEvaluator(board)
-        else:
+        elif(turn >= 45 and turn <= 50):
+            self._depth = 15
             self._eval = eval_test.WLDEvaluator()
+        else:
+            self._depth = 10
+            self._eval = eval_test.PerfectEvaluator()
         self._bmanager = book_manager.BookManager(own)
 
     def search(self):
