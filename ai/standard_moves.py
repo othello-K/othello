@@ -4,7 +4,7 @@ class InvalidArgument (Exception):
   """
   想定外の引数が渡された時に発生させる例外
   """
-  def __init__ (self):         
+  def __init__ (self):
     print ('ArgumentError : The argument must be Reversi style coordinates!')
 
 
@@ -43,7 +43,6 @@ class Node:
         self.child = None
         self.sibling = None
         self.point = Point()
-    
 
 class StandardMoves:
     def __init__(self, __board, first):
