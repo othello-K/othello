@@ -94,9 +94,15 @@ class GuiGame(BaseGame, Frame):
 
         print(color + ' player put stone on ' + '{}, {}'.format(x, y))
         self._board.display_board()
+        """
+        for i in range(8):
+            for j in range(8):
+                print(self._board.get_liberty(i,j), end='')
+            print('')
+        """
 
     def game_process(self, event, x, y, bow):
-        self.append_history(np.array([x, y]), bow)
+        self.append_history(np.array([x, y], dtype='uint64'), bow)
         self._board.put_stone(x, y, bow)
         self.set_nstone()
         opp = self.get_opponent(bow)

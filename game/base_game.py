@@ -34,6 +34,9 @@ class BaseGame():
     def get_attacker(self):
         return self._attacker
 
+    def get_input_history(self):
+        return self._input_history
+
     def get_opponent(self, bow):
         """
         敵ユーザの番号を返す
